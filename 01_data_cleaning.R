@@ -10,6 +10,10 @@ canopy_raw <- read_csv2("raw_data/canopy_data_raw.csv")
 tree_raw <- read_csv2("raw_data/tree_data_raw.csv")
 soil_raw <- read_csv2("raw_data/soil_data_raw.csv")
 
+#Remove the two last empty rows of soil_raw
+soil_raw <- soil_raw %>%
+  slice(1:(n() - 2))
+
 
 #Show seedling density per subplot and species instead of heights
 #Replace empty subplots (species = "0" rows) with Quercus sp., density = 0
