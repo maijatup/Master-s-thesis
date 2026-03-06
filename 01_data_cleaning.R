@@ -59,4 +59,12 @@ seedling_density <- seedling_density %>%
   select(site, plot, treatment, transect, subplot, mean_canopy_openness, everything())
 
 
+#Add pH values to seedling_density
+seedling_density <- seedling_density %>% 
+  left_join(soil_raw %>% 
+              select(site, plot, treatment, transect, subplot, pH),
+            by = c("site", "plot", "treatment", "transect", "subplot")) %>% 
+  select(site, plot, treatment, transect, subplot, mean_canopy_openness, pH, everything())
+
+
 
