@@ -14,6 +14,10 @@ soil_raw <- read_csv2("raw_data/soil_data_raw.csv")
 soil_raw <- soil_raw %>%
   slice(1:(n() - 2))
 
+#Remove row 38 with duplicate sample
+soil_raw <- soil_raw %>%
+  slice(-38)
+
 
 #Show seedling density per subplot and species instead of heights
 #Replace empty subplots (species = "0" rows) with Quercus sp., density = 0
