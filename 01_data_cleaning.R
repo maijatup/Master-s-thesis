@@ -48,8 +48,8 @@ canopy_mean <- canopy_raw %>%
   group_by(Site, Plot, Treatment, Transect, Subplot) %>% 
   summarise(mean_canopy_openness = mean(`Canopy openness (%)`, na.rm = TRUE, .groups = "drop"))
 
-#Add the means to seedling_density
-seedling_density <- seedling_density %>% 
+#Add the means to seedling_density -> regeneration_data
+regeneration_data <- seedling_density %>% 
   left_join(canopy_mean,
             by = c("site" = "Site",
                    "plot" = "Plot",
@@ -59,8 +59,8 @@ seedling_density <- seedling_density %>%
   select(site, plot, treatment, transect, subplot, mean_canopy_openness, everything())
 
 
-#Add pH values to seedling_density
-seedling_density <- seedling_density %>% 
+#Add pH values to regeneration_data
+regeneration_data <- regeneration_data %>% 
   left_join(soil_raw %>% 
               select(site, plot, treatment, transect, subplot, pH),
             by = c("site", "plot", "treatment", "transect", "subplot")) %>% 
