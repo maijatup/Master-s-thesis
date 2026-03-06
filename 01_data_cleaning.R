@@ -33,3 +33,22 @@ empty_quercus <- empty_subplots %>%
 seedling_density <- bind_rows(seedling_counts, empty_quercus) %>% 
   arrange(site, plot, transect, subplot, species)
 
+
+#Add canopy openness values
+#Calculate mean canopy openness per subplot
+canopy_mean <- canopy_raw %>% 
+  group_by(Site, Plot, Treatment, Transect, Subplot) %>% 
+  summarise(mean_canopy_openness = mean(`Canopy openness (%)`, na.rm = TRUE, .groups = "drop"))
+
+#Add the means to seedling_density
+seedling_density <- seedling_density %>% 
+  left_join(canopy_mean,
+            by = c("site" = "Site",
+                   "plot" = "Plot",
+                   "treatment" = "Treatment",
+                   "transect" = "Transect",
+                   "subplot" = "Subplot")) %>% 
+  select(site, plot, treatment, transect, subplot, mean_canopy_openness, everything())
+
+
+
