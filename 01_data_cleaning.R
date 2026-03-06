@@ -1,0 +1,35 @@
+#Data cleaning
+
+library(readr)
+library(dplyr)
+
+#Load datasets
+seedling_raw <- read_csv2("raw_data/seedling_data_raw.csv")
+old_data_raw <- read_csv2("raw_data/old_data_raw.csv")
+canopy_raw <- read_csv2("raw_data/canopy_data_raw.csv")
+tree_raw <- read_csv2("raw_data/tree_data_raw.csv")
+soil_raw <- read_csv2("raw_data/soil_data_raw.csv")
+
+
+#Show seedling density per subplot and species instead of heights
+#Replace empty subplots (species = "0" rows) with Quercus sp., density = 0
+#Count real seedlings
+seedling_counts <- seedling_raw %>% 
+  filter(species != "0") %>% 
+  group_by(site, plot, treatment, transect, subplot, species) %>% 
+  summarise(density = n(), .groups = "drop")
+
+#Identify empty subplots
+empty_subplots <- seedling_raw %>% 
+  filter(species == "0") %>% 
+  distinct(site, plot, treatment, transect, subplot)
+
+#Create zero-density Quercus rows for empty subplots
+empty_quercus <- empty_subplots %>% 
+  mutate(species = "Quercus sp.",
+         density = 0)
+
+#Combine with real data
+seedling_density <- bind_rows(seedling_counts, empty_quercus) %>% 
+  arrange(site, plot, transect, subplot, species)
+
