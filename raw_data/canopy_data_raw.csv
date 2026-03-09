@@ -1,329 +1,329 @@
-﻿Site;Plot;Treatment;Transect;Subplot;File name;;Closed pixels;Open pixels;Canopy openness (%);Category;Analysis;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;1;20250916_115357;0;9448384;2551616;21,26346667;some leaves blend, some white trunk;165;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;1;20250916_115413;0;9768874;2231126;18,59271667;some leaves blend;151;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;1;20250916_115437;0;9777531;2222469;18,520575;some leaves blend;160;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;1;20250916_115445;0;9778712;2221288;18,51073333;some leaves blend;155;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;2;20250916_122223;0;9881577;2118423;17,653525;some leaves blend;150;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;2;20250916_122233;0;10354737;1645263;13,710525;some leaves blend;153;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;2;20250916_122240;0;10355258;1644742;13,70618333;some leaves blend;160;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;2;20250916_122312;0;10427394;1572606;13,10505;some leaves blend;173;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;3;20250916_124610;0;9075925;2924075;24,36729167;some leaves blend;144;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;3;20250916_124615;0;8697522;3302478;27,52065;some leaves blend;140;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;3;20250916_124621;0;8474263;3525737;29,38114167;some leaves blend;134;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;3;20250916_124628;0;8616677;3383323;28,19435833;some leaves blend;137;;;;;;;;;;;;
-Rya åsar;SV;control;SV35;4;20250916_130748;0;10132061;1867939;15,56615833;sun glare, white trunk, light leaves blend;cover trunks, 181;;;;;;;e.g. 130748;0;7811805;4188195;34,901625;normal
-Rya åsar;SV;control;SV35;4;20250916_130753;0;10549414;1450586;12,08821667;sun glare, white trunk, light leaves blend;cover trunks, 184;;;;;;;;0;7532043;4467957;37,232975;red channel
-Rya åsar;SV;control;SV35;4;20250916_130757;0;10624308;1375692;11,4641;sun glare, white trunk, light leaves blend;cover trunks, 199;;;;;;;;255;7545893;4454107;37,11755833;green channel
-Rya åsar;SV;control;SV35;4;20250916_130804;0;10332858;1667142;13,89285;sun glare, white trunk, light leaves blend;cover trunks, 184;;;;;;;;0;8608321;3391679;28,26399167;blue channel
-Rya åsar;SV;control;SV55;1;20250916_142204;0;10210808;1789192;14,90993333;light leaves blend, (sun glare);163;;;;;;;;0;7146280;4853720;40,44766667;enhance contrast
-Rya åsar;SV;control;SV55;1;20250916_142210;0;10223310;1776690;14,80575;light leaves blend, (sun glare);162;;;;;;;;0;7684516;4315484;35,96236667;Gaussian blur
-Rya åsar;SV;control;SV55;1;20250916_142215;0;10550474;1449526;12,07938333;light leaves blend, white trunks (sun glare);cover trunks, 182;;;;;;;;0;8528636;3471364;28,92803333;Shanbhag
-Rya åsar;SV;control;SV55;1;20250916_142222;0;11096758;903242;7,527016667;light leaves blend, white trunk (sun glare);cover trunks, 206;;;;;;;;0;9140593;2859407;23,82839167;color threshold
-Rya åsar;SV;control;SV55;2;20250916_144047;0;9921946;2078054;17,31711667;some white trunks;cover trunks, 150;;;;;;;;0;10241438;1758562;14,65468333;blue channel - manual threshold
-Rya åsar;SV;control;SV55;2;20250916_144054;0;10162370;1837630;15,31358333;some white trunks;cover trunks, 159;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;2;20250916_144104;0;10456596;1543404;12,8617;light leaves blend, white trunk (sun glare);cover trunks, 173;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;2;20250916_144241;0;10419953;1580047;13,16705833;light leaves blend, white trunk (sun glare);cover trunks, 170;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;3;20250916_150935;0;9727019;2272981;18,94150833;close focus, background blends;sharpen 3x threshold 140;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;3;20250916_150944;0;10212841;1787159;14,89299167;close focus, background blends;sharpen 3x threshold 146;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;3;20250916_150951;0;10465907;1534093;12,78410833;close focus, background blends;sharpen 2x 113;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;3;20250916_151004;0;11104735;895265;7,460541667;close focus, background blends, white trunk;cover trunks, 146;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;4;20250916_154922;0;9023850;2976150;24,80125;some leaves blend in;152;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;4;20250916_154926;0;8567265;3432735;28,606125;some leaves blend in;144;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;4;20250916_154930;0;9274579;2725421;22,71184167;some leaves blend in, some white trunk;156;;;;;;;;;;;;
-Rya åsar;SV;control;SV55;4;20250916_154934;0;9303868;2696132;22,46776667;normal binary;160;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;1;20250917_110611;0;10608510;1391490;11,59575;light leaves blend into the sky;142;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;1;20250917_110625;0;10458063;1541937;12,849475;light leaves blend into the sky;153;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;1;20250917_110639;0;9688207;2311793;19,26494167;light leaves blend into the sky;141;;133;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;1;20250917_110704;0;10348278;1651722;13,76435;light leaves blend into the sky;159;;148;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;2;20250917_115403;0;9241587;2758413;22,986775;light (whole) leaves blend into the sky;163;;138;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;2;20250917_115441;0;10162224;1837776;15,3148;light (whole) leaves blend into the sky;133;;119;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;2;20250917_115502;0;10650914;1349086;11,24238333;light (whole) leaves blend into the sky;156;;125;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;2;20250917_115520;0;10505053;1494947;12,45789167;light (whole) leaves blend into the sky;156;;125;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;3;20250917_125555;0;10072049;1927951;16,06625833;light leaves blend into the sky;174;;155;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;3;20250917_125603;0;10355794;1644206;13,70171667;light leaves blend into the sky white trunk;cover trunks, 190;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;3;20250917_125630;0;10443777;1556223;12,968525;light leaves blend into the sky;166;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO80;3;20250917_125700;0;10431983;1568017;13,06680833;light (whole) leaves blend into the sky;185;;;132;;;;;;;;;
-Rya åsar;NO;thinned;NO80;4;20250917_134918;0;11181608;818392;6,819933333;light leaves blend into the sky (sun glare);180;;;150;;;;;;;;;
-Rya åsar;NO;thinned;NO80;4;20250917_134932_001;0;10846105;1153895;9,615791667;light leaves blend into the sky (white trunk);cover trunks, 163;;;112;;;;;;;;;
-Rya åsar;NO;thinned;NO80;4;20250917_134951;0;10536604;1463396;12,19496667;light leaves blend into the sky (white trunk);cover trunks, 193;;;120;;;;;;;;;
-Rya åsar;NO;thinned;NO80;4;20250917_135003;0;8764983;3235017;26,958475;light leaves blend into the sky (white trunks);cover trunks, 150;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO105;1;20250917_151815;0;10593148;1406852;11,72376667;light leaves blend into the sky (sun glare);157;;;116;;;;;;;;;
-Rya åsar;NO;thinned;NO105;1;20250917_151851;0;10636987;1363013;11,35844167;light leaves blend into the sky (sun glare);162;;;114;;;;;;;;;
-Rya åsar;NO;thinned;NO105;1;20250917_151919;0;10663844;1336156;11,13463333;light leaves blend into the sky (sun glare);170;;;124;;;;;;;;;
-Rya åsar;NO;thinned;NO105;1;20250917_151946;0;10955072;1044928;8,707733333;light leaves blend into the sky (sun glare);177;;;121;;;;;;;;;
-Rya åsar;NO;thinned;NO105;2;20250917_154628;0;9674713;2325287;19,37739167;light leaves blend into the sky (sun glare);154;;;blue channel - binary;;;;;;;;;
-Rya åsar;NO;thinned;NO105;2;20250917_154648;0;10532067;1467933;12,232775;light leaves blend into the sky;150;;;121;;;;;;;;;
-Rya åsar;NO;thinned;NO105;2;20250917_154700;0;10674865;1325135;11,04279167;light leaves blend into the sky (white trunk);cover trunks, 155;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO105;2;20250917_154718;0;11004792;995208;8,2934;light leaves blend into the sky;177;;;115;;;;;;;;;
-Rya åsar;NO;thinned;NO105;3;20250917_160717;0;10044456;1955544;16,2962;light leaves blend into the sky, sun glare;166;;;151;;;;;;;;;
-Rya åsar;NO;thinned;NO105;3;20250917_160725;0;9906706;2093294;17,44411667;light leaves blend into the sky, sun glare;153;;;152;;;;;;;;;
-Rya åsar;NO;thinned;NO105;3;20250917_160739;0;10654060;1345940;11,21616667;light leaves blend into the sky, sun glare;190;;;140;;;;;;;;;
-Rya åsar;NO;thinned;NO105;3;20250917_160806;0;10532200;1467800;12,23166667;light leaves blend, white trunk, sun glare;183;;;142;;;;;;;;;
-Rya åsar;NO;thinned;NO105;4;20250917_162806;0;10459992;1540008;12,8334;light leaves blend, white trunk;cover trunks, 151;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO105;4;20250917_162820;0;10587820;1412180;11,76816667;light leaves blend, white trunk;cover trunks, 172;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO105;4;20250917_162830;0;10405596;1594404;13,2867;light leaves blend, white trunk;cover trunks, 179;;;;;;;;;;;;
-Rya åsar;NO;thinned;NO105;4;20250917_162850;0;10901824;1098176;9,151466667;light leaves blend (white trunk);cover trunks, 176;;;;;;;;;;;;
-Sandviksås;V;control;V55;1;20250918_103534;0;9595639;2404361;20,03634167;some leaves blend in;153;;;;;;;;;;;;
-Sandviksås;V;control;V55;1;20250918_103544;0;8962382;3037618;25,31348333;some leaves blend in;159;;;;;;;;;;;;
-Sandviksås;V;control;V55;1;20250918_103601;0;9541922;2458078;20,48398333;some leaves blend in;150;;;;;;;;;;;;
-Sandviksås;V;control;V55;1;20250918_103618;0;9862661;2137339;17,81115833;some leaves blend in, white trunk;167;;;;;;;;;;;;
-Sandviksås;V;control;V55;2;20250918_110937;0;10086966;1913034;15,94195;some leaves blend in;166;;;;;;;;;;;;
-Sandviksås;V;control;V55;2;20250918_110949;0;9972878;2027122;16,89268333;some leaves blend in;156;;;;;;;;;;;;
-Sandviksås;V;control;V55;2;20250918_111003;0;9943638;2056362;17,13635;some leaves blend in;152;;;;;;;;;;;;
-Sandviksås;V;control;V55;2;20250918_111017;0;10006435;1993565;16,61304167;some leaves blend in;152;;;;;;;;;;;;
-Sandviksås;V;control;V55;3;20250918_115143;0;10439067;1560933;13,007775;light leaves blend, (sun glare);160;;135;;;;;;;;;;
-Sandviksås;V;control;V55;3;20250918_115203;0;10429115;1570885;13,09070833;light leaves blend;162;;140;;;;;;;;;;
-Sandviksås;V;control;V55;3;20250918_115217;0;10581982;1418018;11,81681667;light leaves blend, (sun glare);167;;135;;;;;;;;;;
-Sandviksås;V;control;V55;3;20250918_115243;0;10643185;1356815;11,30679167;light leaves blend, (white branch, sun glare);177;;;139;;;;;;;;;
-Sandviksås;V;control;V55;4;20250918_122244;0;10056372;1943628;16,1969;light leaves blend;162;;130;;;;;;;;;;
-Sandviksås;V;control;V55;4;20250918_122305;0;9955198;2044802;17,04001667;light leaves blend;148;;138;;;;;;;;;;
-Sandviksås;V;control;V55;4;20250918_122316;0;9945295;2054705;17,12254167;light leaves blend;153;;140;;;;;;;;;;
-Sandviksås;V;control;V55;4;20250918_122329;0;10094397;1905603;15,880025;light leaves blend;160;;143;;;;;;;;;;
-Sandviksås;V;control;V75;1;20250918_140249;0;10299841;1700159;14,16799167;light leaves blend;164;;124;;;;;;;;;;
-Sandviksås;V;control;V75;1;20250918_140305;0;10668520;1331480;11,09566667;light leaves blend;178;;124;;;;;;;;;;
-Sandviksås;V;control;V75;1;20250918_140330;0;10597868;1402132;11,68443333;light leaves blend, white trunk;cover trunks, 177;;121;;;;;;;;;;
-Sandviksås;V;control;V75;1;20250918_140448;0;10863603;1136397;9,469975;light leaves blend, white trunk;cover trunks, 190;;138;;;;;;;;;;
-Sandviksås;V;control;V75;2;20250918_144242;0;10489546;1510454;12,58711667;light leaves blend, white trunk;cover trunks, 181;;;;;;;;;;;;
-Sandviksås;V;control;V75;2;20250918_144256;0;10330391;1669609;13,91340833;light leaves blend, (sun glare);175;;;;;;;;;;;;
-Sandviksås;V;control;V75;2;20250918_144308;0;10138551;1861449;15,512075;light leaves blend, white trunk;160;;;;;;;;;;;;
-Sandviksås;V;control;V75;2;20250918_144400;0;10427140;1572860;13,10716667;light leaves blend, white trunk;cover trunks, 171;;;;;;;;;;;;
-Sandviksås;V;control;V75;3;20250918_151121;0;10110087;1889913;15,749275;light leaves blend;163;;138;;;;;;;;;;
-Sandviksås;V;control;V75;3;20250918_151138;0;10288387;1711613;14,26344167;light leaves blend;174;;124;;;;;;;;;;
-Sandviksås;V;control;V75;3;20250918_151156;0;10025448;1974552;16,4546;light leaves blend;152;;135;;;;;;;;;;
-Sandviksås;V;control;V75;3;20250918_151219;0;10032915;1967085;16,392375;light leaves blend;156;;127;;;;;;;;;;
-Sandviksås;V;control;V75;4;20250918_153741;0;10335486;1664514;13,87095;light leaves blend, white trunk;cover trunks, 171;;;;;;;;;;;;
-Sandviksås;V;control;V75;4;20250918_153755;0;10174485;1825515;15,212625;light leaves blend, white trunk;cover trunks, 161;;;;;;;;;;;;
-Sandviksås;V;control;V75;4;20250918_153810;0;10180487;1819513;15,16260833;light leaves blend, white trunk;cover trunks, 169;;;;;;;;;;;;
-Sandviksås;V;control;V75;4;20250918_153825;0;10315650;1684350;14,03625;light leaves blend, white trunk;cover trunks, 177;;;;;;;;;;;;
-Sandviksås;V;control;;opening 1;20250918_161144;0;9918161;2081839;17,34865833;light leaves blend;160;;;;;;;;;;;;
-Sandviksås;V;control;;opening 1;20250918_161155;0;10220406;1779594;14,82995;normal binary;166;;;;;;;;;;;;
-Sandviksås;V;control;;opening 1;20250918_161222;0;10176997;1823003;15,19169167;light leaves blend, white trunk;169;;;;;;;;;;;;
-Sandviksås;V;control;;opening 1;20250918_161242;0;10301091;1698909;14,157575;light leaves blend, (sun glare);178;;;;;;;;;;;;
-Sandviksås;V;control;;opening 2;20250918_163330;0;10798537;1201463;10,01219167;light leaves blend ;188;;144;;;;;;;;;;
-Sandviksås;V;control;;opening 2;20250918_163402;0;10266120;1733880;14,449;light leaves blend ;176;;157;;;;;;;;;;
-Sandviksås;V;control;;opening 2;20250918_163439;0;9378561;2621439;21,845325;light leaves blend ;166;;146;;;;;;;;;;
-Sandviksås;V;control;;opening 2;20250918_163453;0;9868577;2131423;17,76185833;light leaves blend ;175;;158;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;1;20250919_110208;0;6319330;5680670;47,33891667;light leaves blend ;141;;135;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;1;20250919_110219;0;6416836;5583164;46,52636667;light leaves blend ;157;;139;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;1;20250919_110229;0;6286862;5713138;47,60948333;light leaves blend, white trunk;136;;128;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;1;20250919_110244;0;6320900;5679100;47,32583333;light leaves blend, white trunk;139;;140;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;2;20250919_114016;0;7818103;4181897;34,84914167;light leaves blend ;149;;136;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;2;20250919_114029;0;8121311;3878689;32,32240833;light leaves blend, white trunk;163;;146;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;2;20250919_114050;0;8108388;3891612;32,4301;light leaves blend, white trunk;161;;143;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;2;20250919_114109;0;7710206;4289794;35,74828333;white trunk;cover trunks, 138;;;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;3;20250919_121523;0;6573599;5426401;45,22000833;normal binary;;;149;normal binary var inte dålig;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;3;20250919_121542;0;5942917;6057083;50,47569167;normal binary;;;170;normal binary var inte dålig;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;3;20250919_121553_001;0;6288124;5711876;47,59896667;some leaves blend in;157;;139;normal binary var inte dålig;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;3;20250919_121613;0;8209978;3790022;31,58351667;some leaves blend in;149;;136;normal binary var inte dålig;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;4;20250919_130153;0;7271028;4728972;39,4081;normal binary;;;;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;4;20250919_130205;0;7172014;4827986;40,23321667;normal binary;;;;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;4;20250919_130218;0;7035910;4964090;41,36741667;some white trunk;137;;;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö25;4;20250919_130232;0;7389736;4610264;38,41886667;some white trunk;153;;161;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;1;20250919_145351;0;9827209;2172791;18,10659167;some leaves blend in;153;;124;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;1;20250919_145400;0;9309155;2690845;22,42370833;normal binary;;;124;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;1;20250919_145408;0;9580418;2419582;20,16318333;some leaves blend in;131;;130;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;1;20250919_145417;0;9817599;2182401;18,186675;some leaves blend in;147;;129;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;2;20250919_153332;0;7654294;4345706;36,21421667;some leaves blend in;157;;167;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;2;20250919_153341;0;7656474;4343526;36,19605;some leaves blend in;160;;160;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;2;20250919_153351;0;7394186;4605814;38,38178333;some leaves blend in;142;;141;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;2;20250919_153434;0;7576382;4423618;36,86348333;some leaves blend in;152;;136;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;3;20250919_160605;0;7504500;4495500;37,4625;some leaves blend in;154;;;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;3;20250919_160615;0;7700975;4299025;35,82520833;some leaves blend in;147;;143;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;3;20250919_160627;0;8541070;3458930;28,82441667;some leaves blend in;138;;;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;3;20250919_160646;0;8425734;3574266;29,78555;some leaves blend in;154;;142;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;4;20250919_163046;0;9767997;2232003;18,600025;some white trunk;139;;138;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;4;20250919_163100;0;9873968;2126032;17,71693333;some white trunk;139;;126;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;4;20250919_163113;0;9949669;2050331;17,08609167;some white trunk;147;;122;;;;;;;;;;
-Sandviksås;Ö;thinned;Ö45;4;20250919_163135;0;10659037;1340963;11,17469167;some lighter leaves blend in;186;;154;;;;;;;;;;
-Skölvene;V;control;V35;1;20250922_103829;0;10120572;1879428;15,6619;light leaves blend, white trunks;cover trunks, 156;;134;;;;;;;;;;
-Skölvene;V;control;V35;1;20250922_103838;0;10296591;1703409;14,195075;some lighter leaves blend in;170;;149;;;;;;;;;;
-Skölvene;V;control;V35;1;20250922_103858;0;10438320;1561680;13,014;some white trunks;cover trunks, 159;;138;;;;;;;;;;
-Skölvene;V;control;V35;1;20250922_103911;0;10600479;1399521;11,662675;light leaves blend in, white trunk;cover trunks, 172;;150;;;;;;;;;;
-Skölvene;V;control;V35;2;20250922_111109;0;10540014;1459986;12,16655;light leaves blend in, white trunk;cover trunks, 168;;163;;;;;;;;;;
-Skölvene;V;control;V35;2;20250922_111125;0;10526251;1473749;12,28124167;light leaves blend in, white trunk;cover trunks, 165;;;;;;;;;;;;
-Skölvene;V;control;V35;2;20250922_111138_001;0;10515374;1484626;12,37188333;light leaves blend in, white trunk;167;;146;;;;;;;;;;
-Skölvene;V;control;V35;2;20250922_111206;0;10613071;1386929;11,55774167;light leaves blend in;168;;131;;;;;;;;;;
-Skölvene;V;control;V35;3;20250922_114332;0;10226744;1773256;14,77713333;light leaves blend in;169;;129;;;;;;;;;;
-Skölvene;V;control;V35;3;20250922_114401;0;10078865;1921135;16,00945833;light leaves blend in, white trunk;cover trunks, 158;;147;;;;;;;;;;
-Skölvene;V;control;V35;3;20250922_114427_001;0;10265987;1734013;14,45010833;light leaves blend in, white trunk;cover trunks, 155;;140;;;;;;;;;;
-Skölvene;V;control;V35;3;20250922_114500;0;10830658;1169342;9,744516667;light leaves blend in, white trunk;166;;141;;;;;;;;;;
-Skölvene;V;control;V35;4;20250922_122410;0;9660990;2339010;19,49175;light leaves blend in;155;;143;;;;;;;;;;
-Skölvene;V;control;V35;4;20250922_122423;0;10657724;1342276;11,18563333;light leaves blend in;171;;146;;;;;;;;;;
-Skölvene;V;control;V35;4;20250922_122452;0;10942717;1057283;8,810691667;light leaves blend in;184;;152;;;;;;;;;;
-Skölvene;V;control;V35;4;20250922_122508;0;10652299;1347701;11,23084167;light leaves blend in;193;;141;;;;;;;;;;
-Skölvene;V;control;V55;1;20250922_141816;0;11038610;961390;8,011583333;light leaves blend in;207;;145;;;;;;;;;;
-Skölvene;V;control;V55;1;20250922_141926;0;10468028;1531972;12,76643333;light leaves blend in, white trunk;cover trunks, 164;;163;;;;;;;;;;
-Skölvene;V;control;V55;1;20250922_141940;0;10258004;1741996;14,51663333;light leaves blend in, white trunk;cover trunks, 166;;147;;;;;;;;;;
-Skölvene;V;control;V55;1;20250922_141958;0;10656855;1343145;11,192875;light leaves blend in, white trunk;201;;153;;;;;;;;;;
-Skölvene;V;control;V55;2;20250922_144007;0;10747299;1252701;10,439175;light leaves blend in, white trunk;201;;165;;;;;;;;;;
-Skölvene;V;control;V55;2;20250922_144019;0;10331860;1668140;13,90116667;light leaves blend in, white trunk;cover trunks, 181;;181;;;;;;;;;;
-Skölvene;V;control;V55;2;20250922_144053;0;10502303;1497697;12,48080833;light leaves blend in, white trunk;cover trunks, 191;;;;;;;;;;;;
-Skölvene;V;control;V55;2;20250922_144116;0;10600815;1399185;11,659875;light leaves blend in, (white trunk);193;;170;;;;;;;;;;
-Skölvene;V;control;V55;3;20250922_150734;0;9615606;2384394;19,86995;light leaves blend in, white trunk;cover trunks, 171;;170;;;;;;;;;;
-Skölvene;V;control;V55;3;20250922_150744;0;10000819;1999181;16,65984167;light leaves blend in, white trunk;cover trunks, 174;;;;;;;;;;;;
-Skölvene;V;control;V55;3;20250922_150847;0;9801975;2198025;18,316875;light leaves blend in, white trunk;cover trunks, 176;;;;;;;;;;;;
-Skölvene;V;control;V55;3;20250922_150933;0;9909647;2090353;17,41960833;light leaves blend in, white trunk;cover trunks, 174;;;;;;;;;;;;
-Skölvene;V;control;V55;4;20250922_154235;0;10185448;1814552;15,12126667;light leaves blend in;170;;152;;;;;;;;;;
-Skölvene;V;control;V55;4;20250922_154247;0;10350285;1649715;13,747625;light leaves blend in, (white trunk);167;;146;;;;;;;;;;
-Skölvene;V;control;V55;4;20250922_154259;0;10393300;1606700;13,38916667;light leaves blend in;180;;159;;;;;;;;;;
-Skölvene;V;control;V55;4;20250922_154323;0;10282149;1717851;14,315425;light leaves blend in;173;;143;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;1;20250923_105421;0;10504619;1495381;12,46150833;light leaves blend in;170;;165;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;1;20250923_105433;0;10652039;1347961;11,23300833;light leaves blend in;171;;154;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;1;20250923_105455;0;10715226;1284774;10,70645;light leaves blend in, white trunk;174;;151;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;1;20250923_105507;0;10718098;1281902;10,68251667;light leaves blend in, (white trunk);173;;145;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;2;20250923_113920;0;8634627;3365373;28,044775;light leaves blend in, white trunk;cover trunks, 179;;146;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;2;20250923_113937;0;8981055;3018945;25,157875;light leaves blend in, white trunk;cover trunks, 176;;;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;2;20250923_113949;0;10265555;1734445;14,45370833;light leaves blend in, white trunk;cover trunks, 160;;153;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;2;20250923_114003;0;10719810;1280190;10,66825;light leaves blend in, white trunk;cover trunks, 174;;;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;3;20250923_122112;0;9486673;2513327;20,94439167;light leaves blend in, white trunk;cover trunks, 169;;151;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;3;20250923_122128;0;9829424;2170576;18,08813333;light leaves blend in;191;;157;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;3;20250923_122141;0;10067977;1932023;16,10019167;light leaves blend in;199;;169;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;3;20250923_122158;0;10269446;1730554;14,42128333;light leaves blend in;cover trunks, 186;;161;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;4;20250923_130507;0;11366508;633492;5,2791;light leaves blend in, white trunk;cover trunks, 177;;;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;4;20250923_130552;0;11117475;882525;7,354375;light leaves blend in, white trunk;cover trunks, 175;;;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;4;20250923_130602;0;10846446;1153554;9,61295;light leaves blend in, white trunk;cover trunks, 165;;;;;;;;;;;;
-Skölvene;Ö;thinned;Ö35;4;20250923_130612;0;10872872;1127128;9,392733333;light leaves blend in, white trunk;cover trunks, 182;;177;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;1;20250923_144731;0;10790662;1209338;10,07781667;light leaves blend in, white trunk, (sun glare);clear trunks, 150;;136;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;1;20250923_144754;0;10928765;1071235;8,926958333;light leaves blend in, (white trunk);clear trunks, 166;;171;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;1;20250923_144812;0;10856324;1143676;9,530633333;light leaves blend in, (sun glare);clear trunks, 158;;158;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;1;20250923_144823;0;10938692;1061308;8,844233333;light leaves blend in;clear trunks, 166;;149;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;2;20250923_152048;0;9949101;2050899;17,090825;light leaves blend in, (white trunk);168;;161;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;2;20250923_152057;0;9801443;2198557;18,32130833;light leaves blend in, (white trunk);166;;175;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;2;20250923_152106;0;10203878;1796122;14,96768333;light leaves blend in, white trunk;181;;165;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;2;20250923_152117;0;10167174;1832826;15,27355;light leaves blend in, white trunk;178;;155;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;3;20250923_154646;0;10852971;1147029;9,558575;light leaves blend in;171;;125;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;3;20250923_154714;0;10691285;1308715;10,90595833;light leaves blend in, (white trunk);173;;119;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;3;20250923_154729;0;10831139;1168861;9,740508333;light leaves blend in, (white trunk);178;;123;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;3;20250923_154746;0;10912829;1087171;9,059758333;light leaves blend in, (white trunk);177;;140;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;4;20250923_162010;0;11226142;773858;6,448816667;light leaves blend in;178;;126;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;4;20250923_162020;0;11262527;737473;6,145608333;light leaves blend in;198;;134;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;4;20250923_162032;0;11172361;827639;6,896991667;light leaves blend in;198;;138;;;;;;;;;;
-Skölvene;Ö;thinned;Ö55;4;20250923_162047;0;11267406;732594;6,10495;light leaves blend in, white trunk;194;;141;;;;;;;;;;
-Karla;SO;thinned;SO35;1;20250924_112519;0;10157776;1842224;15,35186667;light leaves blend in, white trunk;cover trunks, 177;;190;;;;;;;;;;
-Karla;SO;thinned;SO35;1;20250924_112526;0;10416344;1583656;13,19713333;light leaves blend in, white trunk;cover trunks, 153;;161;;;;;;;;;;
-Karla;SO;thinned;SO35;1;20250924_112533;0;9751088;2248912;18,74093333;light leaves blend in, white trunk;cover trunks, 162;;162;;;;;;;;;;
-Karla;SO;thinned;SO35;1;20250924_112541;0;9641863;2358137;19,65114167;light leaves blend in, white trunk;cover trunks, 168;;169;;;;;;;;;;
-Karla;SO;thinned;SO35;2;20250924_120033;0;9239493;2760507;23,004225;light leaves blend in, white trunk;182;;148;;;;;;;;;;
-Karla;SO;thinned;SO35;2;20250924_120040;0;9112701;2887299;24,060825;light leaves blend in, white trunk;179;;162;;;;;;;;;;
-Karla;SO;thinned;SO35;2;20250924_120047;0;8994669;3005331;25,044425;light leaves blend in, sun glare;178;;149;;;;;;;;;;
-Karla;SO;thinned;SO35;2;20250924_120055;0;9014378;2985622;24,88018333;light leaves blend in;178;;159;;;;;;;;;;
-Karla;SO;thinned;SO35;3;20250924_123256;0;10463615;1536385;12,80320833;light leaves blend in, white trunk, sun glare;194;;192;;;;;;;;;;
-Karla;SO;thinned;SO35;3;20250924_123308;0;10630782;1369218;11,41015;light leaves blend in, white trunk, sun glare;198;;187;;;;;;;;;;
-Karla;SO;thinned;SO35;3;20250924_123329;0;10427805;1572195;13,101625;light leaves blend in, white trunk, sun glare;186;;184;;;;;;;;;;
-Karla;SO;thinned;SO35;3;20250924_123406;0;10628474;1371526;11,42938333;light leaves blend in, white trunk, sun glare;197;;179;;;;;;;;;;
-Karla;SO;thinned;SO35;4;20250924_130207;0;10613941;1386059;11,55049167;light leaves blend in, white trunk;cover trunks, 177;;;;;;;;;;;;
-Karla;SO;thinned;SO35;4;20250924_130219;0;10614996;1385004;11,5417;light leaves blend in, white trunk, sun glare;cover trunks, 186;;;;;;;;;;;;
-Karla;SO;thinned;SO35;4;20250924_130231;0;10479748;1520252;12,66876667;light leaves blend in, white trunk;cover trunks, 182;;;;;;;;;;;;
-Karla;SO;thinned;SO35;4;20250924_130237;0;10681723;1318277;10,98564167;light leaves blend in, white trunk;cover trunks, 187;;;;;;;;;;;;
-Karla;SO;thinned;SO55;1;20250924_144932;0;9943287;2056713;17,139275;light leaves blend in, white trunk;cover trunks, 176;;163;;;;;;;;;;
-Karla;SO;thinned;SO55;1;20250924_144943;0;9756203;2243797;18,69830833;light leaves blend in;168;;164;;;;;;;;;;
-Karla;SO;thinned;SO55;1;20250924_144952;0;10219358;1780642;14,83868333;light leaves blend in, white trunk;177;;162;;;;;;;;;;
-Karla;SO;thinned;SO55;1;20250924_145002;0;9782075;2217925;18,48270833;light leaves blend in, white trunk;189;;165;;;;;;;;;;
-Karla;SO;thinned;SO55;2;20250924_152720;0;10030449;1969551;16,412925;light leaves blend in, white trunk;195;;176;;;;;;;;;;
-Karla;SO;thinned;SO55;2;20250924_152728;0;10013871;1986129;16,551075;light leaves blend in, white trunk;191;;167;;;;;;;;;;
-Karla;SO;thinned;SO55;2;20250924_152738;0;9739089;2260911;18,840925;light leaves blend in;187;;165;;;;;;;;;;
-Karla;SO;thinned;SO55;2;20250924_152746;0;9593996;2406004;20,05003333;light leaves blend in, white trunk;187;;178;;;;;;;;;;
-Karla;SO;thinned;SO55;3;20250924_154829;0;10561801;1438199;11,98499167;light leaves blend in;cover trunks, 179;;170;;;;;;;;;;
-Karla;SO;thinned;SO55;3;20250924_154849;0;10171941;1828059;15,233825;light leaves blend in, white trunk;183;;181;;;;;;;;;;
-Karla;SO;thinned;SO55;3;20250924_154907;0;10302111;1697889;14,149075;light leaves blend in, white trunk;cover trunks, 183;;174;;;;;;;;;;
-Karla;SO;thinned;SO55;3;20250924_154922;0;9984073;2015927;16,79939167;light leaves blend in, white trunk;cover trunks, 178;;150;;;;;;;;;;
-Karla;SO;thinned;SO55;4;20250924_160803;0;10306209;1693791;14,114925;light leaves blend in, white trunk;197;;179;;;;;;;;;;
-Karla;SO;thinned;SO55;4;20250924_160817;0;10427298;1572702;13,10585;light leaves blend in, white trunk;193;;173;;;;;;;;;;
-Karla;SO;thinned;SO55;4;20250924_160908;0;10650685;1349315;11,24429167;light leaves blend in, white trunk;192;;175;;;;;;;;;;
-Karla;SO;thinned;SO55;4;20250924_160931;0;10887483;1112517;9,270975;light leaves blend in, white trunk;197;;200;;;;;;;;;;
-Karla;NV;control;NV25;1;20250929_104145;0;8509342;3490658;29,08881667;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;1;20250929_104159;0;8353983;3646017;30,383475;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;1;20250929_104208;0;8413707;3586293;29,885775;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;1;20250929_104223;0;8544922;3455078;28,79231667;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;2;20250929_112944;0;9302812;2697188;22,47656667;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;2;20250929_113003;0;8762266;3237734;26,98111667;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;2;20250929_113025;0;8873163;3126837;26,056975;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;2;20250929_113041;0;9188516;2811484;23,42903333;white trunk;135;;130;;;;;;;;;;
-Karla;NV;control;NV25;3;20250929_121829;0;9220333;2779667;23,16389167;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;3;20250929_121845;0;8724432;3275568;27,2964;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;3;20250929_121858;0;8702317;3297683;27,48069167;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;3;20250929_121915;0;8857303;3142697;26,18914167;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV25;4;20250929_131417_001;0;8933131;3066869;25,55724167;light leaves blend in, white trunk;149;;138;;;;;;;;;;
-Karla;NV;control;NV25;4;20250929_131442;0;8747412;3252588;27,1049;white trunk;148;;136;;;;;;;;;;
-Karla;NV;control;NV25;4;20250929_131505;0;9252810;2747190;22,89325;white trunk;162;;147;;;;;;;;;;
-Karla;NV;control;NV25;4;20250929_131518;0;8669845;3330155;27,75129167;white trunk;135;;129;;;;;;;;;;
-Karla;NV;control;NV45;1;20250929_151648;0;9053014;2946986;24,55821667;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;1;20250929_151707;0;9071399;2928601;24,40500833;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;1;20250929_151725;0;9291431;2708569;22,57140833;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;1;20250929_151807;0;10302338;1697662;14,14718333;leaves furthest away blend in;150;;138;;;;;;;;;;
-Karla;NV;control;NV45;2;20250929_155710;0;9001705;2998295;24,98579167;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;2;20250929_155725;0;9354692;2645308;22,04423333;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;2;20250929_155740;0;8911063;3088937;25,74114167;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;2;20250929_155756;0;8794973;3205027;26,70855833;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;3;20250929_163041;0;9030500;2969500;24,74583333;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;3;20250929_163105;0;9436227;2563773;21,364775;normal binary;;;ok;;;;;;;;;;
-Karla;NV;control;NV45;3;20250929_163143;0;9881673;2118327;17,652725;some white trunk;141;;140;;;;;;;;;;
-Karla;NV;control;NV45;3;20250929_163209;0;9366485;2633515;21,94595833;some white trunk;131;;137;;;;;;;;;;
-Karla;NV;control;NV45;4;20250929_170659;0;10155873;1844127;15,367725;light leaves blend in;152;;148;;;;;;;;;;
-Karla;NV;control;NV45;4;20250929_170711;0;10787500;1212500;10,10416667;light leaves blend in, sun glare;184;;182;;;;;;;;;;
-Karla;NV;control;NV45;4;20250929_170753;0;10729333;1270667;10,58889167;light leaves blend in, white trunk;cover trunks, 169;;;;;;;;;;;;
-Karla;NV;control;NV45;4;20250929_170810;0;9982961;2017039;16,80865833;light leaves blend in, white trunk;158;;146;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;1;20250930_102612;0;10912345;1087655;9,063791667;light leaves blend in, white trunk;cover trunks, 176;;;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;1;20250930_102624;0;11245403;754597;6,288308333;light leaves blend in;191;;194;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;1;20250930_102642;0;10900709;1099291;9,160758333;light leaves blend in, white trunk;cover trunks, 163;;170;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;1;20250930_102707;0;10719106;1280894;10,67411667;light leaves blend in, white trunk;cover trunks, 167;;189;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;2;20250930_105715_001;0;11155003;844997;7,041641667;light leaves blend in;193;;165;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;2;20250930_105753;0;11186031;813969;6,783075;light leaves blend in, white trunk;195;;188;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;2;20250930_105830;0;11144941;855059;7,125491667;light leaves blend in, white trunk;cover trunks, 168;;201;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;2;20250930_105849;0;10988566;1011434;8,428616667;light leaves blend in, white trunk;cover trunks, 156;;(-174);;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;3;20250930_111933;0;11156959;843041;7,025341667;light leaves blend in, white trunk;199;;184;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;3;20250930_111947;0;11343321;656679;5,472325;light leaves blend in, white trunk;212;;187;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;3;20250930_112029;0;11345727;654273;5,452275;light leaves blend in, white trunk;213;;197;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;3;20250930_112036;0;11244680;755320;6,294333333;light leaves blend in, white trunk;202;;182;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;4;20250930_114310;0;10913933;1086067;9,050558333;light leaves blend in, white trunk;183;;186;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;4;20250930_114317;0;11002137;997863;8,315525;light leaves blend in, white trunk;182;;188;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;4;20250930_114323;0;11404399;595601;4,963341667;light leaves blend in, white trunk;;;196;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö89;4;20250930_114332;0;11364216;635784;5,2982;light leaves blend in, white trunk, (sun glare);202;;206;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;1;20250930_132217;0;10886932;1113068;9,275566667;light leaves blend in, white trunk, (sun glare);182;;177;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;1;20250930_132238;0;10936874;1063126;8,859383333;light leaves blend in, white trunk, (sun glare);;;179;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;1;20250930_132257;0;11015149;984851;8,207091667;light leaves blend in, sun glare;186;;177;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;1;20250930_132319;0;10754995;1245005;10,37504167;light leaves blend in, sun glare;;;159;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;2;20250930_133636;0;10923505;1076495;8,970791667;light leaves blend in;179;;172;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;2;20250930_133655;0;10632344;1367656;11,39713333;light leaves blend in;;;158;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;2;20250930_133706;0;10801789;1198211;9,985091667;light leaves blend in;166;;171;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;2;20250930_133718;0;10629612;1370388;11,4199;light leaves blend in;;;163;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;3;20250930_135605;0;9318591;2681409;22,345075;some white trunk;144;;141;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;3;20250930_135613;0;8503399;3496601;29,13834167;some white trunk;;;135;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;3;20250930_135647;0;8439673;3560327;29,66939167;some white trunk;;;145;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;3;20250930_135735;0;8684748;3315252;27,6271;normal binary;;;152;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;4;20250930_143418;0;10753707;1246293;10,385775;normal binary, some white trunk but Rieke;;;;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;4;20250930_143430;0;10781815;1218185;10,15154167;normal binary white trunk;cover trunks, 129;;;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;4;20250930_143446;0;10911543;1088457;9,070475;white trunk, Rieke;176;;161;;;;;;;;;;
-Östadkulle;Ö;thinned;Ö75;4;20250930_143455;0;10681516;1318484;10,98736667;white trunk, Rieke;156;;146;;;;;;;;;;
-Östadkulle;V;control;V95;1;20251001_101417;0;10494616;1505384;12,54486667;light leaves blend in;173;;167;;;;;;;;;;
-Östadkulle;V;control;V95;1;20251001_101431;0;10334121;1665879;13,882325;light leaves blend in, white trunk;;;163;;;;;;;;;;
-Östadkulle;V;control;V95;1;20251001_101447;0;10590427;1409573;11,74644167;light leaves blend in, white trunk;180;;175;;;;;;;;;;
-Östadkulle;V;control;V95;1;20251001_101457;0;10343420;1656580;13,80483333;light leaves blend in;;;165;;;;;;;;;;
-Östadkulle;V;control;V95;2;20251001_104951;0;10569392;1430608;11,92173333;light leaves blend in, white trunk;cover trunks, 163;;;;;;;;;;;;
-Östadkulle;V;control;V95;2;20251001_105001;0;10545538;1454462;12,12051667;light leaves blend in, white trunk;cover trunks, 161;;;;;;;;;;;;
-Östadkulle;V;control;V95;2;20251001_105021_001;0;10673758;1326242;11,05201667;light leaves blend in, white trunk;cover trunks, 157;;;;;;;;;;;;
-Östadkulle;V;control;V95;2;20251001_105043;0;10426974;1573026;13,10855;light leaves blend in, white trunk;cover trunks, 162;;;;;;;;;;;;
-Östadkulle;V;control;V95;3;20251001_114335;0;10311031;1688969;14,07474167;light leaves blend in, white trunk;cover trunks, 166;;190;;;;;;;;;;
-Östadkulle;V;control;V95;3;20251001_114347;0;10173854;1826146;15,21788333;light leaves blend in, white trunk;cover trunks, 151;;;;;;;;;;;;
-Östadkulle;V;control;V95;3;20251001_114405;0;10506531;1493469;12,445575;light leaves blend in, white trunk;cover trunks, 179;;;;;;;;;;;;
-Östadkulle;V;control;V95;3;20251001_114458;0;10482006;1517994;12,64995;light leaves blend in, white trunk;cover trunks, 160;;;;;;;;;;;;
-Östadkulle;V;control;V95;4;20251001_122402;0;10323606;1676394;13,96995;light leaves blend in, white trunk;cover trunks, 172;;182;;;;;;;;;;
-Östadkulle;V;control;V95;4;20251001_122436;0;10351961;1648039;13,73365833;light leaves blend in, white trunk;cover trunks, 159;;173;;;;;;;;;;
-Östadkulle;V;control;V95;4;20251001_122500;0;10118766;1881234;15,67695;light leaves blend in, white trunk;cover trunks, 162;;;;;;;;;;;;
-Östadkulle;V;control;V95;4;20251001_122525;0;10147846;1852154;15,43461667;light leaves blend in, white trunk;cover trunks, 164;;;;;;;;;;;;
-Östadkulle;V;control;V75;1;20251001_142750;0;10820893;1179107;9,825891667;light leaves blend in, white trunk;cover trunks, 167;;;;;;;;;;;;
-Östadkulle;V;control;V75;1;20251001_142805;0;10869999;1130001;9,416675;light leaves blend in, white trunk;cover trunks, 174;;155;;;;;;;;;;
-Östadkulle;V;control;V75;1;20251001_142816;0;10893763;1106237;9,218641667;light leaves blend in, white trunk;cover trunks, 171;;;;;;;;;;;;
-Östadkulle;V;control;V75;1;20251001_142825;0;10925730;1074270;8,95225;light leaves blend in, white trunk;cover trunks, 175;;;;;;;;;;;;
-Östadkulle;V;control;V75;2;20251001_145634;0;10910935;1089065;9,075541667;light leaves blend in, (white trunk);209;;202;;;;;;;;;;
-Östadkulle;V;control;V75;2;20251001_145708;0;11038345;961655;8,013791667;light leaves blend in, (sun glare);;;199;;;;;;;;;;
-Östadkulle;V;control;V75;2;20251001_145736;0;11180437;819563;6,829691667;light leaves blend in, (white trunk);210;;212;;;;;;;;;;
-Östadkulle;V;control;V75;2;20251001_145806;0;11267068;732932;6,107766667;light leaves blend in, white trunk;;;209;;;;;;;;;;
-Östadkulle;V;control;V75;3;20251001_152859;0;10933256;1066744;8,889533333;light leaves blend in, white trunk;cover trunks, 182;;159;;;;;;;;;;
-Östadkulle;V;control;V75;3;20251001_152916;0;11024794;975206;8,126716667;light leaves blend in, white trunk;;;196;;;;;;;;;;
-Östadkulle;V;control;V75;3;20251001_152933;0;11038003;961997;8,016641667;light leaves blend in, white trunk;203;;205;;;;;;;;;;
-Östadkulle;V;control;V75;3;20251001_152944;0;10929605;1070395;8,919958333;light leaves blend in, white trunk;;;197;;;;;;;;;;
-Östadkulle;V;control;V75;4;20251001_155707;0;10766269;1233731;10,28109167;light leaves blend in, white trunk;192;;200;;;;;;;;;;
-Östadkulle;V;control;V75;4;20251001_155718;0;11009151;990849;8,257075;light leaves blend in, white trunk;;;199;;;;;;;;;;
-Östadkulle;V;control;V75;4;20251001_155733;0;10836096;1163904;9,6992;light leaves blend in;183;;184;;;;;;;;;;
-Östadkulle;V;control;V75;4;20251001_155751;0;10859128;1140872;9,507266667;light leaves blend in, white trunk;;;190;;;;;;;;;;
+﻿Site;Plot;Treatment;Transect;Subplot;File name;;Closed pixels;Open pixels;Canopy openness (%);Category;Analysis
+Rya åsar;SV;control;SV35;1;20250916_115357;0;9448384;2551616;21,26346667;some leaves blend, some white trunk;165
+Rya åsar;SV;control;SV35;1;20250916_115413;0;9768874;2231126;18,59271667;some leaves blend;151
+Rya åsar;SV;control;SV35;1;20250916_115437;0;9777531;2222469;18,520575;some leaves blend;160
+Rya åsar;SV;control;SV35;1;20250916_115445;0;9778712;2221288;18,51073333;some leaves blend;155
+Rya åsar;SV;control;SV35;2;20250916_122223;0;9881577;2118423;17,653525;some leaves blend;150
+Rya åsar;SV;control;SV35;2;20250916_122233;0;10354737;1645263;13,710525;some leaves blend;153
+Rya åsar;SV;control;SV35;2;20250916_122240;0;10355258;1644742;13,70618333;some leaves blend;160
+Rya åsar;SV;control;SV35;2;20250916_122312;0;10427394;1572606;13,10505;some leaves blend;173
+Rya åsar;SV;control;SV35;3;20250916_124610;0;9075925;2924075;24,36729167;some leaves blend;144
+Rya åsar;SV;control;SV35;3;20250916_124615;0;8697522;3302478;27,52065;some leaves blend;140
+Rya åsar;SV;control;SV35;3;20250916_124621;0;8474263;3525737;29,38114167;some leaves blend;134
+Rya åsar;SV;control;SV35;3;20250916_124628;0;8616677;3383323;28,19435833;some leaves blend;137
+Rya åsar;SV;control;SV35;4;20250916_130748;0;10132061;1867939;15,56615833;sun glare, white trunk, light leaves blend;cover trunks, 181
+Rya åsar;SV;control;SV35;4;20250916_130753;0;10549414;1450586;12,08821667;sun glare, white trunk, light leaves blend;cover trunks, 184
+Rya åsar;SV;control;SV35;4;20250916_130757;0;10624308;1375692;11,4641;sun glare, white trunk, light leaves blend;cover trunks, 199
+Rya åsar;SV;control;SV35;4;20250916_130804;0;10332858;1667142;13,89285;sun glare, white trunk, light leaves blend;cover trunks, 184
+Rya åsar;SV;control;SV55;1;20250916_142204;0;10210808;1789192;14,90993333;light leaves blend, (sun glare);163
+Rya åsar;SV;control;SV55;1;20250916_142210;0;10223310;1776690;14,80575;light leaves blend, (sun glare);162
+Rya åsar;SV;control;SV55;1;20250916_142215;0;10550474;1449526;12,07938333;light leaves blend, white trunks (sun glare);cover trunks, 182
+Rya åsar;SV;control;SV55;1;20250916_142222;0;11096758;903242;7,527016667;light leaves blend, white trunk (sun glare);cover trunks, 206
+Rya åsar;SV;control;SV55;2;20250916_144047;0;9921946;2078054;17,31711667;some white trunks;cover trunks, 150
+Rya åsar;SV;control;SV55;2;20250916_144054;0;10162370;1837630;15,31358333;some white trunks;cover trunks, 159
+Rya åsar;SV;control;SV55;2;20250916_144104;0;10456596;1543404;12,8617;light leaves blend, white trunk (sun glare);cover trunks, 173
+Rya åsar;SV;control;SV55;2;20250916_144241;0;10419953;1580047;13,16705833;light leaves blend, white trunk (sun glare);cover trunks, 170
+Rya åsar;SV;control;SV55;3;20250916_150935;0;9727019;2272981;18,94150833;close focus, background blends;sharpen 3x threshold 140
+Rya åsar;SV;control;SV55;3;20250916_150944;0;10212841;1787159;14,89299167;close focus, background blends;sharpen 3x threshold 146
+Rya åsar;SV;control;SV55;3;20250916_150951;0;10465907;1534093;12,78410833;close focus, background blends;sharpen 2x 113
+Rya åsar;SV;control;SV55;3;20250916_151004;0;11104735;895265;7,460541667;close focus, background blends, white trunk;cover trunks, 146
+Rya åsar;SV;control;SV55;4;20250916_154922;0;9023850;2976150;24,80125;some leaves blend in;152
+Rya åsar;SV;control;SV55;4;20250916_154926;0;8567265;3432735;28,606125;some leaves blend in;144
+Rya åsar;SV;control;SV55;4;20250916_154930;0;9274579;2725421;22,71184167;some leaves blend in, some white trunk;156
+Rya åsar;SV;control;SV55;4;20250916_154934;0;9303868;2696132;22,46776667;normal binary;160
+Rya åsar;NO;thinned;NO80;1;20250917_110611;0;10608510;1391490;11,59575;light leaves blend into the sky;142
+Rya åsar;NO;thinned;NO80;1;20250917_110625;0;10458063;1541937;12,849475;light leaves blend into the sky;153
+Rya åsar;NO;thinned;NO80;1;20250917_110639;0;9688207;2311793;19,26494167;light leaves blend into the sky;141
+Rya åsar;NO;thinned;NO80;1;20250917_110704;0;10348278;1651722;13,76435;light leaves blend into the sky;159
+Rya åsar;NO;thinned;NO80;2;20250917_115403;0;9241587;2758413;22,986775;light (whole) leaves blend into the sky;163
+Rya åsar;NO;thinned;NO80;2;20250917_115441;0;10162224;1837776;15,3148;light (whole) leaves blend into the sky;133
+Rya åsar;NO;thinned;NO80;2;20250917_115502;0;10650914;1349086;11,24238333;light (whole) leaves blend into the sky;156
+Rya åsar;NO;thinned;NO80;2;20250917_115520;0;10505053;1494947;12,45789167;light (whole) leaves blend into the sky;156
+Rya åsar;NO;thinned;NO80;3;20250917_125555;0;10072049;1927951;16,06625833;light leaves blend into the sky;174
+Rya åsar;NO;thinned;NO80;3;20250917_125603;0;10355794;1644206;13,70171667;light leaves blend into the sky white trunk;cover trunks, 190
+Rya åsar;NO;thinned;NO80;3;20250917_125630;0;10443777;1556223;12,968525;light leaves blend into the sky;166
+Rya åsar;NO;thinned;NO80;3;20250917_125700;0;10431983;1568017;13,06680833;light (whole) leaves blend into the sky;185
+Rya åsar;NO;thinned;NO80;4;20250917_134918;0;11181608;818392;6,819933333;light leaves blend into the sky (sun glare);180
+Rya åsar;NO;thinned;NO80;4;20250917_134932_001;0;10846105;1153895;9,615791667;light leaves blend into the sky (white trunk);cover trunks, 163
+Rya åsar;NO;thinned;NO80;4;20250917_134951;0;10536604;1463396;12,19496667;light leaves blend into the sky (white trunk);cover trunks, 193
+Rya åsar;NO;thinned;NO80;4;20250917_135003;0;8764983;3235017;26,958475;light leaves blend into the sky (white trunks);cover trunks, 150
+Rya åsar;NO;thinned;NO105;1;20250917_151815;0;10593148;1406852;11,72376667;light leaves blend into the sky (sun glare);157
+Rya åsar;NO;thinned;NO105;1;20250917_151851;0;10636987;1363013;11,35844167;light leaves blend into the sky (sun glare);162
+Rya åsar;NO;thinned;NO105;1;20250917_151919;0;10663844;1336156;11,13463333;light leaves blend into the sky (sun glare);170
+Rya åsar;NO;thinned;NO105;1;20250917_151946;0;10955072;1044928;8,707733333;light leaves blend into the sky (sun glare);177
+Rya åsar;NO;thinned;NO105;2;20250917_154628;0;9674713;2325287;19,37739167;light leaves blend into the sky (sun glare);154
+Rya åsar;NO;thinned;NO105;2;20250917_154648;0;10532067;1467933;12,232775;light leaves blend into the sky;150
+Rya åsar;NO;thinned;NO105;2;20250917_154700;0;10674865;1325135;11,04279167;light leaves blend into the sky (white trunk);cover trunks, 155
+Rya åsar;NO;thinned;NO105;2;20250917_154718;0;11004792;995208;8,2934;light leaves blend into the sky;177
+Rya åsar;NO;thinned;NO105;3;20250917_160717;0;10044456;1955544;16,2962;light leaves blend into the sky, sun glare;166
+Rya åsar;NO;thinned;NO105;3;20250917_160725;0;9906706;2093294;17,44411667;light leaves blend into the sky, sun glare;153
+Rya åsar;NO;thinned;NO105;3;20250917_160739;0;10654060;1345940;11,21616667;light leaves blend into the sky, sun glare;190
+Rya åsar;NO;thinned;NO105;3;20250917_160806;0;10532200;1467800;12,23166667;light leaves blend, white trunk, sun glare;183
+Rya åsar;NO;thinned;NO105;4;20250917_162806;0;10459992;1540008;12,8334;light leaves blend, white trunk;cover trunks, 151
+Rya åsar;NO;thinned;NO105;4;20250917_162820;0;10587820;1412180;11,76816667;light leaves blend, white trunk;cover trunks, 172
+Rya åsar;NO;thinned;NO105;4;20250917_162830;0;10405596;1594404;13,2867;light leaves blend, white trunk;cover trunks, 179
+Rya åsar;NO;thinned;NO105;4;20250917_162850;0;10901824;1098176;9,151466667;light leaves blend (white trunk);cover trunks, 176
+Sandviksås;V;control;V55;1;20250918_103534;0;9595639;2404361;20,03634167;some leaves blend in;153
+Sandviksås;V;control;V55;1;20250918_103544;0;8962382;3037618;25,31348333;some leaves blend in;159
+Sandviksås;V;control;V55;1;20250918_103601;0;9541922;2458078;20,48398333;some leaves blend in;150
+Sandviksås;V;control;V55;1;20250918_103618;0;9862661;2137339;17,81115833;some leaves blend in, white trunk;167
+Sandviksås;V;control;V55;2;20250918_110937;0;10086966;1913034;15,94195;some leaves blend in;166
+Sandviksås;V;control;V55;2;20250918_110949;0;9972878;2027122;16,89268333;some leaves blend in;156
+Sandviksås;V;control;V55;2;20250918_111003;0;9943638;2056362;17,13635;some leaves blend in;152
+Sandviksås;V;control;V55;2;20250918_111017;0;10006435;1993565;16,61304167;some leaves blend in;152
+Sandviksås;V;control;V55;3;20250918_115143;0;10439067;1560933;13,007775;light leaves blend, (sun glare);160
+Sandviksås;V;control;V55;3;20250918_115203;0;10429115;1570885;13,09070833;light leaves blend;162
+Sandviksås;V;control;V55;3;20250918_115217;0;10581982;1418018;11,81681667;light leaves blend, (sun glare);167
+Sandviksås;V;control;V55;3;20250918_115243;0;10643185;1356815;11,30679167;light leaves blend, (white branch, sun glare);177
+Sandviksås;V;control;V55;4;20250918_122244;0;10056372;1943628;16,1969;light leaves blend;162
+Sandviksås;V;control;V55;4;20250918_122305;0;9955198;2044802;17,04001667;light leaves blend;148
+Sandviksås;V;control;V55;4;20250918_122316;0;9945295;2054705;17,12254167;light leaves blend;153
+Sandviksås;V;control;V55;4;20250918_122329;0;10094397;1905603;15,880025;light leaves blend;160
+Sandviksås;V;control;V75;1;20250918_140249;0;10299841;1700159;14,16799167;light leaves blend;164
+Sandviksås;V;control;V75;1;20250918_140305;0;10668520;1331480;11,09566667;light leaves blend;178
+Sandviksås;V;control;V75;1;20250918_140330;0;10597868;1402132;11,68443333;light leaves blend, white trunk;cover trunks, 177
+Sandviksås;V;control;V75;1;20250918_140448;0;10863603;1136397;9,469975;light leaves blend, white trunk;cover trunks, 190
+Sandviksås;V;control;V75;2;20250918_144242;0;10489546;1510454;12,58711667;light leaves blend, white trunk;cover trunks, 181
+Sandviksås;V;control;V75;2;20250918_144256;0;10330391;1669609;13,91340833;light leaves blend, (sun glare);175
+Sandviksås;V;control;V75;2;20250918_144308;0;10138551;1861449;15,512075;light leaves blend, white trunk;160
+Sandviksås;V;control;V75;2;20250918_144400;0;10427140;1572860;13,10716667;light leaves blend, white trunk;cover trunks, 171
+Sandviksås;V;control;V75;3;20250918_151121;0;10110087;1889913;15,749275;light leaves blend;163
+Sandviksås;V;control;V75;3;20250918_151138;0;10288387;1711613;14,26344167;light leaves blend;174
+Sandviksås;V;control;V75;3;20250918_151156;0;10025448;1974552;16,4546;light leaves blend;152
+Sandviksås;V;control;V75;3;20250918_151219;0;10032915;1967085;16,392375;light leaves blend;156
+Sandviksås;V;control;V75;4;20250918_153741;0;10335486;1664514;13,87095;light leaves blend, white trunk;cover trunks, 171
+Sandviksås;V;control;V75;4;20250918_153755;0;10174485;1825515;15,212625;light leaves blend, white trunk;cover trunks, 161
+Sandviksås;V;control;V75;4;20250918_153810;0;10180487;1819513;15,16260833;light leaves blend, white trunk;cover trunks, 169
+Sandviksås;V;control;V75;4;20250918_153825;0;10315650;1684350;14,03625;light leaves blend, white trunk;cover trunks, 177
+Sandviksås;V;control;random;opening 1;20250918_161144;0;9918161;2081839;17,34865833;light leaves blend;160
+Sandviksås;V;control;random;opening 1;20250918_161155;0;10220406;1779594;14,82995;normal binary;166
+Sandviksås;V;control;random;opening 1;20250918_161222;0;10176997;1823003;15,19169167;light leaves blend, white trunk;169
+Sandviksås;V;control;random;opening 1;20250918_161242;0;10301091;1698909;14,157575;light leaves blend, (sun glare);178
+Sandviksås;V;control;random;opening 2;20250918_163330;0;10798537;1201463;10,01219167;light leaves blend ;188
+Sandviksås;V;control;random;opening 2;20250918_163402;0;10266120;1733880;14,449;light leaves blend ;176
+Sandviksås;V;control;random;opening 2;20250918_163439;0;9378561;2621439;21,845325;light leaves blend ;166
+Sandviksås;V;control;random;opening 2;20250918_163453;0;9868577;2131423;17,76185833;light leaves blend ;175
+Sandviksås;Ö;thinned;Ö25;1;20250919_110208;0;6319330;5680670;47,33891667;light leaves blend ;141
+Sandviksås;Ö;thinned;Ö25;1;20250919_110219;0;6416836;5583164;46,52636667;light leaves blend ;157
+Sandviksås;Ö;thinned;Ö25;1;20250919_110229;0;6286862;5713138;47,60948333;light leaves blend, white trunk;136
+Sandviksås;Ö;thinned;Ö25;1;20250919_110244;0;6320900;5679100;47,32583333;light leaves blend, white trunk;139
+Sandviksås;Ö;thinned;Ö25;2;20250919_114016;0;7818103;4181897;34,84914167;light leaves blend ;149
+Sandviksås;Ö;thinned;Ö25;2;20250919_114029;0;8121311;3878689;32,32240833;light leaves blend, white trunk;163
+Sandviksås;Ö;thinned;Ö25;2;20250919_114050;0;8108388;3891612;32,4301;light leaves blend, white trunk;161
+Sandviksås;Ö;thinned;Ö25;2;20250919_114109;0;7710206;4289794;35,74828333;white trunk;cover trunks, 138
+Sandviksås;Ö;thinned;Ö25;3;20250919_121523;0;6573599;5426401;45,22000833;normal binary;
+Sandviksås;Ö;thinned;Ö25;3;20250919_121542;0;5942917;6057083;50,47569167;normal binary;
+Sandviksås;Ö;thinned;Ö25;3;20250919_121553_001;0;6288124;5711876;47,59896667;some leaves blend in;157
+Sandviksås;Ö;thinned;Ö25;3;20250919_121613;0;8209978;3790022;31,58351667;some leaves blend in;149
+Sandviksås;Ö;thinned;Ö25;4;20250919_130153;0;7271028;4728972;39,4081;normal binary;
+Sandviksås;Ö;thinned;Ö25;4;20250919_130205;0;7172014;4827986;40,23321667;normal binary;
+Sandviksås;Ö;thinned;Ö25;4;20250919_130218;0;7035910;4964090;41,36741667;some white trunk;137
+Sandviksås;Ö;thinned;Ö25;4;20250919_130232;0;7389736;4610264;38,41886667;some white trunk;153
+Sandviksås;Ö;thinned;Ö45;1;20250919_145351;0;9827209;2172791;18,10659167;some leaves blend in;153
+Sandviksås;Ö;thinned;Ö45;1;20250919_145400;0;9309155;2690845;22,42370833;normal binary;
+Sandviksås;Ö;thinned;Ö45;1;20250919_145408;0;9580418;2419582;20,16318333;some leaves blend in;131
+Sandviksås;Ö;thinned;Ö45;1;20250919_145417;0;9817599;2182401;18,186675;some leaves blend in;147
+Sandviksås;Ö;thinned;Ö45;2;20250919_153332;0;7654294;4345706;36,21421667;some leaves blend in;157
+Sandviksås;Ö;thinned;Ö45;2;20250919_153341;0;7656474;4343526;36,19605;some leaves blend in;160
+Sandviksås;Ö;thinned;Ö45;2;20250919_153351;0;7394186;4605814;38,38178333;some leaves blend in;142
+Sandviksås;Ö;thinned;Ö45;2;20250919_153434;0;7576382;4423618;36,86348333;some leaves blend in;152
+Sandviksås;Ö;thinned;Ö45;3;20250919_160605;0;7504500;4495500;37,4625;some leaves blend in;154
+Sandviksås;Ö;thinned;Ö45;3;20250919_160615;0;7700975;4299025;35,82520833;some leaves blend in;147
+Sandviksås;Ö;thinned;Ö45;3;20250919_160627;0;8541070;3458930;28,82441667;some leaves blend in;138
+Sandviksås;Ö;thinned;Ö45;3;20250919_160646;0;8425734;3574266;29,78555;some leaves blend in;154
+Sandviksås;Ö;thinned;Ö45;4;20250919_163046;0;9767997;2232003;18,600025;some white trunk;139
+Sandviksås;Ö;thinned;Ö45;4;20250919_163100;0;9873968;2126032;17,71693333;some white trunk;139
+Sandviksås;Ö;thinned;Ö45;4;20250919_163113;0;9949669;2050331;17,08609167;some white trunk;147
+Sandviksås;Ö;thinned;Ö45;4;20250919_163135;0;10659037;1340963;11,17469167;some lighter leaves blend in;186
+Skölvene;V;control;V35;1;20250922_103829;0;10120572;1879428;15,6619;light leaves blend, white trunks;cover trunks, 156
+Skölvene;V;control;V35;1;20250922_103838;0;10296591;1703409;14,195075;some lighter leaves blend in;170
+Skölvene;V;control;V35;1;20250922_103858;0;10438320;1561680;13,014;some white trunks;cover trunks, 159
+Skölvene;V;control;V35;1;20250922_103911;0;10600479;1399521;11,662675;light leaves blend in, white trunk;cover trunks, 172
+Skölvene;V;control;V35;2;20250922_111109;0;10540014;1459986;12,16655;light leaves blend in, white trunk;cover trunks, 168
+Skölvene;V;control;V35;2;20250922_111125;0;10526251;1473749;12,28124167;light leaves blend in, white trunk;cover trunks, 165
+Skölvene;V;control;V35;2;20250922_111138_001;0;10515374;1484626;12,37188333;light leaves blend in, white trunk;167
+Skölvene;V;control;V35;2;20250922_111206;0;10613071;1386929;11,55774167;light leaves blend in;168
+Skölvene;V;control;V35;3;20250922_114332;0;10226744;1773256;14,77713333;light leaves blend in;169
+Skölvene;V;control;V35;3;20250922_114401;0;10078865;1921135;16,00945833;light leaves blend in, white trunk;cover trunks, 158
+Skölvene;V;control;V35;3;20250922_114427_001;0;10265987;1734013;14,45010833;light leaves blend in, white trunk;cover trunks, 155
+Skölvene;V;control;V35;3;20250922_114500;0;10830658;1169342;9,744516667;light leaves blend in, white trunk;166
+Skölvene;V;control;V35;4;20250922_122410;0;9660990;2339010;19,49175;light leaves blend in;155
+Skölvene;V;control;V35;4;20250922_122423;0;10657724;1342276;11,18563333;light leaves blend in;171
+Skölvene;V;control;V35;4;20250922_122452;0;10942717;1057283;8,810691667;light leaves blend in;184
+Skölvene;V;control;V35;4;20250922_122508;0;10652299;1347701;11,23084167;light leaves blend in;193
+Skölvene;V;control;V55;1;20250922_141816;0;11038610;961390;8,011583333;light leaves blend in;207
+Skölvene;V;control;V55;1;20250922_141926;0;10468028;1531972;12,76643333;light leaves blend in, white trunk;cover trunks, 164
+Skölvene;V;control;V55;1;20250922_141940;0;10258004;1741996;14,51663333;light leaves blend in, white trunk;cover trunks, 166
+Skölvene;V;control;V55;1;20250922_141958;0;10656855;1343145;11,192875;light leaves blend in, white trunk;201
+Skölvene;V;control;V55;2;20250922_144007;0;10747299;1252701;10,439175;light leaves blend in, white trunk;201
+Skölvene;V;control;V55;2;20250922_144019;0;10331860;1668140;13,90116667;light leaves blend in, white trunk;cover trunks, 181
+Skölvene;V;control;V55;2;20250922_144053;0;10502303;1497697;12,48080833;light leaves blend in, white trunk;cover trunks, 191
+Skölvene;V;control;V55;2;20250922_144116;0;10600815;1399185;11,659875;light leaves blend in, (white trunk);193
+Skölvene;V;control;V55;3;20250922_150734;0;9615606;2384394;19,86995;light leaves blend in, white trunk;cover trunks, 171
+Skölvene;V;control;V55;3;20250922_150744;0;10000819;1999181;16,65984167;light leaves blend in, white trunk;cover trunks, 174
+Skölvene;V;control;V55;3;20250922_150847;0;9801975;2198025;18,316875;light leaves blend in, white trunk;cover trunks, 176
+Skölvene;V;control;V55;3;20250922_150933;0;9909647;2090353;17,41960833;light leaves blend in, white trunk;cover trunks, 174
+Skölvene;V;control;V55;4;20250922_154235;0;10185448;1814552;15,12126667;light leaves blend in;170
+Skölvene;V;control;V55;4;20250922_154247;0;10350285;1649715;13,747625;light leaves blend in, (white trunk);167
+Skölvene;V;control;V55;4;20250922_154259;0;10393300;1606700;13,38916667;light leaves blend in;180
+Skölvene;V;control;V55;4;20250922_154323;0;10282149;1717851;14,315425;light leaves blend in;173
+Skölvene;Ö;thinned;Ö35;1;20250923_105421;0;10504619;1495381;12,46150833;light leaves blend in;170
+Skölvene;Ö;thinned;Ö35;1;20250923_105433;0;10652039;1347961;11,23300833;light leaves blend in;171
+Skölvene;Ö;thinned;Ö35;1;20250923_105455;0;10715226;1284774;10,70645;light leaves blend in, white trunk;174
+Skölvene;Ö;thinned;Ö35;1;20250923_105507;0;10718098;1281902;10,68251667;light leaves blend in, (white trunk);173
+Skölvene;Ö;thinned;Ö35;2;20250923_113920;0;8634627;3365373;28,044775;light leaves blend in, white trunk;cover trunks, 179
+Skölvene;Ö;thinned;Ö35;2;20250923_113937;0;8981055;3018945;25,157875;light leaves blend in, white trunk;cover trunks, 176
+Skölvene;Ö;thinned;Ö35;2;20250923_113949;0;10265555;1734445;14,45370833;light leaves blend in, white trunk;cover trunks, 160
+Skölvene;Ö;thinned;Ö35;2;20250923_114003;0;10719810;1280190;10,66825;light leaves blend in, white trunk;cover trunks, 174
+Skölvene;Ö;thinned;Ö35;3;20250923_122112;0;9486673;2513327;20,94439167;light leaves blend in, white trunk;cover trunks, 169
+Skölvene;Ö;thinned;Ö35;3;20250923_122128;0;9829424;2170576;18,08813333;light leaves blend in;191
+Skölvene;Ö;thinned;Ö35;3;20250923_122141;0;10067977;1932023;16,10019167;light leaves blend in;199
+Skölvene;Ö;thinned;Ö35;3;20250923_122158;0;10269446;1730554;14,42128333;light leaves blend in;cover trunks, 186
+Skölvene;Ö;thinned;Ö35;4;20250923_130507;0;11366508;633492;5,2791;light leaves blend in, white trunk;cover trunks, 177
+Skölvene;Ö;thinned;Ö35;4;20250923_130552;0;11117475;882525;7,354375;light leaves blend in, white trunk;cover trunks, 175
+Skölvene;Ö;thinned;Ö35;4;20250923_130602;0;10846446;1153554;9,61295;light leaves blend in, white trunk;cover trunks, 165
+Skölvene;Ö;thinned;Ö35;4;20250923_130612;0;10872872;1127128;9,392733333;light leaves blend in, white trunk;cover trunks, 182
+Skölvene;Ö;thinned;Ö55;1;20250923_144731;0;10790662;1209338;10,07781667;light leaves blend in, white trunk, (sun glare);clear trunks, 150
+Skölvene;Ö;thinned;Ö55;1;20250923_144754;0;10928765;1071235;8,926958333;light leaves blend in, (white trunk);clear trunks, 166
+Skölvene;Ö;thinned;Ö55;1;20250923_144812;0;10856324;1143676;9,530633333;light leaves blend in, (sun glare);clear trunks, 158
+Skölvene;Ö;thinned;Ö55;1;20250923_144823;0;10938692;1061308;8,844233333;light leaves blend in;clear trunks, 166
+Skölvene;Ö;thinned;Ö55;2;20250923_152048;0;9949101;2050899;17,090825;light leaves blend in, (white trunk);168
+Skölvene;Ö;thinned;Ö55;2;20250923_152057;0;9801443;2198557;18,32130833;light leaves blend in, (white trunk);166
+Skölvene;Ö;thinned;Ö55;2;20250923_152106;0;10203878;1796122;14,96768333;light leaves blend in, white trunk;181
+Skölvene;Ö;thinned;Ö55;2;20250923_152117;0;10167174;1832826;15,27355;light leaves blend in, white trunk;178
+Skölvene;Ö;thinned;Ö55;3;20250923_154646;0;10852971;1147029;9,558575;light leaves blend in;171
+Skölvene;Ö;thinned;Ö55;3;20250923_154714;0;10691285;1308715;10,90595833;light leaves blend in, (white trunk);173
+Skölvene;Ö;thinned;Ö55;3;20250923_154729;0;10831139;1168861;9,740508333;light leaves blend in, (white trunk);178
+Skölvene;Ö;thinned;Ö55;3;20250923_154746;0;10912829;1087171;9,059758333;light leaves blend in, (white trunk);177
+Skölvene;Ö;thinned;Ö55;4;20250923_162010;0;11226142;773858;6,448816667;light leaves blend in;178
+Skölvene;Ö;thinned;Ö55;4;20250923_162020;0;11262527;737473;6,145608333;light leaves blend in;198
+Skölvene;Ö;thinned;Ö55;4;20250923_162032;0;11172361;827639;6,896991667;light leaves blend in;198
+Skölvene;Ö;thinned;Ö55;4;20250923_162047;0;11267406;732594;6,10495;light leaves blend in, white trunk;194
+Karla;SO;thinned;SO35;1;20250924_112519;0;10157776;1842224;15,35186667;light leaves blend in, white trunk;cover trunks, 177
+Karla;SO;thinned;SO35;1;20250924_112526;0;10416344;1583656;13,19713333;light leaves blend in, white trunk;cover trunks, 153
+Karla;SO;thinned;SO35;1;20250924_112533;0;9751088;2248912;18,74093333;light leaves blend in, white trunk;cover trunks, 162
+Karla;SO;thinned;SO35;1;20250924_112541;0;9641863;2358137;19,65114167;light leaves blend in, white trunk;cover trunks, 168
+Karla;SO;thinned;SO35;2;20250924_120033;0;9239493;2760507;23,004225;light leaves blend in, white trunk;182
+Karla;SO;thinned;SO35;2;20250924_120040;0;9112701;2887299;24,060825;light leaves blend in, white trunk;179
+Karla;SO;thinned;SO35;2;20250924_120047;0;8994669;3005331;25,044425;light leaves blend in, sun glare;178
+Karla;SO;thinned;SO35;2;20250924_120055;0;9014378;2985622;24,88018333;light leaves blend in;178
+Karla;SO;thinned;SO35;3;20250924_123256;0;10463615;1536385;12,80320833;light leaves blend in, white trunk, sun glare;194
+Karla;SO;thinned;SO35;3;20250924_123308;0;10630782;1369218;11,41015;light leaves blend in, white trunk, sun glare;198
+Karla;SO;thinned;SO35;3;20250924_123329;0;10427805;1572195;13,101625;light leaves blend in, white trunk, sun glare;186
+Karla;SO;thinned;SO35;3;20250924_123406;0;10628474;1371526;11,42938333;light leaves blend in, white trunk, sun glare;197
+Karla;SO;thinned;SO35;4;20250924_130207;0;10613941;1386059;11,55049167;light leaves blend in, white trunk;cover trunks, 177
+Karla;SO;thinned;SO35;4;20250924_130219;0;10614996;1385004;11,5417;light leaves blend in, white trunk, sun glare;cover trunks, 186
+Karla;SO;thinned;SO35;4;20250924_130231;0;10479748;1520252;12,66876667;light leaves blend in, white trunk;cover trunks, 182
+Karla;SO;thinned;SO35;4;20250924_130237;0;10681723;1318277;10,98564167;light leaves blend in, white trunk;cover trunks, 187
+Karla;SO;thinned;SO55;1;20250924_144932;0;9943287;2056713;17,139275;light leaves blend in, white trunk;cover trunks, 176
+Karla;SO;thinned;SO55;1;20250924_144943;0;9756203;2243797;18,69830833;light leaves blend in;168
+Karla;SO;thinned;SO55;1;20250924_144952;0;10219358;1780642;14,83868333;light leaves blend in, white trunk;177
+Karla;SO;thinned;SO55;1;20250924_145002;0;9782075;2217925;18,48270833;light leaves blend in, white trunk;189
+Karla;SO;thinned;SO55;2;20250924_152720;0;10030449;1969551;16,412925;light leaves blend in, white trunk;195
+Karla;SO;thinned;SO55;2;20250924_152728;0;10013871;1986129;16,551075;light leaves blend in, white trunk;191
+Karla;SO;thinned;SO55;2;20250924_152738;0;9739089;2260911;18,840925;light leaves blend in;187
+Karla;SO;thinned;SO55;2;20250924_152746;0;9593996;2406004;20,05003333;light leaves blend in, white trunk;187
+Karla;SO;thinned;SO55;3;20250924_154829;0;10561801;1438199;11,98499167;light leaves blend in;cover trunks, 179
+Karla;SO;thinned;SO55;3;20250924_154849;0;10171941;1828059;15,233825;light leaves blend in, white trunk;183
+Karla;SO;thinned;SO55;3;20250924_154907;0;10302111;1697889;14,149075;light leaves blend in, white trunk;cover trunks, 183
+Karla;SO;thinned;SO55;3;20250924_154922;0;9984073;2015927;16,79939167;light leaves blend in, white trunk;cover trunks, 178
+Karla;SO;thinned;SO55;4;20250924_160803;0;10306209;1693791;14,114925;light leaves blend in, white trunk;197
+Karla;SO;thinned;SO55;4;20250924_160817;0;10427298;1572702;13,10585;light leaves blend in, white trunk;193
+Karla;SO;thinned;SO55;4;20250924_160908;0;10650685;1349315;11,24429167;light leaves blend in, white trunk;192
+Karla;SO;thinned;SO55;4;20250924_160931;0;10887483;1112517;9,270975;light leaves blend in, white trunk;197
+Karla;NV;control;NV25;1;20250929_104145;0;8509342;3490658;29,08881667;normal binary;
+Karla;NV;control;NV25;1;20250929_104159;0;8353983;3646017;30,383475;normal binary;
+Karla;NV;control;NV25;1;20250929_104208;0;8413707;3586293;29,885775;normal binary;
+Karla;NV;control;NV25;1;20250929_104223;0;8544922;3455078;28,79231667;normal binary;
+Karla;NV;control;NV25;2;20250929_112944;0;9302812;2697188;22,47656667;normal binary;
+Karla;NV;control;NV25;2;20250929_113003;0;8762266;3237734;26,98111667;normal binary;
+Karla;NV;control;NV25;2;20250929_113025;0;8873163;3126837;26,056975;normal binary;
+Karla;NV;control;NV25;2;20250929_113041;0;9188516;2811484;23,42903333;white trunk;135
+Karla;NV;control;NV25;3;20250929_121829;0;9220333;2779667;23,16389167;normal binary;
+Karla;NV;control;NV25;3;20250929_121845;0;8724432;3275568;27,2964;normal binary;
+Karla;NV;control;NV25;3;20250929_121858;0;8702317;3297683;27,48069167;normal binary;
+Karla;NV;control;NV25;3;20250929_121915;0;8857303;3142697;26,18914167;normal binary;
+Karla;NV;control;NV25;4;20250929_131417_001;0;8933131;3066869;25,55724167;light leaves blend in, white trunk;149
+Karla;NV;control;NV25;4;20250929_131442;0;8747412;3252588;27,1049;white trunk;148
+Karla;NV;control;NV25;4;20250929_131505;0;9252810;2747190;22,89325;white trunk;162
+Karla;NV;control;NV25;4;20250929_131518;0;8669845;3330155;27,75129167;white trunk;135
+Karla;NV;control;NV45;1;20250929_151648;0;9053014;2946986;24,55821667;normal binary;
+Karla;NV;control;NV45;1;20250929_151707;0;9071399;2928601;24,40500833;normal binary;
+Karla;NV;control;NV45;1;20250929_151725;0;9291431;2708569;22,57140833;normal binary;
+Karla;NV;control;NV45;1;20250929_151807;0;10302338;1697662;14,14718333;leaves furthest away blend in;150
+Karla;NV;control;NV45;2;20250929_155710;0;9001705;2998295;24,98579167;normal binary;
+Karla;NV;control;NV45;2;20250929_155725;0;9354692;2645308;22,04423333;normal binary;
+Karla;NV;control;NV45;2;20250929_155740;0;8911063;3088937;25,74114167;normal binary;
+Karla;NV;control;NV45;2;20250929_155756;0;8794973;3205027;26,70855833;normal binary;
+Karla;NV;control;NV45;3;20250929_163041;0;9030500;2969500;24,74583333;normal binary;
+Karla;NV;control;NV45;3;20250929_163105;0;9436227;2563773;21,364775;normal binary;
+Karla;NV;control;NV45;3;20250929_163143;0;9881673;2118327;17,652725;some white trunk;141
+Karla;NV;control;NV45;3;20250929_163209;0;9366485;2633515;21,94595833;some white trunk;131
+Karla;NV;control;NV45;4;20250929_170659;0;10155873;1844127;15,367725;light leaves blend in;152
+Karla;NV;control;NV45;4;20250929_170711;0;10787500;1212500;10,10416667;light leaves blend in, sun glare;184
+Karla;NV;control;NV45;4;20250929_170753;0;10729333;1270667;10,58889167;light leaves blend in, white trunk;cover trunks, 169
+Karla;NV;control;NV45;4;20250929_170810;0;9982961;2017039;16,80865833;light leaves blend in, white trunk;158
+Östadkulle;Ö;thinned;Ö89;1;20250930_102612;0;10912345;1087655;9,063791667;light leaves blend in, white trunk;cover trunks, 176
+Östadkulle;Ö;thinned;Ö89;1;20250930_102624;0;11245403;754597;6,288308333;light leaves blend in;191
+Östadkulle;Ö;thinned;Ö89;1;20250930_102642;0;10900709;1099291;9,160758333;light leaves blend in, white trunk;cover trunks, 163
+Östadkulle;Ö;thinned;Ö89;1;20250930_102707;0;10719106;1280894;10,67411667;light leaves blend in, white trunk;cover trunks, 167
+Östadkulle;Ö;thinned;Ö89;2;20250930_105715_001;0;11155003;844997;7,041641667;light leaves blend in;193
+Östadkulle;Ö;thinned;Ö89;2;20250930_105753;0;11186031;813969;6,783075;light leaves blend in, white trunk;195
+Östadkulle;Ö;thinned;Ö89;2;20250930_105830;0;11144941;855059;7,125491667;light leaves blend in, white trunk;cover trunks, 168
+Östadkulle;Ö;thinned;Ö89;2;20250930_105849;0;10988566;1011434;8,428616667;light leaves blend in, white trunk;cover trunks, 156
+Östadkulle;Ö;thinned;Ö89;3;20250930_111933;0;11156959;843041;7,025341667;light leaves blend in, white trunk;199
+Östadkulle;Ö;thinned;Ö89;3;20250930_111947;0;11343321;656679;5,472325;light leaves blend in, white trunk;212
+Östadkulle;Ö;thinned;Ö89;3;20250930_112029;0;11345727;654273;5,452275;light leaves blend in, white trunk;213
+Östadkulle;Ö;thinned;Ö89;3;20250930_112036;0;11244680;755320;6,294333333;light leaves blend in, white trunk;202
+Östadkulle;Ö;thinned;Ö89;4;20250930_114310;0;10913933;1086067;9,050558333;light leaves blend in, white trunk;183
+Östadkulle;Ö;thinned;Ö89;4;20250930_114317;0;11002137;997863;8,315525;light leaves blend in, white trunk;182
+Östadkulle;Ö;thinned;Ö89;4;20250930_114323;0;11404399;595601;4,963341667;light leaves blend in, white trunk;
+Östadkulle;Ö;thinned;Ö89;4;20250930_114332;0;11364216;635784;5,2982;light leaves blend in, white trunk, (sun glare);202
+Östadkulle;Ö;thinned;Ö75;1;20250930_132217;0;10886932;1113068;9,275566667;light leaves blend in, white trunk, (sun glare);182
+Östadkulle;Ö;thinned;Ö75;1;20250930_132238;0;10936874;1063126;8,859383333;light leaves blend in, white trunk, (sun glare);
+Östadkulle;Ö;thinned;Ö75;1;20250930_132257;0;11015149;984851;8,207091667;light leaves blend in, sun glare;186
+Östadkulle;Ö;thinned;Ö75;1;20250930_132319;0;10754995;1245005;10,37504167;light leaves blend in, sun glare;
+Östadkulle;Ö;thinned;Ö75;2;20250930_133636;0;10923505;1076495;8,970791667;light leaves blend in;179
+Östadkulle;Ö;thinned;Ö75;2;20250930_133655;0;10632344;1367656;11,39713333;light leaves blend in;
+Östadkulle;Ö;thinned;Ö75;2;20250930_133706;0;10801789;1198211;9,985091667;light leaves blend in;166
+Östadkulle;Ö;thinned;Ö75;2;20250930_133718;0;10629612;1370388;11,4199;light leaves blend in;
+Östadkulle;Ö;thinned;Ö75;3;20250930_135605;0;9318591;2681409;22,345075;some white trunk;144
+Östadkulle;Ö;thinned;Ö75;3;20250930_135613;0;8503399;3496601;29,13834167;some white trunk;
+Östadkulle;Ö;thinned;Ö75;3;20250930_135647;0;8439673;3560327;29,66939167;some white trunk;
+Östadkulle;Ö;thinned;Ö75;3;20250930_135735;0;8684748;3315252;27,6271;normal binary;
+Östadkulle;Ö;thinned;Ö75;4;20250930_143418;0;10753707;1246293;10,385775;normal binary, some white trunk but Rieke;
+Östadkulle;Ö;thinned;Ö75;4;20250930_143430;0;10781815;1218185;10,15154167;normal binary white trunk;cover trunks, 129
+Östadkulle;Ö;thinned;Ö75;4;20250930_143446;0;10911543;1088457;9,070475;white trunk, Rieke;176
+Östadkulle;Ö;thinned;Ö75;4;20250930_143455;0;10681516;1318484;10,98736667;white trunk, Rieke;156
+Östadkulle;V;control;V95;1;20251001_101417;0;10494616;1505384;12,54486667;light leaves blend in;173
+Östadkulle;V;control;V95;1;20251001_101431;0;10334121;1665879;13,882325;light leaves blend in, white trunk;
+Östadkulle;V;control;V95;1;20251001_101447;0;10590427;1409573;11,74644167;light leaves blend in, white trunk;180
+Östadkulle;V;control;V95;1;20251001_101457;0;10343420;1656580;13,80483333;light leaves blend in;
+Östadkulle;V;control;V95;2;20251001_104951;0;10569392;1430608;11,92173333;light leaves blend in, white trunk;cover trunks, 163
+Östadkulle;V;control;V95;2;20251001_105001;0;10545538;1454462;12,12051667;light leaves blend in, white trunk;cover trunks, 161
+Östadkulle;V;control;V95;2;20251001_105021_001;0;10673758;1326242;11,05201667;light leaves blend in, white trunk;cover trunks, 157
+Östadkulle;V;control;V95;2;20251001_105043;0;10426974;1573026;13,10855;light leaves blend in, white trunk;cover trunks, 162
+Östadkulle;V;control;V95;3;20251001_114335;0;10311031;1688969;14,07474167;light leaves blend in, white trunk;cover trunks, 166
+Östadkulle;V;control;V95;3;20251001_114347;0;10173854;1826146;15,21788333;light leaves blend in, white trunk;cover trunks, 151
+Östadkulle;V;control;V95;3;20251001_114405;0;10506531;1493469;12,445575;light leaves blend in, white trunk;cover trunks, 179
+Östadkulle;V;control;V95;3;20251001_114458;0;10482006;1517994;12,64995;light leaves blend in, white trunk;cover trunks, 160
+Östadkulle;V;control;V95;4;20251001_122402;0;10323606;1676394;13,96995;light leaves blend in, white trunk;cover trunks, 172
+Östadkulle;V;control;V95;4;20251001_122436;0;10351961;1648039;13,73365833;light leaves blend in, white trunk;cover trunks, 159
+Östadkulle;V;control;V95;4;20251001_122500;0;10118766;1881234;15,67695;light leaves blend in, white trunk;cover trunks, 162
+Östadkulle;V;control;V95;4;20251001_122525;0;10147846;1852154;15,43461667;light leaves blend in, white trunk;cover trunks, 164
+Östadkulle;V;control;V75;1;20251001_142750;0;10820893;1179107;9,825891667;light leaves blend in, white trunk;cover trunks, 167
+Östadkulle;V;control;V75;1;20251001_142805;0;10869999;1130001;9,416675;light leaves blend in, white trunk;cover trunks, 174
+Östadkulle;V;control;V75;1;20251001_142816;0;10893763;1106237;9,218641667;light leaves blend in, white trunk;cover trunks, 171
+Östadkulle;V;control;V75;1;20251001_142825;0;10925730;1074270;8,95225;light leaves blend in, white trunk;cover trunks, 175
+Östadkulle;V;control;V75;2;20251001_145634;0;10910935;1089065;9,075541667;light leaves blend in, (white trunk);209
+Östadkulle;V;control;V75;2;20251001_145708;0;11038345;961655;8,013791667;light leaves blend in, (sun glare);
+Östadkulle;V;control;V75;2;20251001_145736;0;11180437;819563;6,829691667;light leaves blend in, (white trunk);210
+Östadkulle;V;control;V75;2;20251001_145806;0;11267068;732932;6,107766667;light leaves blend in, white trunk;
+Östadkulle;V;control;V75;3;20251001_152859;0;10933256;1066744;8,889533333;light leaves blend in, white trunk;cover trunks, 182
+Östadkulle;V;control;V75;3;20251001_152916;0;11024794;975206;8,126716667;light leaves blend in, white trunk;
+Östadkulle;V;control;V75;3;20251001_152933;0;11038003;961997;8,016641667;light leaves blend in, white trunk;203
+Östadkulle;V;control;V75;3;20251001_152944;0;10929605;1070395;8,919958333;light leaves blend in, white trunk;
+Östadkulle;V;control;V75;4;20251001_155707;0;10766269;1233731;10,28109167;light leaves blend in, white trunk;192
+Östadkulle;V;control;V75;4;20251001_155718;0;11009151;990849;8,257075;light leaves blend in, white trunk;
+Östadkulle;V;control;V75;4;20251001_155733;0;10836096;1163904;9,6992;light leaves blend in;183
+Östadkulle;V;control;V75;4;20251001_155751;0;10859128;1140872;9,507266667;light leaves blend in, white trunk;
