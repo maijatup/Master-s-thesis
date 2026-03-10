@@ -41,8 +41,24 @@ empty_quercus <- empty_subplots %>%
          density = 0)
 
 #Combine with real data
-seedling_density <- bind_rows(seedling_counts, empty_quercus) %>% 
+seedling_density <- bind_rows(seedling_counts, empty_quercus)
+
+#Identify subplots without Quercus and create zero-density rows
+missing_quercus <- seedling_density %>% 
+  group_by(site, plot, treatment, transect, subplot) %>% 
+  filter(!any(species == "Quercus sp.")) %>% 
+  distinct(site, plot, treatment, transect, subplot) %>% 
+  mutate(species = "Quercus sp.",
+         density = 0)
+
+#Combine with real data
+seedling_density <- bind_rows(seedling_density, missing_quercus) %>% 
   arrange(site, plot, transect, subplot, species)
+
+#Add year
+seedling_density <- seedling_density %>% 
+  mutate(year = 2025) %>% 
+  select(site, plot, treatment, year, everything())
 
 
 #Add canopy openness values
@@ -73,7 +89,7 @@ regeneration_data <- regeneration_data %>%
 #Add tree basal area to regeneration_data
 #Calculate basal area for every individual tree
 tree_ba <- tree_raw %>% 
-  mutate(basal_area = pi * (diameter_cm /100 / 2)^2)
+  mutate(basal_area = pi * (diameter_cm/100/2)^2)
 
 #Calculate basal area by species
 species_ba <- tree_ba %>% 
@@ -111,7 +127,7 @@ regeneration_data <- regeneration_data %>%
       site == "Skölvene" & transect %in% c("V55", "Ö55") ~ .,
       site == "Östadkulle" & transect %in% c("V75", "Ö75") ~ .,
       TRUE ~ NA_real_)))
-  
+
 
 
 
