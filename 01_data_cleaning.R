@@ -55,11 +55,6 @@ missing_quercus <- seedling_density %>%
 seedling_density <- bind_rows(seedling_density, missing_quercus) %>% 
   arrange(site, plot, transect, subplot, species)
 
-#Add year
-seedling_density <- seedling_density %>% 
-  mutate(year = 2025) %>% 
-  select(site, plot, treatment, year, everything())
-
 
 #Add canopy openness values
 #Calculate mean canopy openness per subplot
@@ -128,7 +123,10 @@ regeneration_data <- regeneration_data %>%
       site == "Östadkulle" & transect %in% c("V75", "Ö75") ~ .,
       TRUE ~ NA_real_)))
 
-
+#Add year to my data
+regeneration_data_25 <- regeneration_data %>% 
+  mutate(year = 2025) %>% 
+  select(site, plot, treatment, year, everything())
 
 
 
