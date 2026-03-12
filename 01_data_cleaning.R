@@ -21,39 +21,68 @@ soil_raw <- soil_raw %>%
 soil_raw <- soil_raw %>%
   slice(-38)
 
+#Add year and subplot area to seedling data
+#Add a shoot column
+seedling_raw <- seedling_raw %>% 
+  mutate(year = 2025,
+         area_m2 = 5,
+         shoot = notes %in% c(
+           "stubbskott, räknas ej?",
+           "stubbskott",
+           "stubbskott på ovan rönn",
+           "stubbskott av nian")) %>% 
+  select(site, plot, treatment, year, transect, subplot, position_m, area_m2, everything())
 
-#Show seedling density per subplot and species instead of heights
-#Replace empty subplots (species = "0" rows) with Quercus sp., density = 0
-#Count real seedlings
-seedling_counts <- seedling_raw %>% 
-  filter(species != "0") %>% 
-  group_by(site, plot, treatment, transect, subplot, species) %>% 
-  summarise(density = n(), .groups = "drop")
+#Dataset including trunk shoots
+seedling_raw_all <- seedling_raw
 
-#Identify empty subplots
-empty_subplots <- seedling_raw %>% 
-  filter(species == "0") %>% 
-  distinct(site, plot, treatment, transect, subplot)
+#Dataset excluding trunk shoots
+seedling_raw_no_shoots <- seedling_raw %>% 
+  filter(!shoot == TRUE)
 
-#Create zero-density Quercus rows for empty subplots
-empty_quercus <- empty_subplots %>% 
-  mutate(species = "Quercus sp.",
-         density = 0)
 
-#Combine with real data
-seedling_density <- bind_rows(seedling_counts, empty_quercus)
+#Function to calculate seedling density per subplot and species
+calculate_seedling_density <- function(data) {
+  
+  #Replace empty subplots with Quercus sp., density = 0
+  #Count real seedlings
+  seedling_counts <- data %>% 
+    filter(species != "0") %>% 
+    group_by(site, plot, treatment, year, transect, subplot, area_m2, species) %>% 
+    summarise(density = n(), .groups = "drop")
+  
+  #Identify empty subplots
+  empty_subplots <- data %>% 
+    filter(species == "0") %>% 
+    distinct(site, plot, treatment, year, transect, subplot, area_m2)
+  
+  #Create zero-density Quercus rows for empty subplots
+  empty_quercus <- empty_subplots %>% 
+    mutate(species = "Quercus sp.",
+           density = 0)
+  
+  #Combine with real data
+  seedling_density <- bind_rows(seedling_counts, empty_quercus)
+  
+  #Identify subplots without Quercus and create zero-density rows
+  missing_quercus <- seedling_density %>% 
+    group_by(site, plot, treatment, year, transect, subplot, area_m2) %>% 
+    filter(!any(species == "Quercus sp.")) %>% 
+    distinct(site, plot, treatment, year, transect, subplot, area_m2) %>% 
+    mutate(species = "Quercus sp.",
+           density = 0)
+  
+  #Combine everything
+  seedling_density <- bind_rows(seedling_density, missing_quercus) %>% arrange(site, plot, treatment, year, transect, subplot, area_m2, species)
+  
+  return(seedling_density)
+}
 
-#Identify subplots without Quercus and create zero-density rows
-missing_quercus <- seedling_density %>% 
-  group_by(site, plot, treatment, transect, subplot) %>% 
-  filter(!any(species == "Quercus sp.")) %>% 
-  distinct(site, plot, treatment, transect, subplot) %>% 
-  mutate(species = "Quercus sp.",
-         density = 0)
+#Seedling density including trunk shoots
+seedling_density_all <- calculate_seedling_density(seedling_raw_all)
 
-#Combine with real data
-seedling_density <- bind_rows(seedling_density, missing_quercus) %>% 
-  arrange(site, plot, transect, subplot, species)
+#Seedling density excluding trunk shoots
+seedling_density_no_shoots <- calculate_seedling_density(seedling_raw_no_shoots)
 
 
 #Add canopy openness values
@@ -122,12 +151,5 @@ regeneration_data <- regeneration_data %>%
       site == "Skölvene" & transect %in% c("V55", "Ö55") ~ .,
       site == "Östadkulle" & transect %in% c("V75", "Ö75") ~ .,
       TRUE ~ NA_real_)))
-
-#Add year to my data
-regeneration_data_25 <- regeneration_data %>% 
-  mutate(year = 2025) %>% 
-  select(site, plot, treatment, year, everything())
-
-
 
 
