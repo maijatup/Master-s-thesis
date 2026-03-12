@@ -1224,11 +1224,11 @@ Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Quercus sp.;<20
 Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Quercus sp.;<20;;browsed;FALSE;FALSE;
 Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Quercus sp.;<20;;browsed;FALSE;FALSE;
 Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Quercus sp.;<20;;browsed;FALSE;FALSE;
-Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";TRUE;FALSE;
-Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";TRUE;FALSE;
-Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";TRUE;FALSE;
-Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";TRUE;FALSE;
-Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";TRUE;FALSE;
+Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";FALSE;FALSE;
+Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";FALSE;FALSE;
+Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";FALSE;FALSE;
+Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";FALSE;FALSE;
+Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Frangula alnus;<20;;"not browsed, ""rotskott?""";FALSE;FALSE;
 Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Sorbus aucuparia;<20;;not browsed;FALSE;FALSE;
 Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Sorbus aucuparia;<20;;not browsed;FALSE;FALSE;
 Rya åsar;NO;thinned;Anna Bergqvist;2002-08-30;NO85;1;15-okt;5;;;Sorbus aucuparia;<20;;not browsed;FALSE;FALSE;
@@ -7246,7 +7246,7 @@ Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;<20;;;FA
 Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;<20;;;FALSE;FALSE;
 Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;<20;;;FALSE;FALSE;
 Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;<20;;;FALSE;FALSE;
-Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;<20;;"""rotskott""";TRUE;FALSE;
+Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;<20;;"""rotskott""";FALSE;FALSE;
 Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;>130;0.1-5;"""S"" - stubbskott?";TRUE;FALSE;
 Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;>130;0.1-5;"""S"" - stubbskott?";TRUE;FALSE;
 Karla;SO;thinned;Frank Götmark;2003-09-04;SO55;2;31-34;3;;;Quercus sp.;20-130;;;FALSE;FALSE;
