@@ -202,11 +202,13 @@ old_data_raw <- old_data_raw %>%
 #Remove data from 2001 (before thinning) and 2002 (only recorded seedlings <20 cm)
 #Remove the extra subplot from 2003 with unknown size
 #Remove subplots that were within exclosures
+#Remove raspberry Rubus idaeus since they were not always recorded
 #Remove trees larger than 5 cm DBH
 #Remove subplots that were not checked in 2003 and 2005 so that these zeros don't skew the dataset
 old_data_03_05 <- old_data_raw %>% 
   filter(!year %in% c(2001, 2002),
          subplot != "extra",
+         species != "Rubus idaeus",
          in_exclosure != TRUE) %>% 
   filter(is.na(diameter_cm) |
            suppressWarnings(as.numeric(diameter_cm)) <= 5 |
