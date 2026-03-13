@@ -89,28 +89,47 @@ seedling_density_no_shoots <- calculate_seedling_density(seedling_raw_no_shoots)
 #Calculate mean canopy openness per subplot
 canopy_mean <- canopy_raw %>% 
   group_by(Site, Plot, Treatment, Transect, Subplot) %>% 
-  summarise(mean_canopy_openness = mean(`Canopy openness (%)`, na.rm = TRUE, .groups = "drop"))
+  summarise(canopy_openness = mean(`Canopy openness (%)`, na.rm = TRUE, .groups = "drop"))
 
-#Add the means to seedling_density -> regeneration_data
-regeneration_data <- seedling_density %>% 
+#Add the means to seedling_density datasets
+#Including trunk shoots
+data_2025_all <- seedling_density_all %>% 
   left_join(canopy_mean,
             by = c("site" = "Site",
                    "plot" = "Plot",
                    "treatment" = "Treatment",
                    "transect" = "Transect",
                    "subplot" = "Subplot")) %>% 
-  select(site, plot, treatment, transect, subplot, mean_canopy_openness, everything())
+  select(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, everything())
+
+#Excluding trunk shoots
+data_2025_no_shoots <- seedling_density_no_shoots %>% 
+  left_join(canopy_mean,
+            by = c("site" = "Site",
+                   "plot" = "Plot",
+                   "treatment" = "Treatment",
+                   "transect" = "Transect",
+                   "subplot" = "Subplot")) %>% 
+  select(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, everything())
 
 
-#Add pH values to regeneration_data
-regeneration_data <- regeneration_data %>% 
+#Add pH values to both datasets
+#Including trunk shoots
+data_2025_all <- data_2025_all %>% 
   left_join(soil_raw %>% 
               select(site, plot, treatment, transect, subplot, pH),
             by = c("site", "plot", "treatment", "transect", "subplot")) %>% 
-  select(site, plot, treatment, transect, subplot, mean_canopy_openness, pH, everything())
+  select(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, everything())
+
+#Excluding trunk shoots
+data_2025_no_shoots <- data_2025_no_shoots %>% 
+  left_join(soil_raw %>% 
+              select(site, plot, treatment, transect, subplot, pH),
+            by = c("site", "plot", "treatment", "transect", "subplot")) %>% 
+  select(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, everything())
 
 
-#Add tree basal area to regeneration_data
+#Add tree basal area to both datasets
 #Calculate basal area for every individual tree
 tree_ba <- tree_raw %>% 
   mutate(basal_area = pi * (diameter_cm/100/2)^2)
@@ -135,9 +154,26 @@ species_ba_wide <- species_ba %>%
               -c(site, plot, transect_range, treatment)) %>% 
   select(site, plot, transect_range, treatment, quercus_sp_ba, everything())
 
-#Add species and stand BA to regeneration_data
+#Add species and stand BA to both datasets
 #Note: BA was only measured around one of the transects in each plot and BA values are therefore only added for these transects
-regeneration_data <- regeneration_data %>% 
+#Including trunk shoots
+data_2025_all <- data_2025_all %>% 
+  left_join(species_ba_wide %>% select(-transect_range), 
+            by = c("site", "plot", "treatment")) %>% 
+  left_join(total_ba %>% select(-transect_range),
+            by = c("site", "plot", "treatment")) %>%
+  mutate(across(
+    ends_with("_ba"), 
+    ~ case_when(
+      site == "Karla" & transect %in% c("NV45", "SO55") ~ .,
+      site == "Rya åsar" & transect %in% c("NO80", "SV55") ~ .,
+      site == "Sandviksås" & transect %in% c("V55", "Ö45") ~ .,
+      site == "Skölvene" & transect %in% c("V55", "Ö55") ~ .,
+      site == "Östadkulle" & transect %in% c("V75", "Ö75") ~ .,
+      TRUE ~ NA_real_)))
+
+#Excluding trunk shoots
+data_2025_no_shoots <- data_2025_no_shoots %>% 
   left_join(species_ba_wide %>% select(-transect_range), 
             by = c("site", "plot", "treatment")) %>% 
   left_join(total_ba %>% select(-transect_range),
