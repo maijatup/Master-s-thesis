@@ -269,4 +269,12 @@ data_03_05_all <- calculate_seedling_density_old(data_03_05_all)
 data_03_05_no_shoots <- calculate_seedling_density_old(data_03_05_no_shoots)
 
 
+#Combine the old and new datasets and save as csv files
+regeneration_all <- bind_rows(data_03_05_all, data_2025_all)
+write_csv(regeneration_all, "processed_data/regeneration_all.csv")
+
+regeneration_no_shoots <- bind_rows(data_03_05_no_shoots, data_2025_no_shoots)
+write_csv(regeneration_no_shoots, "processed_data/regeneration_no_shoots.csv")
+
+
 

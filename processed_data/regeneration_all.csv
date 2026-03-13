@@ -1,0 +1,726 @@
+site,plot,treatment,year,transect,subplot,area_m2,canopy_openness,pH,species,density,quercus_sp_ba,alnus_glutinosa_ba,betula_sp_ba,frangula_alnus_ba,picea_abies_ba,populus_tremula_ba,sorbus_aucuparia_ba,acer_platanoides_ba,salix_sp_ba,sorbus_intermedia_ba,corylus_avellana_ba,fagus_sylvatica_ba,tilia_cordata_ba,pinus_sylvestris_ba,fraxinus_excelsior_ba,total_ba
+Karla,NV,control,2003,NV25,1,5,NA,NA,Frangula alnus,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,1,5,NA,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,1,5,NA,NA,Quercus sp.,59,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,2,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,2,5,NA,NA,Quercus sp.,39,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,3,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,3,5,NA,NA,Quercus sp.,68,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,3,5,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,4,5,NA,NA,Frangula alnus,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,4,5,NA,NA,Populus tremula,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV25,4,5,NA,NA,Quercus sp.,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV45,1,5,NA,NA,Frangula alnus,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV45,1,5,NA,NA,Quercus sp.,111,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2003,NV45,1,5,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,1,5,25,5.9,Frangula alnus,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,1,5,25,5.9,Populus tremula,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,1,5,25,5.9,Quercus sp.,54,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,2,5,20,NA,Frangula alnus,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,2,5,20,NA,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,3,5,22.5,5.4,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,3,5,22.5,5.4,Quercus sp.,49,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,3,5,22.5,5.4,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,4,5,30,NA,Frangula alnus,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,4,5,30,NA,Populus tremula,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,4,5,30,NA,Quercus sp.,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV25,4,5,30,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV45,1,5,30,6,Frangula alnus,16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV45,1,5,30,6,Quercus sp.,74,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2005,NV45,1,5,30,6,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,1,5,NA,NA,Betula pubescens,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,1,5,NA,NA,Frangula alnus,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,1,5,NA,NA,Populus tremula,23,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,1,5,NA,NA,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,1,5,NA,NA,Ribes alpinum,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,1,5,NA,NA,Sorbus aucuparia,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,2,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,2,5,NA,NA,Populus tremula,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,2,5,NA,NA,Quercus sp.,40,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,2,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,4,5,NA,NA,Frangula alnus,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,4,5,NA,NA,Populus tremula,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,4,5,NA,NA,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO35,4,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,2,2,NA,NA,Frangula alnus,18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,2,2,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,2,3,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,2,3,NA,NA,Quercus sp.,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,2,3,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,3,5,NA,NA,Frangula alnus,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,3,5,NA,NA,Populus tremula,16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,3,5,NA,NA,Quercus sp.,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,3,5,NA,NA,Sorbus aucuparia,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,3,5,NA,NA,Sorbus intermedia,27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,4,5,NA,NA,Populus tremula,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,4,5,NA,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2003,SO55,4,5,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,1,5,62.5,NA,Betula sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,1,5,62.5,NA,Frangula alnus,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,1,5,62.5,NA,Populus tremula,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,1,5,62.5,NA,Quercus sp.,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,1,5,62.5,NA,Ribes sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,1,5,62.5,NA,Sorbus aucuparia,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,2,5,35,6.6,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,2,5,35,6.6,Populus tremula,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,2,5,35,6.6,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,2,5,35,6.6,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO35,4,5,NA,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO55,2,5,67.5,6.4,Frangula alnus,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO55,2,5,67.5,6.4,Quercus sp.,18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO55,2,5,67.5,6.4,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO55,3,5,NA,NA,Quercus sp.,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO55,3,5,NA,NA,Sorbus intermedia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2005,SO55,4,5,NA,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,1,5,NA,NA,Acer platanoides,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,1,5,NA,NA,Frangula alnus,101,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,1,5,NA,NA,Quercus sp.,46,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,1,5,NA,NA,Sorbus aucuparia,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,1,5,NA,NA,Ulmus glabra,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,3,5,NA,NA,Fagus sylvatica,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,3,5,NA,NA,Frangula alnus,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,3,5,NA,NA,Quercus sp.,17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,3,5,NA,NA,Sorbus aucuparia,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,4,5,NA,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,4,5,NA,NA,Alnus sp.,27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,4,5,NA,NA,Frangula alnus,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,4,5,NA,NA,Quercus sp.,35,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO105,4,5,NA,NA,Sorbus aucuparia,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,2,5,NA,NA,Frangula alnus,64,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,2,5,NA,NA,Quercus sp.,34,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,2,5,NA,NA,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Frangula alnus,54,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Prunus padus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Quercus sp.,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Sorbus aucuparia,32,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Tilia cordata,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,3,5,NA,NA,Unknown sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Acer platanoides,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Fagus sylvatica,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Frangula alnus,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Quercus sp.,107,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Sorbus aucuparia,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2003,NO85,4,5,NA,NA,Tilia cordata,70,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,1,5,60,NA,Acer platanoides,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,1,5,60,NA,Frangula alnus,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,1,5,60,NA,Quercus sp.,32,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,1,5,60,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,1,5,60,NA,Ulmus glabra,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Acer platanoides,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Crataegus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Fagus sylvatica,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Frangula alnus,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Quercus sp.,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,3,5,55,NA,Sorbus aucuparia,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,4,5,60,5.8,Acer platanoides,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,4,5,60,5.8,Alnus sp.,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,4,5,60,5.8,Frangula alnus,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,4,5,60,5.8,Quercus sp.,36,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO105,4,5,60,5.8,Sorbus aucuparia,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO85,2,5,60,5.9,Frangula alnus,49,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO85,2,5,60,5.9,Quercus sp.,26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO85,2,5,60,5.9,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO85,3,5,45,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2005,NO85,4,5,60,NA,Quercus sp.,97,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,1,5,NA,NA,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,1,5,NA,NA,Quercus sp.,20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,2,5,NA,NA,Picea abies,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,2,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,2,5,NA,NA,Sorbus aucuparia,24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,3,5,NA,NA,Quercus sp.,18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,3,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,4,5,NA,NA,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,4,5,NA,NA,Quercus sp.,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV35,4,5,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,1,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,1,5,NA,NA,Frangula alnus,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,1,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,1,5,NA,NA,Sorbus aucuparia,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,2,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,2,5,NA,NA,Sorbus aucuparia,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,2,5,NA,NA,Tilia cordata,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,2,5,NA,NA,Viburnum opulus,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,3,5,NA,NA,Corylus avellana,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,3,5,NA,NA,Crataegus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,3,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,3,5,NA,NA,Sorbus aucuparia,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,4,5,NA,NA,Acer platanoides,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,4,5,NA,NA,Quercus sp.,20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,4,5,NA,NA,Sorbus aucuparia,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2003,SV55,4,5,NA,NA,Viburnum opulus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,1,5,20,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,1,5,20,NA,Corylus avellana,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,1,5,20,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,2,5,30,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,3,5,25,NA,Quercus sp.,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,4,5,25,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV35,4,5,25,NA,Quercus sp.,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,1,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,2,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,3,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,4,5,25,5.8,Crataegus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,4,5,25,5.8,Quercus sp.,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,4,5,25,5.8,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2005,SV55,4,5,25,5.8,Viburnum opulus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,1,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,1,5,NA,NA,Picea abies,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,1,5,NA,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,1,5,NA,NA,Sorbus aucuparia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,2,5,NA,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,2,5,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,3,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,4,5,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,4,5,NA,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V55,4,5,NA,NA,Sorbus aucuparia,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,1,5,NA,NA,Betula pubescens,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,1,5,NA,NA,Picea abies,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,1,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,1,5,NA,NA,Sorbus aucuparia,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,2,5,NA,NA,Picea abies,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,2,5,NA,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,2,5,NA,NA,Quercus sp.,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,2,5,NA,NA,Sorbus aucuparia,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,3,5,NA,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,3,5,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,3,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2003,V75,4,5,NA,NA,Quercus sp.,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,1,5,25,6.2,Picea abies,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,1,5,25,6.2,Populus tremula,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,1,5,25,6.2,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,1,5,25,6.2,Sorbus aucuparia,18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,2,5,35,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,2,5,35,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,3,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,4,5,45,6.2,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,4,5,45,6.2,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V55,4,5,45,6.2,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V75,1,5,NA,NA,Picea abies,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V75,1,5,NA,NA,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V75,2,5,50,NA,Picea abies,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V75,2,5,50,NA,Quercus sp.,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V75,3,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2005,V75,4,5,15,6.3,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,1,5,NA,NA,Betula sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,1,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,1,5,NA,NA,Sorbus aucuparia,16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,2,5,NA,NA,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,2,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,3,5,NA,NA,Betula sp.,37,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,3,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,3,5,NA,NA,Populus tremula,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,3,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,4,5,NA,NA,Betula pubescens,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,4,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö25,4,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,1,5,NA,NA,Betula sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,1,5,NA,NA,Pinus sylvestris,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,1,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,2,5,NA,NA,Betula sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,2,5,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,2,5,NA,NA,Populus tremula,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,2,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,2,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,3,5,NA,NA,Populus tremula,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,3,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,4,5,NA,NA,Betula sp.,24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,4,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,4,5,NA,NA,Pinus sylvestris,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,4,5,NA,NA,Populus tremula,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,4,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2003,Ö45,4,5,NA,NA,Unknown sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,1,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,1,5,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,2,5,65,6,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,3,5,NA,NA,Betula sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,3,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,4,5,85,6.2,Betula sp.,17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,4,5,85,6.2,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö25,4,5,85,6.2,Sorbus aucuparia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,1,5,75,NA,Betula sp.,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,1,5,75,NA,Pinus sylvestris,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,1,5,75,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,2,5,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,2,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,3,5,60,6.1,Betula sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,3,5,60,6.1,Populus tremula,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,3,5,60,6.1,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,3,5,60,6.1,Unknown sp. ,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2005,Ö45,4,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,1,5,NA,NA,Betula pubescens,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,1,5,NA,NA,Corylus avellana,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,1,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,1,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,2,NA,NA,Corylus avellana,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,2,NA,NA,Frangula alnus,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,2,NA,NA,Prunus avium,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,2,NA,NA,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,2,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,3,NA,NA,Frangula alnus,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,3,NA,NA,Prunus avium,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,3,NA,NA,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,2,3,NA,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,3,5,NA,NA,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,3,5,NA,NA,Prunus avium,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,3,5,NA,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,4,5,NA,NA,Prunus avium,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V35,4,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,1,5,NA,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,1,5,NA,NA,Frangula alnus,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,1,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,1,5,NA,NA,Sorbus aucuparia,27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,2,5,NA,NA,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,2,5,NA,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,3,5,NA,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,3,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,3,5,NA,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,3,5,NA,NA,Sorbus aucuparia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,4,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,4,5,NA,NA,Quercus sp.,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2003,V55,4,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,1,5,NA,NA,Corylus avellana,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,1,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,2,35,6.1,Corylus avellana,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,2,35,6.1,Prunus avium,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,2,35,6.1,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,2,35,6.1,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,3,35,6.1,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,3,35,6.1,Prunus avium,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,3,35,6.1,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,2,3,35,6.1,Sorbus aucuparia,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,3,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,3,5,NA,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V35,4,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,1,5,30,6.5,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,1,5,30,6.5,Sorbus aucuparia,25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,2,5,17.5,6.6,Corylus avellana,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,2,5,17.5,6.6,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,2,5,17.5,6.6,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,3,5,NA,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,4,5,60,5.8,Corylus avellana,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,4,5,60,5.8,Quercus sp.,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2005,V55,4,5,60,5.8,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,1,5,NA,NA,Betula sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,1,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,1,5,NA,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,1,5,NA,NA,Sorbus aucuparia,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,2,5,NA,NA,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,2,5,NA,NA,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,2,5,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,2,5,NA,NA,Quercus sp.,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,2,5,NA,NA,Sorbus aucuparia,25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,4,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,4,5,NA,NA,Prunus avium,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö35,4,5,NA,NA,Quercus sp.,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,1,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,1,5,NA,NA,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,1,5,NA,NA,Quercus sp.,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,2,5,NA,NA,Corylus avellana,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,2,5,NA,NA,Frangula alnus,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,2,5,NA,NA,Populus tremula,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,2,5,NA,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,3,5,NA,NA,Alnus glutinosa,30,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,3,5,NA,NA,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,3,5,NA,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,3,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,4,5,NA,NA,Corylus avellana,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2003,Ö55,4,5,NA,NA,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,1,5,NA,NA,Betula sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,1,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,2,5,55,6.6,Betula sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,2,5,55,6.6,Corylus avellana,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,2,5,55,6.6,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,2,5,55,6.6,Fraxinus excelsior,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,2,5,55,6.6,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,2,5,55,6.6,Quercus sp.,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö35,4,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,1,5,55,6.4,Corylus avellana,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,1,5,55,6.4,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,1,5,55,6.4,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,2,5,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,2,5,NA,NA,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,3,5,NA,NA,Alnus glutinosa,30,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,3,5,NA,NA,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,3,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,4,5,55,6.2,Corylus avellana,60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,4,5,55,6.2,Prunus avium,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,4,5,55,6.2,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2005,Ö55,4,5,55,6.2,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,1,2,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,1,3,NA,NA,Fraxinus excelsior,65,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,1,3,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,2,5,NA,NA,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,2,5,NA,NA,Fraxinus excelsior,115,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,2,5,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,2,5,NA,NA,Sorbus aucuparia,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,3,5,NA,NA,Corylus avellana,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,3,5,NA,NA,Fraxinus excelsior,62,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,3,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,4,5,NA,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,4,5,NA,NA,Fraxinus excelsior,56,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,4,5,NA,NA,Populus tremula,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,4,5,NA,NA,Quercus sp.,16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V75,4,5,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,1,2,NA,NA,Fraxinus excelsior,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,1,2,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,1,3,NA,NA,Fraxinus excelsior,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,1,3,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,2,2,NA,NA,Quercus sp.,16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,2,3,NA,NA,Fraxinus excelsior,137,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,2,3,NA,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,2,3,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,3,5,NA,NA,Fraxinus excelsior,97,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,3,5,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,3,5,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,4,2,NA,NA,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,4,3,NA,NA,Corylus avellana,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,4,3,NA,NA,Fraxinus excelsior,45,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,4,3,NA,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2003,V95,4,3,NA,NA,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,1,2,15,6.1,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,1,3,15,6.1,Fraxinus excelsior,76,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,1,3,15,6.1,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,2,5,15,NA,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,2,5,15,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,2,5,15,NA,Sorbus aucuparia,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,3,5,10,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,4,5,12.5,6.4,Fraxinus excelsior,220,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,4,5,12.5,6.4,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,4,5,12.5,6.4,Quercus sp.,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V75,4,5,12.5,6.4,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,1,2,12.5,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,1,3,12.5,NA,Fraxinus excelsior,18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,1,3,12.5,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,1,3,12.5,NA,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,2,2,15,5.9,Fraxinus excelsior,152,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,2,2,15,5.9,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,2,2,15,5.9,Quercus sp.,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,2,3,15,5.9,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,2,3,15,5.9,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,3,5,10,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,4,5,10,6.5,Corylus avellana,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,4,5,10,6.5,Fraxinus excelsior,310,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,4,5,10,6.5,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2005,V95,4,5,10,6.5,Quercus sp.,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,2,NA,NA,Fraxinus excelsior,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,2,NA,NA,Populus tremula,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,2,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,2,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,3,NA,NA,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,3,NA,NA,Fraxinus excelsior,33,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,3,NA,NA,Populus tremula,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,3,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,1,3,NA,NA,Sorbus aucuparia,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,2,2,NA,NA,Populus tremula,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,2,2,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,2,3,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,2,3,NA,NA,Fraxinus excelsior,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,2,3,NA,NA,Populus tremula,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,2,3,NA,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,2,NA,NA,Fraxinus excelsior,47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,2,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,3,NA,NA,Corylus avellana,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,3,NA,NA,Fraxinus excelsior,81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,3,NA,NA,Populus tremula,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,3,NA,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,3,3,NA,NA,Sorbus aucuparia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,2,NA,NA,Alnus sp. ,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,2,NA,NA,Populus tremula,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,2,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,3,NA,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,3,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,3,NA,NA,Fraxinus excelsior,41,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,3,NA,NA,Populus tremula,19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö75,4,3,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,2,NA,NA,Fraxinus excelsior,31,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,2,NA,NA,Populus tremula,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,2,NA,NA,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,3,NA,NA,Fraxinus excelsior,70,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,3,NA,NA,Populus tremula,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,3,NA,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,2,3,NA,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,2,NA,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,2,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Acer platanoides,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Fraxinus excelsior,67,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,3,3,NA,NA,Viburnum opulus,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,4,5,NA,NA,Alnus glutinosa,27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,4,5,NA,NA,Betula sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,4,5,NA,NA,Frangula alnus,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,4,5,NA,NA,Fraxinus excelsior,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2003,Ö95,4,5,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,1,2,45,NA,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,1,3,45,NA,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,2,50,6.5,Corylus avellana,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,2,50,6.5,Fraxinus excelsior,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,2,50,6.5,Populus tremula,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,2,50,6.5,Quercus sp.,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,2,50,6.5,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,3,50,6.5,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,3,50,6.5,Fraxinus excelsior,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,3,50,6.5,Populus tremula,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,3,50,6.5,Quercus sp.,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,2,3,50,6.5,Tilia cordata,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,3,3,NA,NA,Corylus avellana,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,3,3,NA,NA,Fraxinus excelsior,21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,3,3,NA,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,2,55,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,3,55,NA,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,3,55,NA,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,3,55,NA,Fraxinus excelsior,165,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,3,55,NA,Populus tremula,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,3,55,NA,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö75,4,3,55,NA,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,2,2,60,6.6,Fraxinus excelsior,59,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,2,2,60,6.6,Populus tremula,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,2,2,60,6.6,Quercus sp.,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,2,3,60,6.6,Fraxinus excelsior,55,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,2,3,60,6.6,Populus tremula,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,2,3,60,6.6,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,3,3,NA,NA,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Alnus glutinosa,28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Betula sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Frangula alnus,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Fraxinus excelsior,59,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2005,Ö95,4,5,50,NA,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,1,5,29.537595835,4.42,Populus tremula,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,1,5,29.537595835,4.42,Quercus sp.,27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,2,5,24.735922917499998,4.32,Frangula alnus,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,2,5,24.735922917499998,4.32,Quercus sp.,19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,2,5,24.735922917499998,4.32,Sorbus aucuparia,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,3,5,26.0325312525,4.1,Frangula alnus,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,3,5,26.0325312525,4.1,Populus tremula,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,3,5,26.0325312525,4.1,Quercus sp.,46,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,3,5,26.0325312525,4.1,Sorbus aucuparia,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,4,5,25.826670835,4.1,Frangula alnus,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,4,5,25.826670835,4.1,Populus tremula,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,4,5,25.826670835,4.1,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV25,4,5,25.826670835,4.1,Sorbus aucuparia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,NV,control,2025,NV45,1,5,21.420454165000002,4.23,Frangula alnus,2,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,1,5,21.420454165000002,4.23,Quercus sp.,57,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,1,5,21.420454165000002,4.23,Sorbus aucuparia,2,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,2,5,24.86993125,4.82,Frangula alnus,16,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,2,5,24.86993125,4.82,Populus tremula,14,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,2,5,24.86993125,4.82,Quercus sp.,4,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,2,5,24.86993125,4.82,Sorbus aucuparia,1,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,3,5,21.427322915,4.99,Frangula alnus,6,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,3,5,21.427322915,4.99,Populus tremula,9,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,3,5,21.427322915,4.99,Quercus sp.,13,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,3,5,21.427322915,4.99,Sorbus aucuparia,3,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,4,5,13.2173604175,4.39,Acer platanoides,1,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,4,5,13.2173604175,4.39,Picea abies,1,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,4,5,13.2173604175,4.39,Quercus sp.,12,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,NV,control,2025,NV45,4,5,13.2173604175,4.39,Sorbus aucuparia,9,2.008276168728615,0.0718187893973335,0.22346983311177915,0.007177900059660641,0.008252197739691115,0.2208835609385707,0.1540542873904098,0,0,0,0,0,0,0,0,2.69393273736606
+Karla,SO,thinned,2025,SO35,1,5,16.73526875,4.25,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,1,5,16.73526875,4.25,Frangula alnus,18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,1,5,16.73526875,4.25,Populus tremula,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,1,5,16.73526875,4.25,Quercus sp.,39,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,1,5,16.73526875,4.25,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,2,5,24.2474145825,4.52,Frangula alnus,20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,2,5,24.2474145825,4.52,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,2,5,24.2474145825,4.52,Quercus sp.,17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,2,5,24.2474145825,4.52,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,3,5,12.186091665,4.71,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,3,5,12.186091665,4.71,Frangula alnus,16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,3,5,12.186091665,4.71,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,3,5,12.186091665,4.71,Quercus sp.,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,3,5,12.186091665,4.71,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,4,5,11.6866500025,4.27,Populus tremula,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO35,4,5,11.6866500025,4.27,Quercus sp.,14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Karla,SO,thinned,2025,SO55,1,5,17.2897437475,4.37,Frangula alnus,3,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,1,5,17.2897437475,4.37,Quercus sp.,110,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,2,5,17.9637395825,4.6,Frangula alnus,3,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,2,5,17.9637395825,4.6,Quercus sp.,9,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,3,5,14.541820835,4.8,Populus tremula,1,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,3,5,14.541820835,4.8,Quercus sp.,3,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,4,5,11.9340104175,4.75,Frangula alnus,5,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Karla,SO,thinned,2025,SO55,4,5,11.9340104175,4.75,Quercus sp.,12,1.3335933519808418,0,0.28148986564202017,0,0.006692476662790574,1.2656897808044507,0.1802512352955525,0.016209958338252027,0.011244315724565614,0.0060558558150577025,0,0,0,0,0,3.1012268402635312
+Rya åsar,NO,thinned,2025,NO105,1,5,10.73114375075,5.19,Fagus sylvatica,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,1,5,10.73114375075,5.19,Frangula alnus,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,1,5,10.73114375075,5.19,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,1,5,10.73114375075,5.19,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,1,5,10.73114375075,5.19,Ulmus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,2,5,12.736589585,4.43,Frangula alnus,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,2,5,12.736589585,4.43,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,3,5,14.2970375025,4.8,Acer platanoides,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,3,5,14.2970375025,4.8,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,3,5,14.2970375025,4.8,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO105,4,5,11.75993333425,4.89,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,NO,thinned,2025,NO80,1,5,14.3686291675,4.44,Frangula alnus,25,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,1,5,14.3686291675,4.44,Quercus sp.,1,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,1,5,14.3686291675,4.44,Sorbus aucuparia,7,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,2,5,15.500462500000001,4.94,Corylus avellana,7,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,2,5,15.500462500000001,4.94,Frangula alnus,27,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,2,5,15.500462500000001,4.94,Picea abies,1,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,2,5,15.500462500000001,4.94,Quercus sp.,2,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,2,5,15.500462500000001,4.94,Sorbus aucuparia,11,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,2,5,15.500462500000001,4.94,Unknown sp.,1,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,3,5,13.9508270825,4.9,Corylus avellana,4,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,3,5,13.9508270825,4.9,Frangula alnus,37,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,3,5,13.9508270825,4.9,Quercus sp.,3,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,4,5,13.8972916675,4.79,Corylus avellana,1,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,4,5,13.8972916675,4.79,Frangula alnus,8,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,4,5,13.8972916675,4.79,Quercus sp.,23,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,NO,thinned,2025,NO80,4,5,13.8972916675,4.79,Sorbus aucuparia,3,2.6194719715046,0,0.0071619845373698185,0.06507060841112501,0,0,0.19703415241457414,0.015406224512715519,0,0,0.008411352952599333,0.014037489690304838,0.10263123842796451,0,0,3.029225022451253
+Rya åsar,SV,control,2025,SV35,1,5,19.2218729175,4.85,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2025,SV35,1,5,19.2218729175,4.85,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2025,SV35,2,5,14.5438208325,4.33,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2025,SV35,3,5,27.365860417500002,4.83,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2025,SV35,4,5,13.25283125,5.32,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2025,SV35,4,5,13.25283125,5.32,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Rya åsar,SV,control,2025,SV55,1,5,12.33052083175,4.1,Quercus sp.,0,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,2,5,14.6648645825,4.22,Quercus sp.,0,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,3,5,13.51978749925,4.8,Corylus avellana,1,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,3,5,13.51978749925,4.8,Fagus sylvatica,1,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,3,5,13.51978749925,4.8,Quercus sp.,1,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,3,5,13.51978749925,4.8,Sorbus aucuparia,3,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,4,5,24.646745834999997,4.77,Quercus sp.,44,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Rya åsar,SV,control,2025,SV55,4,5,24.646745834999997,4.77,Viburnum opulus,6,1.506531405366312,0.13949954327855327,0.28082937147755105,0,1.0958632119030365,0,0.3191061999848775,0.03679668499318004,0,0,0.08645311113364412,0.03653407890678149,0,0,0,3.501613607043936
+Sandviksås,V,control,2025,V55,1,5,20.911241665,4.59,Quercus sp.,1,2.545082825428199,0,0.5065353353302406,0,2.7830676138929578,0,0.08072352350584827,0.02856040277807975,0,0,0,0,0,0,0,5.943969700935325
+Sandviksås,V,control,2025,V55,2,5,16.64600625,3.61,Populus tremula,1,2.545082825428199,0,0.5065353353302406,0,2.7830676138929578,0,0.08072352350584827,0.02856040277807975,0,0,0,0,0,0,0,5.943969700935325
+Sandviksås,V,control,2025,V55,2,5,16.64600625,3.61,Quercus sp.,0,2.545082825428199,0,0.5065353353302406,0,2.7830676138929578,0,0.08072352350584827,0.02856040277807975,0,0,0,0,0,0,0,5.943969700935325
+Sandviksås,V,control,2025,V55,3,5,12.3055229175,4.33,Quercus sp.,0,2.545082825428199,0,0.5065353353302406,0,2.7830676138929578,0,0.08072352350584827,0.02856040277807975,0,0,0,0,0,0,0,5.943969700935325
+Sandviksås,V,control,2025,V55,4,5,16.559870834999998,4.1,Quercus sp.,0,2.545082825428199,0,0.5065353353302406,0,2.7830676138929578,0,0.08072352350584827,0.02856040277807975,0,0,0,0,0,0,0,5.943969700935325
+Sandviksås,V,control,2025,V75,1,5,11.6045166675,3.7,Picea abies,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,1,5,11.6045166675,3.7,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,2,5,13.7799416675,4.01,Picea abies,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,2,5,13.7799416675,4.01,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,2,5,13.7799416675,4.01,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,3,5,15.714922917500001,4.4,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,4,5,14.5706083325,3.64,Picea abies,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,V75,4,5,14.5706083325,3.64,Quercus sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,random,opening 1,5,15.38196875,4.16,Picea abies,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,random,opening 1,5,15.38196875,4.16,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,random,opening 2,5,16.01709375,4.55,Picea abies,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,V,control,2025,random,opening 2,5,16.01709375,4.55,Quercus sp.,22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,1,5,47.20015,4.71,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,1,5,47.20015,4.71,Quercus sp.,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,1,5,47.20015,4.71,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,2,5,33.8374833325,3.99,Corylus avellana,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,2,5,33.8374833325,3.99,Picea abies,9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,2,5,33.8374833325,3.99,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,3,5,43.719545835000005,4.77,Betula pendula,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,3,5,43.719545835000005,4.77,Picea abies,13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,3,5,43.719545835000005,4.77,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,3,5,43.719545835000005,4.77,Quercus sp.,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,3,5,43.719545835000005,4.77,Sorbus aucuparia,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,4,5,39.8569000025,4.37,Betula pendula,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,4,5,39.8569000025,4.37,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö25,4,5,39.8569000025,4.37,Sorbus aucuparia,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sandviksås,Ö,thinned,2025,Ö45,1,5,19.7200395825,4.13,Picea abies,1,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,1,5,19.7200395825,4.13,Quercus sp.,34,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,1,5,19.7200395825,4.13,Sorbus aucuparia,5,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,2,5,36.9138833325,4.75,Betula pendula,16,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,2,5,36.9138833325,4.75,Betula sp.,1,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,2,5,36.9138833325,4.75,Picea abies,14,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,2,5,36.9138833325,4.75,Populus tremula,3,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,2,5,36.9138833325,4.75,Quercus sp.,0,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,3,5,32.97441875,NA,Betula pendula,1,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,3,5,32.97441875,NA,Quercus sp.,2,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,4,5,16.1444354175,4.73,Betula pendula,5,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,4,5,16.1444354175,4.73,Picea abies,4,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,4,5,16.1444354175,4.73,Populus tremula,7,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,4,5,16.1444354175,4.73,Quercus sp.,2,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Sandviksås,Ö,thinned,2025,Ö45,4,5,16.1444354175,4.73,Unknown sp.,1,0.9316946108073594,0.11268984782136389,0,0,0.3606775413512041,0.5756882749095614,0.06891420675625846,0,0,0,0,0,0,0.20371867132251928,0,2.2533831529682664
+Skölvene,V,control,2025,V35,1,5,13.633412499999999,4.53,Corylus avellana,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,1,5,13.633412499999999,4.53,Quercus sp.,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,1,5,13.633412499999999,4.53,Sorbus aucuparia,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,2,5,12.0943541675,4.68,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,2,5,12.0943541675,4.68,Quercus sp.,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,2,5,12.0943541675,4.68,Unknown sp.,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,3,5,13.745304164250001,4.82,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,4,5,12.67972916675,5.28,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,4,5,12.67972916675,5.28,Fraxinus excelsior,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,4,5,12.67972916675,5.28,Prunus padus,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V35,4,5,12.67972916675,5.28,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,V,control,2025,V55,1,5,11.62188124825,4.82,Quercus sp.,3,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,1,5,11.62188124825,4.82,Sorbus aucuparia,1,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,2,5,12.12025625,4.13,Corylus avellana,1,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,2,5,12.12025625,4.13,Quercus sp.,0,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,2,5,12.12025625,4.13,Sorbus aucuparia,1,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,3,5,18.06656875,3.68,Quercus sp.,2,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,3,5,18.06656875,3.68,Sorbus aucuparia,10,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,V,control,2025,V55,4,5,14.143370834999999,4.19,Quercus sp.,2,2.3507145228880373,0.831737179944253,0.2094721321789514,0,0.23179365069552899,0,0.15530365581633931,0,0,0,0.21147748788639492,0,0,0,0,3.990498629409505
+Skölvene,Ö,thinned,2025,Ö35,1,5,11.2708708325,4.2,Corylus avellana,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,1,5,11.2708708325,4.2,Frangula alnus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,1,5,11.2708708325,4.2,Quercus sp.,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,1,5,11.2708708325,4.2,Sorbus aucuparia,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,2,5,19.5811520825,4.59,Betula pendula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,2,5,19.5811520825,4.59,Corylus avellana,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,2,5,19.5811520825,4.59,Quercus sp.,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,3,5,17.3885,4.6,Alnus glutinosa,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,3,5,17.3885,4.6,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,3,5,17.3885,4.6,Fraxinus excelsior,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,3,5,17.3885,4.6,Prunus padus,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,3,5,17.3885,4.6,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,3,5,17.3885,4.6,Sorbus aucuparia,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,4,5,7.90978958325,4.1,Corylus avellana,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö35,4,5,7.90978958325,4.1,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Skölvene,Ö,thinned,2025,Ö55,1,5,9.34491041725,4.51,Corylus avellana,1,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,1,5,9.34491041725,4.51,Quercus sp.,6,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,1,5,9.34491041725,4.51,Sorbus aucuparia,3,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,2,5,16.413341665,4.52,Corylus avellana,1,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,2,5,16.413341665,4.52,Frangula alnus,6,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,2,5,16.413341665,4.52,Populus tremula,3,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,2,5,16.413341665,4.52,Quercus sp.,4,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,2,5,16.413341665,4.52,Sorbus aucuparia,3,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,3,5,9.816199999,4.18,Quercus sp.,24,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,3,5,9.816199999,4.18,Sorbus aucuparia,2,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,4,5,6.3990916667499995,4.29,Corylus avellana,1,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Skölvene,Ö,thinned,2025,Ö55,4,5,6.3990916667499995,4.29,Quercus sp.,12,1.3866397841361011,0.21119896627300558,0.12138768013659801,0,0.004615501147038329,0.24370641827820913,0.026777864415307717,0,0,0,0.22409849618561664,0,0,0,0,2.2184247105718766
+Östadkulle,V,control,2025,V75,1,5,9.3533645835,4.73,Corylus avellana,9,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,1,5,9.3533645835,4.73,Fraxinus excelsior,29,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,1,5,9.3533645835,4.73,Quercus sp.,1,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,2,5,7.5066979169999994,4.65,Corylus avellana,7,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,2,5,7.5066979169999994,4.65,Picea abies,1,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,2,5,7.5066979169999994,4.65,Quercus sp.,0,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,3,5,8.4882125,3.85,Corylus avellana,1,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,3,5,8.4882125,3.85,Fraxinus excelsior,10,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,3,5,8.4882125,3.85,Populus tremula,1,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,3,5,8.4882125,3.85,Quercus sp.,1,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,4,5,9.436158334249999,4.29,Picea abies,2,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V75,4,5,9.436158334249999,4.29,Quercus sp.,0,2.5600832041847985,0.23819964798818483,0.17955891012885175,0,0.9013118807692305,0,0.13957116312766196,0,0,0,0.24873572300285882,0,0,0,0.07557485237716738,4.343035381578754
+Östadkulle,V,control,2025,V95,1,5,12.994616667499999,4.82,Corylus avellana,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,1,5,12.994616667499999,4.82,Fraxinus excelsior,33,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,1,5,12.994616667499999,4.82,Populus tremula,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,1,5,12.994616667499999,4.82,Quercus sp.,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,2,5,12.050704167500001,4.74,Fraxinus excelsior,142,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,2,5,12.050704167500001,4.74,Populus tremula,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,2,5,12.050704167500001,4.74,Quercus sp.,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,3,5,13.597037499999999,5.05,Corylus avellana,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,3,5,13.597037499999999,5.05,Fraxinus excelsior,43,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,3,5,13.597037499999999,5.05,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,4,5,14.70379375,4.53,Corylus avellana,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,4,5,14.70379375,4.53,Fraxinus excelsior,73,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,V,control,2025,V95,4,5,14.70379375,4.53,Quercus sp.,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö75,1,5,9.17927083425,5.49,Fraxinus excelsior,22,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,1,5,9.17927083425,5.49,Picea abies,1,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,1,5,9.17927083425,5.49,Quercus sp.,0,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,2,5,10.443229166,4.79,Corylus avellana,4,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,2,5,10.443229166,4.79,Fraxinus excelsior,1,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,2,5,10.443229166,4.79,Quercus sp.,2,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,3,5,27.194977084999998,4.43,Betula sp.,3,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,3,5,27.194977084999998,4.43,Corylus avellana,10,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,3,5,27.194977084999998,4.43,Picea abies,1,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,3,5,27.194977084999998,4.43,Populus tremula,10,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,3,5,27.194977084999998,4.43,Quercus sp.,6,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,4,5,10.148789585,4.95,Corylus avellana,4,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,4,5,10.148789585,4.95,Fraxinus excelsior,5,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö75,4,5,10.148789585,4.95,Quercus sp.,1,1.0565598322860519,0.30714568575552487,0,0,0.0035093724236262107,0,0.02935617884912085,0,0,0,0.2489983291297074,0,0.18357757923638432,0,0,1.8291469776804157
+Östadkulle,Ö,thinned,2025,Ö89,1,5,8.79674375075,4.58,Corylus avellana,26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,1,5,8.79674375075,4.58,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,2,5,7.344706250250001,5.37,Corylus avellana,11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,2,5,7.344706250250001,5.37,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,3,5,6.0610687500000004,3.86,Corylus avellana,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,3,5,6.0610687500000004,3.86,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,4,5,6.90690625,4.66,Fraxinus excelsior,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,4,5,6.90690625,4.66,Populus tremula,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Östadkulle,Ö,thinned,2025,Ö89,4,5,6.90690625,4.66,Quercus sp.,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
