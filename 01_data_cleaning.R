@@ -9,6 +9,7 @@ library(janitor)
 #Load datasets
 seedling_raw <- read_csv2("raw_data/seedling_data_raw.csv")
 old_data_raw <- read.csv("raw_data/old_data_raw.csv", sep = ";", dec = ".")
+old_canopy_raw <- read_csv2("raw_data/old_canopy_raw.csv")
 canopy_raw <- read_csv2("raw_data/canopy_data_raw.csv")
 tree_raw <- read_csv2("raw_data/tree_data_raw.csv")
 soil_raw <- read_csv2("raw_data/soil_data_raw.csv")
@@ -199,10 +200,26 @@ old_data_raw <- old_data_raw %>%
   mutate(diameter_cm = na_if(diameter_cm, "")) %>% 
   select(site, plot, treatment, year, (everything()))
 
+
+#Add old canopy data
+#First convert canopy to character
+old_canopy_raw <- old_canopy_raw %>%
+  mutate(subplot = as.character(subplot))
+
+#Join
+old_data_raw <- old_data_raw %>% 
+  left_join(old_canopy_raw %>% 
+            select(site, plot, year, transect, subplot, canopy_openness),
+            by = c("site", "plot", "year", "transect", "subplot")) %>% 
+  mutate(canopy_openness = coalesce(canopy_openness.x, canopy_openness.y)) %>% 
+  select(-canopy_openness.x, -canopy_openness.y) %>% 
+  select(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, everything())
+
+
 #Remove data from 2001 (before thinning) and 2002 (only recorded seedlings <20 cm)
 #Remove the extra subplot from 2003 with unknown size
-#Remove subplots that were within exclosures
 #Remove raspberry Rubus idaeus since they were not always recorded
+#Remove subplots that were within exclosures
 #Remove trees larger than 5 cm DBH
 #Remove subplots that were not checked in 2003 and 2005 so that these zeros don't skew the dataset
 old_data_03_05 <- old_data_raw %>% 
