@@ -4,15 +4,19 @@ install.packages("janitor")
 
 library(readr)
 library(dplyr)
+library(tidyr)
 library(janitor)
 
 #Load datasets
 seedling_raw <- read_csv2("raw_data/seedling_data_raw.csv")
-old_data_raw <- read.csv("raw_data/old_data_raw.csv", sep = ";", dec = ".")
-old_canopy_raw <- read_csv2("raw_data/old_canopy_raw.csv")
 canopy_raw <- read_csv2("raw_data/canopy_data_raw.csv")
 tree_raw <- read_csv2("raw_data/tree_data_raw.csv")
 soil_raw <- read_csv2("raw_data/soil_data_raw.csv")
+old_data_raw <- read.csv("raw_data/old_data_raw.csv", sep = ";", dec = ".")
+old_canopy_raw <- read_csv2("raw_data/old_canopy_raw.csv")
+old_tree_raw <- read_csv2("raw_data/tradstruktur_raw.csv")
+thinned_tree_raw <- read_csv2("raw_data/tradstruktur_avverk_raw.csv")
+tree_species <- read_csv2("raw_data/tradslag.csv")
 
 #Remove the two last empty rows of soil_raw
 soil_raw <- soil_raw %>%
@@ -131,7 +135,7 @@ data_2025_no_shoots <- data_2025_no_shoots %>%
 
 
 #Add tree basal area to both datasets
-#Calculate basal area for every individual tree
+#Calculate basal area in m^2 for every individual tree
 tree_ba <- tree_raw %>% 
   mutate(basal_area = pi * (diameter_cm/100/2)^2)
 
@@ -279,11 +283,155 @@ calculate_seedling_density_old <- function(data) {
   return(seedling_density)
 }
 
-#Complete old dataset including trunk shoots
+#Dataset including trunk shoots
 data_03_05_all <- calculate_seedling_density_old(data_03_05_all)
 
-#Complete old dataset excluding trunk shoots
+#Dataset excluding trunk shoots
 data_03_05_no_shoots <- calculate_seedling_density_old(data_03_05_no_shoots)
+
+
+#Calculate basal area in 2003
+#Filter my sites and the sections that make up ~0,3 ha (core area)
+old_trees_core <- old_tree_raw %>% 
+  filter(
+    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(351:554)) |
+    (Omrkod == "KAR" & Yta == "NV" & BSektion %in% c(251:454)) |
+    (Omrkod == "RYA" & Yta == "NO" & BSektion %in% c(851:1054)) |
+    (Omrkod == "RYA" & Yta == "SV") |
+    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(251:454)) |
+    (Omrkod == "SAN" & Yta == "V") |
+    (Omrkod == "SKÖ" & BSektion %in% c(351:554)) |
+    (Omrkod == "ÖST" & BSektion %in% c(751:954))) %>% 
+  mutate(area_type = "core")
+
+thinned_trees_core <- thinned_tree_raw %>% 
+  filter(
+    (Omrkod == "KAR" & BSektion %in% c(350:550)) |
+    (Omrkod == "RYA" & BSektion %in% c(850:1050)) |
+    (Omrkod == "SAN" & BSektion %in% c(250:450)) | 
+    (Omrkod == "SKÖ" & BSektion %in% c(350:550)) |
+    (Omrkod == "ÖST" & BSektion %in% c(750:950))) %>% 
+  mutate(area_type = "core")
+
+#Filter extended area
+old_trees_extended <- old_tree_raw %>% 
+  filter(
+    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(251:954)) |
+    (Omrkod == "KAR" & Yta == "NV" & BSektion %in% c(251:454)) |
+    (Omrkod == "RYA" & Yta == "NO" & BSektion %in% c(751:1054)) |
+    (Omrkod == "RYA" & Yta == "SV") |
+    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(251:454, 651:754)) |
+    (Omrkod == "SAN" & Yta == "V") |
+    (Omrkod == "SKÖ" & Yta == "Ö" & BSektion %in% c(251:754)) |
+    (Omrkod == "SKÖ" & Yta == "V" & BSektion %in% c(251:554)) |
+    (Omrkod == "ÖST" & Yta == "Ö" & BSektion %in% c(451:954)) |
+    (Omrkod == "ÖST" & Yta == "V" & BSektion %in% c(751:954))) %>% 
+  mutate(area_type = "extended")
+
+thinned_trees_extended <- thinned_tree_raw %>% 
+  filter(
+    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(250:950)) |
+    (Omrkod == "RYA" & Yta == "NO" & BSektion %in% c(750:1050)) |
+    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(250:450, 650:750)) |
+    (Omrkod == "SKÖ" & Yta == "Ö" & BSektion %in% c(250:750)) |
+    (Omrkod == "ÖST" & Yta == "Ö" & BSektion %in% c(450:950))) %>% 
+  mutate(area_type = "extended")
+
+#Combine to old_trees and thinned_trees
+old_trees <- bind_rows(old_trees_core, old_trees_extended)
+thinned_trees <- bind_rows(thinned_trees_core, thinned_trees_extended)
+
+#Decode the species
+old_trees <- old_trees %>% 
+  left_join(tree_species %>% 
+            select(Tradartkod, Trad_lati),
+            by = "Tradartkod")
+
+thinned_trees <- thinned_trees %>% 
+  left_join(tree_species %>% 
+            select(Tradartkod, Trad_lati),
+            by = "Tradartkod")
+
+#Merge Betula and Salix species to match my data
+old_trees <- old_trees %>% 
+  mutate(Trad_lati = case_when(
+    Trad_lati %in% c("Betula pendula", "Betula pubescens") ~ "Betula sp.",
+    Trad_lati == "Salix caprea" ~ "Salix sp.",
+    TRUE ~ Trad_lati))
+
+thinned_trees <- thinned_trees %>% 
+  mutate(Trad_lati = case_when(
+    Trad_lati %in% c("Betula pendula", "Betula pubescens") ~ "Betula sp.",
+    Trad_lati == "Salix caprea" ~ "Salix sp.",
+    TRUE ~ Trad_lati))
+
+#Calculate basal area in m^2, note that diameter is in mm, therefore /1000
+old_trees <- old_trees %>% 
+  mutate(basal_area = pi * (Diameter/1000/2)^2 * Antal)
+
+thinned_trees <- thinned_trees %>% 
+  mutate(basal_area = pi * (Diameter/1000/2)^2 * Antal)
+
+#Calculate basal area by species
+old_trees <- old_trees %>% 
+  group_by(Omrkod, Yta, Trad_lati, area_type) %>% 
+  summarise(basal_area = sum(basal_area), .groups = "drop")
+
+thinned_trees <- thinned_trees %>% 
+  group_by(Omrkod, Yta, Trad_lati, area_type) %>% 
+  summarise(thinned_ba = sum(basal_area), .groups = "drop")
+
+#Join and subtract the thinned basal area from old_trees
+old_trees <- old_trees %>% 
+  left_join(thinned_trees,
+            by = c("Omrkod", "Yta", "Trad_lati", "area_type")) %>% 
+  mutate(thinned_ba = replace_na(thinned_ba, 0),
+         basal_area = basal_area - thinned_ba) %>% 
+  select(Omrkod, Yta, Trad_lati, basal_area, area_type) %>% 
+  filter(basal_area > 0)
+
+#Add areas and scale basal_area to m^2/ha
+old_trees <- old_trees %>% 
+  mutate(area_ha = case_when(
+    area_type == "core" & Omrkod %in% c("KAR", "RYA", "ÖST") ~ 0.249,
+    area_type == "core" & Omrkod %in% c("SAN", "SKÖ") ~ 0.3,
+    area_type == "extended" & Omrkod == "KAR" & Yta == "SO" ~ 0.664,
+    area_type == "extended" & Omrkod == "KAR" & Yta == "NV" ~ 0.249,
+    area_type == "extended" & Omrkod == "RYA" & Yta == "NO" ~ 0.332,
+    area_type == "extended" & Omrkod == "RYA" & Yta == "SV" ~ 0.249,
+    area_type == "extended" & Omrkod == "SAN" & Yta == "Ö" ~ 0.5,
+    area_type == "extended" & Omrkod == "SAN" & Yta == "V" ~ 0.3,
+    area_type == "extended" & Omrkod == "SKÖ" & Yta == "Ö" ~ 0.6,
+    area_type == "extended" & Omrkod == "SKÖ" & Yta == "V" ~ 0.4,
+    area_type == "extended" & Omrkod == "ÖST" & Yta == "Ö" ~ 0.498,
+    area_type == "extended" & Omrkod == "ÖST" & Yta == "V" ~ 0.249),
+  basal_area = basal_area / area_ha)
+
+#Calculate total basal area
+old_trees <- old_trees %>% 
+  group_by(Omrkod, Yta, area_type) %>% 
+  mutate(total_ba = sum(basal_area))
+
+#Convert to wide and clean basal_area names
+old_trees <- old_trees %>% 
+  pivot_wider(names_from = Trad_lati,
+              values_from = basal_area,
+              values_fill = 0) %>% 
+  janitor::clean_names() %>% 
+  rename_with(~ paste0(.x, "_ba"),
+              -c(omrkod, yta, area_ha, total_ba, area_type))
+
+#Clean names
+old_trees <- old_trees %>% 
+  rename(site = omrkod,
+         plot = yta) %>% 
+  mutate(site = recode(site, 
+                       "KAR" = "Karla",
+                       "RYA" = "Rya åsar",
+                       "SAN" = "Sandviksås",
+                       "SKÖ" = "Skölvene",
+                       "ÖST" = "Östadkulle"))
+
 
 
 #Combine the old and new datasets and save as csv files
