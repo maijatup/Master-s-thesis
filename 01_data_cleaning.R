@@ -47,13 +47,10 @@ seedling_counts <- seedling_25 %>%
   group_by(site, plot, treatment, year, transect, subplot, area_m2, species, shoot) %>% 
   summarise(density = n(), .groups = "drop")
 
-#Identify empty subplots
-empty_subplots <- seedling_25 %>% 
-  filter(species == "0") %>% 
-  distinct(site, plot, treatment, year, transect, subplot, area_m2)
-  
 #Create zero-density Quercus rows for empty subplots
-empty_quercus <- empty_subplots %>% 
+empty_quercus <- seedling_25 %>% 
+  filter(species == "0") %>% 
+  distinct(site, plot, treatment, year, transect, subplot, area_m2) %>% 
   mutate(species = "Quercus sp.",
          density = 0)
   
@@ -67,8 +64,8 @@ missing_quercus <- seedling_density %>%
   distinct(site, plot, treatment, year, transect, subplot, area_m2) %>% 
   mutate(species = "Quercus sp.",
          density = 0)
-  
-#Combine everything, add shoot = FALSE to Quercus zero-density rows
+
+#Combine everything, add shoot = FALSE to zero-density Quercus rows
 seedling_density <- bind_rows(seedling_density, missing_quercus) %>%
   arrange(site, plot, treatment, year, transect, subplot, area_m2, species) %>% 
   mutate(shoot = replace_na(shoot, FALSE))
@@ -196,13 +193,10 @@ seedling_counts <- data_03_05 %>%
   group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, species, shoot) %>% 
   summarise(density = n(), .groups = "drop")
   
-#Identify empty subplots
-empty_subplots <- data_03_05 %>% 
-  filter(species == "0") %>% 
-  distinct(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH)
-  
 #Create zero-density Quercus rows for empty subplots
-empty_quercus <- empty_subplots %>% 
+empty_quercus <- data_03_05 %>% 
+  filter(species == "0") %>% 
+  distinct(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH) %>% 
   mutate(species = "Quercus sp.",
          density = 0)
   
@@ -217,9 +211,10 @@ missing_quercus <- seedling_density %>%
   mutate(species = "Quercus sp.",
          density = 0)
   
-#Combine everything
+#Combine everything, add shoot = FALSE to zero-density Quercus rows
 data_03_05 <- bind_rows(seedling_density, missing_quercus) %>%
-  arrange(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, species)
+  arrange(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, species) %>% 
+  mutate(shoot = replace_na(shoot, FALSE))
 
 
 #Calculate basal area in 2003
