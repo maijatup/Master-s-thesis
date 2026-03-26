@@ -240,28 +240,24 @@ thinned_trees_core <- thinned_tree_raw %>%
     (Omrkod == "ÖST" & BSektion %in% c(750:950))) %>% 
   mutate(area_type = "core")
 
-#Filter extended area
+#Filter extended area, which is ADDITIONAL to core, not overlapping!
 old_trees_extended <- old_tree_raw %>% 
   filter(
-    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(251:954)) |
-    (Omrkod == "KAR" & Yta == "NV" & BSektion %in% c(251:454)) |
-    (Omrkod == "RYA" & Yta == "NO" & BSektion %in% c(751:1054)) |
-    (Omrkod == "RYA" & Yta == "SV") |
-    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(251:454, 651:754)) |
-    (Omrkod == "SAN" & Yta == "V") |
-    (Omrkod == "SKÖ" & Yta == "Ö" & BSektion %in% c(251:754)) |
-    (Omrkod == "SKÖ" & Yta == "V" & BSektion %in% c(251:554)) |
-    (Omrkod == "ÖST" & Yta == "Ö" & BSektion %in% c(451:954)) |
-    (Omrkod == "ÖST" & Yta == "V" & BSektion %in% c(751:954))) %>% 
+    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(651:954)) |
+    (Omrkod == "RYA" & Yta == "NO" & BSektion %in% c(751:754)) |
+    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(651:754)) |
+    (Omrkod == "SKÖ" & Yta == "Ö" & BSektion %in% c(251:254, 651:754)) |
+    (Omrkod == "SKÖ" & Yta == "V" & BSektion %in% c(251:254)) |
+    (Omrkod == "ÖST" & Yta == "Ö" & BSektion %in% c(451:654))) %>% 
   mutate(area_type = "extended")
 
 thinned_trees_extended <- thinned_tree_raw %>% 
   filter(
-    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(250:950)) |
-    (Omrkod == "RYA" & Yta == "NO" & BSektion %in% c(750:1050)) |
-    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(250:450, 650:750)) |
-    (Omrkod == "SKÖ" & Yta == "Ö" & BSektion %in% c(250:750)) |
-    (Omrkod == "ÖST" & Yta == "Ö" & BSektion %in% c(450:950))) %>% 
+    (Omrkod == "KAR" & Yta == "SO" & BSektion %in% c(650:950)) |
+    (Omrkod == "RYA" & Yta == "NO" & BSektion == "750") |
+    (Omrkod == "SAN" & Yta == "Ö" & BSektion %in% c(650, 750)) |
+    (Omrkod == "SKÖ" & Yta == "Ö" & BSektion %in% c(250, 650, 750)) |
+    (Omrkod == "ÖST" & Yta == "Ö" & BSektion %in% c(450:650))) %>% 
   mutate(area_type = "extended")
 
 #Combine to old_trees and thinned_trees
@@ -322,16 +318,12 @@ old_trees <- old_trees %>%
   mutate(area_ha = case_when(
     area_type == "core" & Omrkod %in% c("KAR", "RYA", "ÖST") ~ 0.249,
     area_type == "core" & Omrkod %in% c("SAN", "SKÖ") ~ 0.3,
-    area_type == "extended" & Omrkod == "KAR" & Yta == "SO" ~ 0.664,
-    area_type == "extended" & Omrkod == "KAR" & Yta == "NV" ~ 0.249,
-    area_type == "extended" & Omrkod == "RYA" & Yta == "NO" ~ 0.332,
-    area_type == "extended" & Omrkod == "RYA" & Yta == "SV" ~ 0.249,
-    area_type == "extended" & Omrkod == "SAN" & Yta == "Ö" ~ 0.5,
-    area_type == "extended" & Omrkod == "SAN" & Yta == "V" ~ 0.3,
-    area_type == "extended" & Omrkod == "SKÖ" & Yta == "Ö" ~ 0.6,
-    area_type == "extended" & Omrkod == "SKÖ" & Yta == "V" ~ 0.4,
-    area_type == "extended" & Omrkod == "ÖST" & Yta == "Ö" ~ 0.498,
-    area_type == "extended" & Omrkod == "ÖST" & Yta == "V" ~ 0.249),
+    area_type == "extended" & Omrkod == "KAR" & Yta == "SO" ~ 0.332,
+    area_type == "extended" & Omrkod == "RYA" & Yta == "NO" ~ 0.083,
+    area_type == "extended" & Omrkod == "SAN" & Yta == "Ö" ~ 0.2,
+    area_type == "extended" & Omrkod == "SKÖ" & Yta == "Ö" ~ 0.3,
+    area_type == "extended" & Omrkod == "SKÖ" & Yta == "V" ~ 0.1,
+    area_type == "extended" & Omrkod == "ÖST" & Yta == "Ö" ~ 0.249),
   basal_area = basal_area / area_ha)
 
 #Calculate total basal area
