@@ -68,9 +68,10 @@ missing_quercus <- seedling_density %>%
   mutate(species = "Quercus sp.",
          density = 0)
   
-#Combine everything
+#Combine everything, add shoot = FALSE to Quercus zero-density rows
 seedling_density <- bind_rows(seedling_density, missing_quercus) %>%
-  arrange(site, plot, treatment, year, transect, subplot, area_m2, species)
+  arrange(site, plot, treatment, year, transect, subplot, area_m2, species) %>% 
+  mutate(shoot = replace_na(shoot, FALSE))
 
 
 #Add canopy openness values
@@ -105,13 +106,18 @@ tree_ba <- tree_raw %>%
 
 #Calculate basal area by species
 species_ba <- tree_ba %>% 
-  group_by(site, plot, transect_range, treatment, species) %>% 
+  group_by(site, plot, treatment, species) %>% 
   summarise(basal_area = sum(basal_area), .groups = "drop")
 
+#Add area and scale basal_area to m^2/ha
+species_ba <- species_ba %>% 
+  mutate(area_ha = 0.1,
+         basal_area = basal_area / area_ha)
+
 #Calculate total basal area
-total_ba <- tree_ba %>% 
-  group_by(site, plot, transect_range, treatment) %>% 
-  summarise(total_ba = sum(basal_area), .groups = "drop")
+species_ba <- species_ba %>% 
+  group_by(site, plot, treatment) %>% 
+  mutate(total_ba = sum(basal_area))
 
 #Convert to wide and clean names
 species_ba_wide <- species_ba %>% 
@@ -120,16 +126,14 @@ species_ba_wide <- species_ba %>%
               values_fill = 0) %>% 
   janitor::clean_names() %>% 
   rename_with(~ paste0(.x, "_ba"),
-              -c(site, plot, transect_range, treatment)) %>% 
-  select(site, plot, transect_range, treatment, quercus_sp_ba, everything())
+              -c(site, plot, treatment, area_ha, total_ba))
 
-#Add species and stand BA
+#Add basal area to main dataset
 #Note: BA was only measured around one of the transects in each plot and BA values are therefore only added for these transects
 data_2025 <- data_2025 %>% 
-  left_join(species_ba_wide %>% select(-transect_range), 
+  left_join(species_ba_wide %>% 
+            select(-area_ha), 
             by = c("site", "plot", "treatment")) %>% 
-  left_join(total_ba %>% select(-transect_range),
-            by = c("site", "plot", "treatment")) %>%
   mutate(across(
     ends_with("_ba"), 
     ~ case_when(
