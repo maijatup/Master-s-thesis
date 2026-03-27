@@ -91,7 +91,7 @@ data_2025 <- seedling_density %>%
 #Add pH values
 data_2025 <- data_2025 %>% 
   left_join(soil_raw %>% 
-              select(site, plot, treatment, transect, subplot, pH),
+            select(site, plot, treatment, transect, subplot, pH),
             by = c("site", "plot", "treatment", "transect", "subplot")) %>% 
   select(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, everything())
 
@@ -351,14 +351,19 @@ old_trees <- old_trees %>%
                        "SKÖ" = "Skölvene",
                        "ÖST" = "Östadkulle"))
 
+#Add to data_03_05, but only for the year 2003
+data_03_05 <- data_03_05 %>%
+  left_join(old_trees %>% 
+            select(-area_ha),
+            by = c("site", "plot")) %>% 
+  mutate(across(ends_with("_ba"),
+                ~ if_else(year == 2003, ., NA_real_)))
 
 
-#Combine the old and new datasets and save as csv files
-regeneration_all <- bind_rows(data_03_05_all, data_2025_all)
-write_csv(regeneration_all, "processed_data/regeneration_all.csv")
 
-regeneration_no_shoots <- bind_rows(data_03_05_no_shoots, data_2025_no_shoots)
-write_csv(regeneration_no_shoots, "processed_data/regeneration_no_shoots.csv")
+#Combine the old and new datasets and save as a csv file
+regeneration_data <- bind_rows(data_03_05, data_2025)
+write_csv(regeneration_data, "processed_data/regeneration_data.csv")
 
 
 
