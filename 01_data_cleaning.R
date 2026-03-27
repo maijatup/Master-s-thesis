@@ -340,7 +340,7 @@ old_trees <- old_trees %>%
   rename_with(~ paste0(.x, "_ba"),
               -c(omrkod, yta, area_ha, total_ba, area_type))
 
-#Clean names
+#Clean names, add year
 old_trees <- old_trees %>% 
   rename(site = omrkod,
          plot = yta) %>% 
@@ -349,15 +349,14 @@ old_trees <- old_trees %>%
                        "RYA" = "Rya åsar",
                        "SAN" = "Sandviksås",
                        "SKÖ" = "Skölvene",
-                       "ÖST" = "Östadkulle"))
+                       "ÖST" = "Östadkulle"),
+         year = 2003)
 
 #Add to data_03_05, but only for the year 2003
 data_03_05 <- data_03_05 %>%
   left_join(old_trees %>% 
             select(-area_ha),
-            by = c("site", "plot")) %>% 
-  mutate(across(ends_with("_ba"),
-                ~ if_else(year == 2003, ., NA_real_)))
+            by = c("site", "plot", "year"))
 
 
 
