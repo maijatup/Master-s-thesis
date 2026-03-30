@@ -4,11 +4,16 @@ library(readr)
 library(dplyr)
 library(ggplot2)
 
-regeneration_all <- read_csv("processed_data/regeneration_all.csv")
+regeneration <- read_csv("processed_data/regeneration_data.csv")
+
+
+#Filter to exclude area_type "extended" to remove duplicate seedling rows
+regeneration_coreNA <- regeneration %>% 
+  filter(area_type != "extended" | is.na(area_type))
 
 
 #Oak density 2003 vs 2005 vs 2025
-oak_density <- regeneration_all %>%
+oak_density <- regeneration_coreNA %>%
   filter(species == "Quercus sp.") %>%
   group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, quercus_sp_ba, total_ba) %>%
   summarise(oak_density = sum(density), .groups = "drop")
@@ -32,8 +37,8 @@ ggplot(oak_density,
 
 
 #Total seedling density 2003 vs 2005 vs 2025
-total_density <- regeneration_all %>% 
-  group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, total_ba) %>% 
+total_density <- regeneration_coreNA %>% 
+  group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, quercus_sp_ba, total_ba) %>% 
   summarise(total_density = sum(density), .groups = "drop")
 
 ggplot(total_density,
@@ -54,21 +59,30 @@ ggplot(total_density,
   labs(x = "treatment", y = "Total density")
 
 
-#Oak density vs canopy openness, 2005 & 2025 (2003 no canopy values)
+#Oak density vs canopy openness, all years
 ggplot(oak_density, aes(x = canopy_openness, y = oak_density)) + 
   geom_point() +
   geom_smooth(method = "lm") +
   labs(x = "Canopy openness (%)",
        y = "Oak seedling density",
-       title = "Oak density vs canopy openness (2005 & 2025)")
+       title = "Oak density vs canopy openness (all years)")
 
-#2005 & 2025 with treatment
+#All years with treatment
 ggplot(oak_density, aes(x = canopy_openness, y = oak_density, fill = treatment, color = treatment)) + 
   geom_point() +
   geom_smooth(method = "lm") +
   labs(x = "Canopy openness (%)",
        y = "Oak seedling density",
-       title = "Oak density vs canopy openness (2005 & 2025)")
+       title = "Oak density vs canopy openness (all years)")
+
+#2003 (canopy values only in treatment plots of three sites)
+ggplot(oak_density %>% filter(year == 2003), 
+       aes(x = canopy_openness, y = oak_density)) + 
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x = "Canopy openness (%)",
+       y = "Oak seedling density",
+       title = "Oak density vs canopy openness (2003)")
 
 #2005
 ggplot(oak_density %>% filter(year == 2005), 
@@ -107,21 +121,30 @@ ggplot(oak_density %>% filter(year == 2025),
        title = "Oak density vs canopy openness (2025)")
 
 
-#Total seedling density vs canopy openness, 2005 & 2025
+#Total seedling density vs canopy openness, all years
 ggplot(total_density, aes(x = canopy_openness, y = total_density)) +
   geom_point() +
   geom_smooth(method = "lm") +
   labs(x = "Canopy openness (%)",
        y = "Total seedling density",
-       title = "Total seedling density vs canopy openness (2005 & 2025)")
+       title = "Total seedling density vs canopy openness (all years)")
 
-#2005 & 2025 with treatment
+#All years with treatment
 ggplot(total_density, aes(x = canopy_openness, y = total_density, fill = treatment, color = treatment)) +
   geom_point() +
   geom_smooth(method = "lm") +
   labs(x = "Canopy openness (%)",
        y = "Total seedling density",
-       title = "Total seedling density vs canopy openness (2005 & 2025)")
+       title = "Total seedling density vs canopy openness (all years)")
+
+#2003 (canopy values only in treatment plots of three sites)
+ggplot(total_density %>% filter(year == 2003),
+       aes(x = canopy_openness, y = total_density)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x = "Canopy openness (%)",
+       y = "Total seedling density",
+       title = "Total seedling density vs canopy openness (2003)")
 
 #2005
 ggplot(total_density %>% filter(year == 2005),
@@ -160,18 +183,18 @@ ggplot(total_density %>% filter(year == 2025),
        title = "Total seedling density vs canopy openness (2025)")
 
 #Without oak
-others_density <- regeneration_all %>% 
+others_density <- regeneration_coreNA %>% 
   filter(species != "Quercus sp.") %>% 
   group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, quercus_sp_ba, total_ba) %>%
   summarise(others_density = sum(density), .groups = "drop")
 
-#2005 & 2025 without oak
+#All years without oak
 ggplot(others_density, aes(x = canopy_openness, y = others_density)) +
   geom_point() +
   geom_smooth(method = "lm") +
   labs(x = "Canopy openness (%)",
        y = "Total seedling density without oak",
-       title = "Total seedling density (no oaks) vs canopy openness (2005 & 2025)")
+       title = "Total seedling density (no oaks) vs canopy openness (all years)")
 
 #With treatment
 ggplot(others_density, aes(x = canopy_openness, y = others_density, fill = treatment, color = treatment)) +
@@ -179,7 +202,16 @@ ggplot(others_density, aes(x = canopy_openness, y = others_density, fill = treat
   geom_smooth(method = "lm") +
   labs(x = "Canopy openness (%)",
        y = "Total seedling density without oak",
-       title = "Total seedling density (no oaks) vs canopy openness (2005 & 2025)")
+       title = "Total seedling density (no oaks) vs canopy openness (all years)")
+
+#2003 without oak (canopy values only in treatment plots of three sites)
+ggplot(others_density %>% filter(year == 2003),
+       aes(x = canopy_openness, y = others_density)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x = "Canopy openness (%)",
+       y = "Total seedling density without oak",
+       title = "Total seedling density (no oaks) vs canopy openness (2003)")
 
 #2005 without oak
 ggplot(others_density %>% filter(year == 2005),
@@ -237,16 +269,26 @@ ggplot(others_density, aes(x = pH, y = others_density, fill = treatment, color =
   labs(x = "pH", y = "Other species' seedling density")
 
 
-#Oak seedling density vs oak basal area (color = site?)
+#Oak seedling density vs oak basal area
 ggplot(oak_density, aes(x = quercus_sp_ba, y = oak_density, fill = treatment)) + 
   geom_point() + 
   geom_smooth(method = "lm") +
-  labs(x = "Oak basal area", y = "Oak seedling density")
+  labs(x = "Oak basal area m^2/ha", y = "Oak seedling density")
 
 #Oak seedling density vs total basal area
 ggplot(oak_density, aes(x = total_ba, y = oak_density, fill = treatment)) + 
   geom_point() + 
   geom_smooth(method = "lm") +
-  labs(x = "Total basal area", y = "Oak seedling density")
+  labs(x = "Total basal area m^2/ha", y = "Oak seedling density")
 
+#Basal area without oak
+others_ba <- regeneration_coreNA %>% 
+  group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, quercus_sp_ba, total_ba) %>%
+  summarise(oak_density = sum(density), .groups = "drop") %>% 
+  mutate(others_ba = total_ba - quercus_sp_ba) 
 
+#Oak seedling density vs other species' basal area
+ggplot(others_ba, aes(x = others_ba, y = oak_density)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") +
+  labs(x = "Other species' basal area m^2/ha", y = "Oak seedling density")
