@@ -3,6 +3,7 @@
 library(readr)
 library(dplyr)
 library(ggplot2)
+library(GGally)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -292,3 +293,9 @@ ggplot(others_ba, aes(x = others_ba, y = oak_density)) +
   geom_point() + 
   geom_smooth(method = "lm") +
   labs(x = "Other species' basal area m^2/ha", y = "Oak seedling density")
+
+
+#Correlation matrix
+ggpairs(oak_density,
+        columns = c("oak_density", "canopy_openness", "pH", "quercus_sp_ba", "total_ba"),
+        aes(color = treatment, alpha = 0.6))
