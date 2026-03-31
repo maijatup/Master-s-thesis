@@ -173,6 +173,7 @@ old_data_raw <- old_data_raw %>%
 #Remove subplots that were within exclosures
 #Remove trees larger than 5 cm DBH
 #Remove subplots that were not checked in 2003 and 2005 so that these zeros don't skew the dataset
+#Sum subplot areas (some divided into 3 and 2 m2)
 data_03_05 <- old_data_raw %>% 
   filter(!year %in% c(2001, 2002),
          subplot != "extra",
@@ -182,7 +183,9 @@ data_03_05 <- old_data_raw %>%
            suppressWarnings(as.numeric(diameter_cm)) <= 5 |
            diameter_cm == "0.1-5") %>% 
   filter(!(site == "Skölvene" & transect == "Ö35" & subplot == 3),
-         !(site == "Karla" & transect == "NV45" & subplot %in% c(2, 3, 4)))
+         !(site == "Karla" & transect == "NV45" & subplot %in% c(2, 3, 4))) %>% 
+  group_by(site, plot, treatment, year, transect, subplot) %>% 
+  mutate(area_m2 = sum(unique(area_m2)))
 
 
 #Calculate seedling density per subplot and species
