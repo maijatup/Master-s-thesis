@@ -1,7 +1,5 @@
 #Data cleaning
 
-install.packages("janitor")
-
 library(readr)
 library(dplyr)
 library(tidyr)
@@ -366,6 +364,4 @@ data_03_05 <- data_03_05 %>%
 #Combine the old and new datasets and save as a csv file
 regeneration_data <- bind_rows(data_03_05, data_2025)
 write_csv(regeneration_data, "processed_data/regeneration_data.csv")
-
-
 
