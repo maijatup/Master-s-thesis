@@ -14,6 +14,7 @@ regeneration_coreNA <- regeneration %>%
 
 
 #Oak density 2003 vs 2005 vs 2025
+#Note that density here is actually seedling count
 oak_density <- regeneration_coreNA %>%
   filter(species == "Quercus sp.") %>%
   group_by(site, plot, treatment, year, transect, subplot, area_m2, canopy_openness, pH, quercus_sp_ba, total_ba) %>%
