@@ -131,7 +131,7 @@ m4_year_c <- glmmTMB(oak_count ~ treatment * year_c + offset(log(area_m2))
 summary(m4_year_c)
 #Now the intercept is meaningful
 #Oak density decreases by 3.5% per year in control plots (significant)
-#Oak density increases by 0.9% per year in thinned plots (just significantly different from control?)
+#Thinned plots show a significantly more positive trend (0.9% increase per year)
 
 
 #Try the model with year as factor
@@ -140,10 +140,8 @@ m4_year_f <- glmmTMB(oak_count ~ treatment * factor(year) + offset(log(area_m2))
                      data = oaks_all, family = nbinom2)
 
 summary(m4_year_f)
-#In 2025, oak density is 57% lower than in 2003 (significant)
-#The effect of thinning became significantly more positive over time
-#Thinned plots show higher oak regeneration than control plots in 2025
-
+#In 2025, oak density is 57% lower in control plots than in 2003 (significant)
+#Thinned plots show significantly higher oak regeneration than control plots in 2025
 
 
 
