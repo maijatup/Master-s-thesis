@@ -73,7 +73,8 @@ seedling_density <- bind_rows(seedling_density, missing_quercus) %>%
 #Calculate mean canopy openness per subplot
 canopy_mean <- canopy_raw %>% 
   group_by(Site, Plot, Treatment, Transect, Subplot) %>% 
-  summarise(canopy_openness = mean(`Canopy openness (%)`, na.rm = TRUE, .groups = "drop"))
+  summarise(canopy_openness = mean(`Canopy openness (%)`, na.rm = TRUE),
+            .groups = "drop")
 
 #Add the means to seedling_density
 data_2025 <- seedling_density %>% 
