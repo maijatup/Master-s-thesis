@@ -76,11 +76,9 @@ summary(m3_p)
 check_overdispersion(m1_pr)
 check_overdispersion(m2_p)
 check_overdispersion(m3_p)
+check_model(m3_p)
 #Overdispersion detected -> switch to negative binomial
 
-check_model(m3_p, check = "homogeneity")
-#This is the only thing in check_model() that gave a result
-#Should I run other diagnostics??
 
 
 
@@ -142,6 +140,46 @@ m4_year_f <- glmmTMB(oak_count ~ treatment * factor(year) + offset(log(area_m2))
 summary(m4_year_f)
 #In 2025, oak density is 57% lower in control plots than in 2003 (significant)
 #Thinned plots show significantly higher oak regeneration than control plots in 2025
+
+
+#Diagnostics
+check_model(m4_year_c)
+check_model(m4_year_f)
+#Mismatch between observed and predicted variance
+
+#Check zero-inflation
+check_zeroinflation(m4_year_c)
+check_zeroinflation(m4_year_f)
+#Not a big difference
+
+#Test models with nbinom1 distribution, which assumes a more linear mean–variance relationship (nbinom2 assumes quadratic)
+m4_nb1_c <- glmmTMB(oak_count ~ treatment * year_c + offset(log(area_m2))
+                    + (1 | site/transect/subplot),
+                    data = oaks_all, family = nbinom1)
+summary(m4_nb1_c)
+
+
+m4_nb1_f <- glmmTMB(oak_count ~ treatment * factor(year) + offset(log(area_m2))
+                    + (1 | site/transect/subplot),
+                    data = oaks_all, family = nbinom1)
+summary(m4_nb1_f)
+
+#Check overdispersion
+check_overdispersion(m4_year_c)
+check_overdispersion(m4_year_f)
+check_overdispersion(m4_nb1_c)
+check_overdispersion(m4_nb1_f)
+#No overdispersion detected, but nb1 ratios closer to 1
+
+check_model(m4_nb1_c)
+check_model(m4_nb1_f)
+#No big differences to nbinom2 plots, but higher residual variance in the dispersion and zero-inflation plots
+
+#Compare models
+AIC(m4_year_c, m4_year_f, m4_nb1_c, m4_nb1_f)
+compare_performance(m4_year_c, m4_year_f, m4_nb1_c, m4_nb1_f, rank = TRUE, verbose = FALSE)
+#Most variation in oak regeneration comes from differences between sites, transects and subplots
+#Nbinom1 models have lower AIC and higher AIC weight -> higher probability of being the best model, also highest performance scores
 
 
 
