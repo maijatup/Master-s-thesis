@@ -19,11 +19,11 @@ oaks_all <- regeneration_core %>%
   group_by(site, plot, treatment, year, transect, subplot, area_m2) %>% 
   summarise(oak_count = sum(density), .groups = "drop")
 
+#Note: exclude shoots inside the sum so zero-oak seedling subplots are kept
 oaks_noshoots <- regeneration_core %>% 
-  filter(species == "Quercus sp.",
-         shoot == FALSE) %>% 
+  filter(species == "Quercus sp.") %>% 
   group_by(site, plot, treatment, year, transect, subplot, area_m2) %>% 
-  summarise(oak_count = sum(density), .groups = "drop")
+  summarise(oak_count = sum(density[shoot == FALSE]), .groups = "drop")
 
 
 
