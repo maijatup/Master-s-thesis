@@ -152,6 +152,7 @@ check_zeroinflation(m4_year_c)
 check_zeroinflation(m4_year_f)
 #Not a big difference
 
+
 #Test models with nbinom1 distribution, which assumes a more linear mean–variance relationship (nbinom2 assumes quadratic)
 m4_nb1_c <- glmmTMB(oak_count ~ treatment * year_c + offset(log(area_m2))
                     + (1 | site/transect/subplot),
@@ -182,4 +183,41 @@ compare_performance(m4_year_c, m4_year_f, m4_nb1_c, m4_nb1_f, rank = TRUE, verbo
 #Nbinom1 models have lower AIC and higher AIC weight -> higher probability of being the best model, also highest performance scores
 
 
+
+#Continue with the factor(year) nbinom2 model
+#Add plot in the random effects
+m4_year_f_plot <- glmmTMB(oak_count ~ treatment * factor(year)
+                          + offset(log(area_m2))
+                          + (1 | site/plot/transect/subplot),
+                          data = oaks_all, family = nbinom2)
+
+summary(m4_year_f_plot)
+#Similar results to m4_year_f -> including plot did not substantially change the fixed effect estimates
+#A lot of the variation attributed to transect in the previous model m4_year_f was actually due to differences between plots
+#Most variation is still on subplot and site levels
+
+
+#Merge 2003 & 2005 to early period after thinning, 2025 is late period
+oaks_all <- oaks_all %>% 
+  mutate(period = if_else(year %in% c(2003, 2005), "early", "late"),
+         period = factor(period))
+
+m4_period <- glmmTMB(oak_count ~ treatment * period
+                     + offset(log(area_m2))
+                     + (1 | site/transect/subplot),
+                     data = oaks_all, family = nbinom2)
+
+summary(m4_period)
+#In the late period, density in control plots is 52% lower than in the early period (significant)
+#The effect of thinning changes significantly over time
+
+
+#Combine these two models
+m4_period_plot <- glmmTMB(oak_count ~ treatment * period
+                          + offset(log(area_m2))
+                          + (1 | site/plot/transect/subplot),
+                          data = oaks_all, family = nbinom2)
+
+summary(m4_period_plot)
+#Similar results and AIC values to the previous two models
 
