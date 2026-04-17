@@ -221,3 +221,18 @@ m4_period_plot <- glmmTMB(oak_count ~ treatment * period
 summary(m4_period_plot)
 #Similar results and AIC values to the previous two models
 
+
+#Run this model with oaks_noshoots to test if excluding trunk shoots affects the results
+oaks_noshoots <- oaks_noshoots %>% 
+  mutate(period = if_else(year %in% c(2003, 2005), "early", "late"),
+         period = factor(period))
+
+m4_noshoots <- glmmTMB(oak_count ~ treatment * period
+                       + offset(log(area_m2))
+                       + (1 | site/plot/transect/subplot),
+                       data = oaks_noshoots, family = nbinom2)
+
+summary(m4_noshoots)
+#Similar results, but the interaction effect slightly increased -> the thinning effect is possibly slightly stronger when considering only true oak seedlings
+#Use this for the main analysis since it's more ecologically correct
+
