@@ -5,6 +5,7 @@ library(readr)
 library(dplyr)
 library(glmmTMB)
 library(performance)
+library(emmeans)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -235,4 +236,24 @@ m4_noshoots <- glmmTMB(oak_count ~ treatment * period
 summary(m4_noshoots)
 #Similar results, but the interaction effect slightly increased -> the thinning effect is possibly slightly stronger when considering only true oak seedlings
 #Use this for the main analysis since it's more ecologically correct
+
+r2(m4_noshoots)
+#Fixed effects explain only 3.6% of the variance, while random effects explain 65.1% 
+
+
+#Post-hoc comparisons
+#Thinned vs control within each period
+(emm1 <- emmeans(m4_noshoots, ~ treatment | period,
+                type = "response",
+                at = list(area_m2 = 1)))
+pairs(emm1)
+
+#Early vs late within each treatment
+(emm2 <- emmeans(m4_noshoots, ~ period | treatment,
+                type = "response",
+                at = list(area_m2 = 1)))
+pairs(emm2)
+#Control plots had 54% lower density in the late period compared to the early period (significant)
+
+
 
