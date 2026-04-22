@@ -3,6 +3,7 @@
 
 library(readr)
 library(dplyr)
+library(glmmTMB)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -81,5 +82,69 @@ oaks_noshoots_ext <- regeneration_extended %>%
             total_ba = first(total_ba),
             quercus_sp_ba = first(quercus_sp_ba), .groups = "drop")
 
+
+
+#Use oaks_noshoots as the main dataset as it is more ecologically correct
+#Model 1: test the effect of total basal area on oak seedling density
+m1 <- glmmTMB(oak_count ~ total_ba + factor(year)
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              data = oaks_noshoots, family = nbinom2)
+
+summary(m1)
+#As basal area increases, oak seedling density decreases (significant)
+
+#Test if including ba measurements from the extended area influences the results
+m1_ext <- glmmTMB(oak_count ~ total_ba + factor(year)
+                  + offset(log(area_m2))
+                  + (1 | site/plot/transect/subplot),
+                  data = oaks_noshoots_ext, family = nbinom2)
+
+summary(m1_ext)
+#Similar results to m1, even though this model has slightly stronger effect, which makes sense since the basal area values are slightly larger -> robust results
+
+#Test the effect of oak basal area on oak seedling density
+m1_oak <- glmmTMB(oak_count ~ quercus_sp_ba + factor(year)
+                  + offset(log(area_m2))
+                  + (1 | site/plot/transect/subplot),
+                  data = oaks_noshoots, family = nbinom2)
+
+summary(m1_oak)
+#Similar, significant result, but slightly stronger effect
+
+
+
+#Model 2: test the effect of canopy openness on oak seedling density
+m2 <- glmmTMB(oak_count ~ canopy_openness + factor(year)
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              data = oaks_noshoots, family = nbinom2)
+
+summary(m2)
+#Canopy openness doesn’t have a significant effect on oak seedling density
+
+
+
+#Model 3: test the effect of pH on oak seedling density
+m3 <- glmmTMB(oak_count ~ pH + factor(year)
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              data = oaks_noshoots, family = nbinom2)
+
+summary(m3)
+#pH doesn't have a significant effect on oak seedling density
+
+
+
+#Model 4: test the effect of all predictors together
+#Note: 2025 is the only year with all predictor values
+m4 <- glmmTMB(oak_count ~ total_ba + canopy_openness + pH
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              data = oaks_noshoots, family = nbinom2)
+
+summary(m4)
+#Note very small sample size
+#Similar results, as basal area increases, oak density decreases (significant)
 
 
