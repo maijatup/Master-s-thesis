@@ -103,6 +103,15 @@ m1_ext <- glmmTMB(oak_count ~ total_ba + factor(year)
 summary(m1_ext)
 #Similar results to m1, even though this model has slightly stronger effect, which makes sense since the basal area values are slightly larger -> robust results
 
+#Test if including trunk shoots influences the results
+m1_shoots <- glmmTMB(oak_count ~ total_ba + factor(year)
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_all, family = nbinom2)
+
+summary(m1_shoots)
+#Doesn't affect the results
+
 #Test the effect of oak basal area on oak seedling density
 m1_oak <- glmmTMB(oak_count ~ quercus_sp_ba + factor(year)
                   + offset(log(area_m2))
@@ -123,6 +132,15 @@ m2 <- glmmTMB(oak_count ~ canopy_openness + factor(year)
 summary(m2)
 #Canopy openness doesn’t have a significant effect on oak seedling density
 
+#Test if including trunk shoots influences the results
+m2_shoots <- glmmTMB(oak_count ~ canopy_openness + factor(year)
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_all, family = nbinom2)
+
+summary(m2_shoots)
+#Doesn't affect the results
+
 
 
 #Model 3: test the effect of pH on oak seedling density
@@ -133,6 +151,15 @@ m3 <- glmmTMB(oak_count ~ pH + factor(year)
 
 summary(m3)
 #pH doesn't have a significant effect on oak seedling density
+
+#Test if including trunk shoots influences the results
+m3_shoots <- glmmTMB(oak_count ~ pH + factor(year)
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_all, family = nbinom2)
+
+summary(m3_shoots)
+#Doesn't affect the results
 
 
 
@@ -146,5 +173,14 @@ m4 <- glmmTMB(oak_count ~ total_ba + canopy_openness + pH
 summary(m4)
 #Note very small sample size
 #Similar results, as basal area increases, oak density decreases (significant)
+
+#Test if including trunk shoots influences the results
+m4_shoots <- glmmTMB(oak_count ~ total_ba + canopy_openness + pH
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_all, family = nbinom2)
+
+summary(m4_shoots)
+#Doesn't affect the results
 
 
