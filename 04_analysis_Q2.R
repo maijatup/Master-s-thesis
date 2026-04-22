@@ -32,18 +32,33 @@ oaks_noshoots <- regeneration_core %>%
 
 
 #Create a dataset in which basal area measurements are from core+extended
+#Add areas of ba measurements and then calculate weighted average basal areas
 regeneration_extended <- regeneration %>%
+  mutate(area_ha = case_when(
+    area_type == "core" & site %in% c("Karla", "Rya åsar", "Östadkulle") ~ 0.249,
+    area_type == "core" & site %in% c("Sandviksås", "Skölvene") ~ 0.3,
+    area_type == "extended" & site == "Karla" & plot == "SO" ~ 0.332,
+    area_type == "extended" & site == "Rya åsar" & plot == "NO" ~ 0.083,
+    area_type == "extended" & site == "Sandviksås" & plot == "Ö" ~ 0.2,
+    area_type == "extended" & site == "Skölvene" & plot == "Ö" ~ 0.3,
+    area_type == "extended" & site == "Skölvene" & plot == "V" ~ 0.1,
+    area_type == "extended" & site == "Östadkulle" & plot == "Ö" ~ 0.249)) %>%
   group_by(site, plot, treatment, year, transect, subplot) %>%
-  mutate(total_ba = case_when(any(area_type == "extended", na.rm = TRUE) ~ 
-                                first(total_ba[area_type == "core"]) + first(total_ba[area_type == "extended"]),
-                              any(area_type == "core", na.rm = TRUE) ~ 
-                                first(total_ba[area_type == "core"]),
-                              TRUE ~ first(total_ba)),
-         quercus_sp_ba = case_when(any(area_type == "extended", na.rm = TRUE) ~ 
-                                     first(quercus_sp_ba[area_type == "core"]) + first(quercus_sp_ba[area_type == "extended"]),
-                                   any(area_type == "core", na.rm = TRUE) ~ 
-                                     first(quercus_sp_ba[area_type == "core"]),
-                                   TRUE ~ first(quercus_sp_ba))) %>%
+  mutate(
+    total_ba = case_when(any(area_type == "extended", na.rm = TRUE) ~ 
+        (first(total_ba[area_type == "core"]) * first(area_ha[area_type == "core"]) + 
+           first(total_ba[area_type == "extended"]) * first(area_ha[area_type == "extended"])) / 
+        (first(area_ha[area_type == "core"]) + first(area_ha[area_type == "extended"])),
+        any(area_type == "core", na.rm = TRUE) ~ 
+          first(total_ba[area_type == "core"]),
+        TRUE ~ first(total_ba)),
+    quercus_sp_ba = case_when(any(area_type == "extended", na.rm = TRUE) ~ 
+        (first(quercus_sp_ba[area_type == "core"]) * first(area_ha[area_type == "core"]) + 
+           first(quercus_sp_ba[area_type == "extended"]) * first(area_ha[area_type == "extended"])) / 
+        (first(area_ha[area_type == "core"]) + first(area_ha[area_type == "extended"])),
+        any(area_type == "core", na.rm = TRUE) ~ 
+          first(quercus_sp_ba[area_type == "core"]),
+        TRUE ~ first(quercus_sp_ba))) %>%
   ungroup() %>%
   filter(area_type != "extended" | is.na(area_type))
 
