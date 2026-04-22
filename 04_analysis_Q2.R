@@ -34,12 +34,16 @@ oaks_noshoots <- regeneration_core %>%
 #Create a dataset in which basal area measurements are from core+extended
 regeneration_extended <- regeneration %>%
   group_by(site, plot, treatment, year, transect, subplot) %>%
-  mutate(total_ba = ifelse(any(area_type == "extended", na.rm = TRUE),
-                           first(total_ba[area_type == "core"]) + first(total_ba[area_type == "extended"]),
-                           first(total_ba[area_type == "core"])),
-         quercus_sp_ba = ifelse(any(area_type == "extended", na.rm = TRUE),
-                                first(quercus_sp_ba[area_type == "core"]) + first(quercus_sp_ba[area_type == "extended"]),
-                                first(quercus_sp_ba[area_type == "core"]))) %>%
+  mutate(total_ba = case_when(any(area_type == "extended", na.rm = TRUE) ~ 
+                                first(total_ba[area_type == "core"]) + first(total_ba[area_type == "extended"]),
+                              any(area_type == "core", na.rm = TRUE) ~ 
+                                first(total_ba[area_type == "core"]),
+                              TRUE ~ first(total_ba)),
+         quercus_sp_ba = case_when(any(area_type == "extended", na.rm = TRUE) ~ 
+                                     first(quercus_sp_ba[area_type == "core"]) + first(quercus_sp_ba[area_type == "extended"]),
+                                   any(area_type == "core", na.rm = TRUE) ~ 
+                                     first(quercus_sp_ba[area_type == "core"]),
+                                   TRUE ~ first(quercus_sp_ba))) %>%
   ungroup() %>%
   filter(area_type != "extended" | is.na(area_type))
 
@@ -61,5 +65,6 @@ oaks_noshoots_ext <- regeneration_extended %>%
             pH = first(pH),
             total_ba = first(total_ba),
             quercus_sp_ba = first(quercus_sp_ba), .groups = "drop")
+
 
 
