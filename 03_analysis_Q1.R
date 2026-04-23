@@ -6,6 +6,7 @@ library(dplyr)
 library(glmmTMB)
 library(performance)
 library(emmeans)
+library(ggplot2)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -39,7 +40,7 @@ summary(m1_p)
 
 #Model 1 without offset for comparison
 m1_x <- glm(oak_count ~ treatment,
-          data = oaks_all, family = poisson)
+            data = oaks_all, family = poisson)
 
 summary(m1_x)
 #AIC 4948.5 higher than m1_p AIC 4932.3 -> m1_p is better
@@ -241,19 +242,54 @@ r2(m4_noshoots)
 #Fixed effects explain only 3.6% of the variance, while random effects explain 65.1% 
 
 
+
 #Post-hoc comparisons
 #Thinned vs control within each period
 (emm1 <- emmeans(m4_noshoots, ~ treatment | period,
-                type = "response",
-                at = list(area_m2 = 1)))
+                 type = "response",
+                 at = list(area_m2 = 1)))
 pairs(emm1)
 
 #Early vs late within each treatment
 (emm2 <- emmeans(m4_noshoots, ~ period | treatment,
-                type = "response",
-                at = list(area_m2 = 1)))
+                 type = "response",
+                 at = list(area_m2 = 1)))
 pairs(emm2)
 #Control plots had 54% lower density in the late period compared to the early period (significant)
 
+
+
+#Plot the results
+#Convert estimated marginal means to dataframe
+emm_df <- as.data.frame(emm1)
+emm_df
+
+#Calculate oak seedling density per m2
+oaks_noshoots <- oaks_noshoots %>% 
+  mutate(density = oak_count / area_m2)
+
+#Plot
+ggplot() +
+  geom_jitter(data = oaks_noshoots,
+              aes(x = period, y = density, colour = treatment),
+              width = 0.2, alpha = 0.3, size = 1.5) +
+  geom_line(data = emm_df,
+            aes(x = period, y = response,
+                colour = treatment, group = treatment),
+            linewidth = 1) +
+  geom_point(data = emm_df,
+             aes(x = period, y = response, colour = treatment),
+             size = 4) +
+  geom_errorbar(data = emm_df,
+                aes(x = period, y = response,
+                    ymin = asymp.LCL, ymax = asymp.UCL,
+                    colour = treatment),
+                width = 0.08, linewidth = 1) +
+  coord_cartesian(ylim = c(0, 10)) +
+  labs(x = "Period after thinning", y = "Oak seedling density per m²",
+       colour = "Treatment") +
+  scale_colour_manual(values = c("control" = "#E07B54",
+                                 "thinned" = "#3A9E8F")) +
+  theme_classic()
 
 
