@@ -4,6 +4,7 @@
 library(readr)
 library(dplyr)
 library(glmmTMB)
+library(piecewiseSEM)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -63,7 +64,7 @@ regeneration_extended <- regeneration %>%
   ungroup() %>%
   filter(area_type != "extended" | is.na(area_type))
 
-#Create oak count datasets, both including and excluding trunk shoots
+#Create extended oak count datasets, both including and excluding trunk shoots
 oaks_all_ext <- regeneration_extended %>%
   filter(species == "Quercus sp.") %>%
   group_by(site, plot, treatment, year, transect, subplot, area_m2) %>%
@@ -182,5 +183,47 @@ m4_shoots <- glmmTMB(oak_count ~ total_ba + canopy_openness + pH
 
 summary(m4_shoots)
 #Doesn't affect the results
+
+
+
+#Check correlation between the predictors
+oaks_noshoots %>%
+  filter(!is.na(total_ba) & !is.na(canopy_openness) & !is.na(pH)) %>%
+  select(total_ba, canopy_openness, pH) %>%
+  as.matrix() %>%
+  rcorr()
+#Significant, moderate correlation between basal area and pH
+#But note that this is only using 2025 values, check pairwise correlations
+
+cor.test(oaks_noshoots$total_ba, oaks_noshoots$canopy_openness)
+cor.test(oaks_noshoots$total_ba, oaks_noshoots$pH)
+cor.test(oaks_noshoots$canopy_openness, oaks_noshoots$pH)
+#All correlations significant and moderate
+
+
+#Structural Equation Modeling (SEM) of causal relationships between variables
+#Filter only 2025
+oaks_2025 <- oaks_noshoots %>% 
+  filter(!is.na(total_ba) & !is.na(canopy_openness) & !is.na(pH))
+
+sem_model <- psem(glmmTMB(canopy_openness ~ total_ba
+                          + (1 | site),
+                          data = oaks_2025,
+                          family = gaussian),
+                  
+                  glmmTMB(total_ba ~ pH
+                          + (1 | site),
+                          data = oaks_2025,
+                          family = gaussian),
+                  
+                  glmmTMB(oak_count ~ total_ba + canopy_openness + pH
+                          + (1 | site/plot/transect/subplot),
+                          data = oaks_2025,
+                          family = nbinom2))
+
+summary(sem_model) #warning: might need to scale or center
+coefs(sem_model)
+#BA affects oak density primarily through a direct pathway
+#BA has a significant indirect pathway through pH / pH has a pathway through BA
 
 
