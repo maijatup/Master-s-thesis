@@ -5,6 +5,7 @@ library(readr)
 library(dplyr)
 library(glmmTMB)
 library(piecewiseSEM)
+library(MuMIn)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -225,5 +226,69 @@ summary(sem_model) #warning: might need to scale or center
 coefs(sem_model)
 #BA affects oak density primarily through a direct pathway
 #BA has a significant indirect pathway through pH / pH has a pathway through BA
+
+
+
+#Merge 2003 and 2005 to early period, calculate means (identical to medians here) of response and predictor variables
+#Round oak count to be able to use nbinom2, round2 for correct rounding
+round2 <- function(x) floor(x + 0.5)
+
+oaks_period <- oaks_noshoots %>%
+  mutate(period = if_else(year %in% c(2003, 2005), "early", "late"),
+         period = factor(period)) %>%
+  group_by(site, plot, treatment, transect, subplot, area_m2, period) %>%
+  summarise(oak_count = round2(mean(oak_count)),
+            canopy_openness = mean(canopy_openness, na.rm = TRUE),
+            pH = mean(pH, na.rm = TRUE),
+            total_ba = mean(total_ba, na.rm = TRUE), 
+            quercus_sp_ba = mean(quercus_sp_ba, na.rm = TRUE), .groups = "drop") %>% 
+  mutate(across(where(is.numeric), ~ifelse(is.nan(.), NA, .)))
+
+
+#Run the models again with this dataset
+m1_period <- glmmTMB(oak_count ~ total_ba + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_period, family = nbinom2)
+
+summary(m1_period)
+#As basal area increases, oak seedling density decreases (significant)
+
+
+m2_period <- glmmTMB(oak_count ~ canopy_openness + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_period, family = nbinom2)
+
+summary(m2_period)
+#Canopy openness doesn’t have a significant effect on oak seedling density
+#Oak density decreases significantly over time, regardless of canopy
+
+
+m3_period <- glmmTMB(oak_count ~ pH + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_period, family = nbinom2)
+
+summary(m3_period)
+#pH doesn’t have a significant effect on oak seedling density
+
+
+m4_period <- glmmTMB(oak_count ~ total_ba + canopy_openness + pH + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_period, family = nbinom2)
+
+summary(m4_period)
+#As basal area decreases, oak seedling density decreases (significant)
+#Period has a significant negative effect on oak seedling density, but note only 66 observations
+
+
+r.squaredGLMM(m1_period)
+r.squaredGLMM(m2_period)
+r.squaredGLMM(m3_period)
+r.squaredGLMM(m4_period)
+#m4_period has the highest marginal R2 -> the combination of all predictors + period explains more variance than any predictor alone
+#The random effects explain a large proportion of the variance, oak seedling density varies a lot across sites
 
 
