@@ -6,6 +6,7 @@ library(dplyr)
 library(glmmTMB)
 library(piecewiseSEM)
 library(MuMIn)
+library(corrplot)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -291,4 +292,41 @@ r.squaredGLMM(m4_period)
 #m4_period has the highest marginal R2 -> the combination of all predictors + period explains more variance than any predictor alone
 #The random effects explain a large proportion of the variance, oak seedling density varies a lot across sites
 
+
+#Correlation plot
+cor_data <- oaks_period %>%
+  select(total_ba, canopy_openness, pH) %>%
+  as.matrix()
+
+cor_matrix <- cor(cor_data, use = "pairwise.complete.obs")
+p_matrix <- cor.mtest(cor_data, use = "pairwise.complete.obs")$p
+
+corrplot(cor_matrix,
+         method = "number",
+         p.mat = p_matrix)
+
+
+#SEM on the period models
+oaks_sem <- oaks_period %>%
+  filter(!is.na(total_ba) & !is.na(canopy_openness) & !is.na(pH))
+
+sem_period <- psem(glmmTMB(canopy_openness ~ total_ba
+                           + (1 | site/plot/transect/subplot),
+                           data = oaks_sem,
+                           family = gaussian),
+                   
+                   glmmTMB(total_ba ~ pH
+                           + (1 | site/plot/transect/subplot),
+                           data = oaks_sem,
+                           family = gaussian),
+                   
+                   glmmTMB(oak_count ~ total_ba + canopy_openness + pH + period
+                           + (1 | site/subplot),
+                           data = oaks_sem,
+                           family = nbinom2))
+
+coefs(sem_period)
+#Basal area is the only significant direct predictor of oak density
+#pH influences BA (and indirectly oak density)
+#Significant decline of oak density between early and late period
 
