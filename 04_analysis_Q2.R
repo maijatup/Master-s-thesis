@@ -278,19 +278,36 @@ summary(m3_period)
 
 
 m4_period_pH <- glmmTMB(oak_count ~ total_ba + canopy_openness + pH + period
-                     + offset(log(area_m2))
-                     + (1 | site/plot/transect/subplot),
-                     data = oaks_period, family = nbinom2)
+                        + offset(log(area_m2))
+                        + (1 | site/plot/transect/subplot),
+                        data = oaks_period, family = nbinom2)
 
 summary(m4_period_pH)
 #As basal area decreases, oak seedling density decreases (significant)
 #Period has a significant negative effect on oak seedling density, but note only 66 observations
 
-#pH was measured using different methods in 2005 and 2025, and cannot be directly compared, therefore dropped from this model
+
+
+#pH was measured using different methods in 2005 and 2025, and cannot be directly compared, test correlations in different periods
+oaks_0305 <- oaks_period %>% 
+  filter(period == "early")
+
+cor.test(oaks_period$total_ba, oaks_period$pH)
+cor.test(oaks_0305$total_ba, oaks_0305$pH)
+cor.test(oaks_2025$total_ba, oaks_2025$pH)
+#Significant correlation between basal area and pH in the combined data and 2025 data but not in 2003&2005 data
+
+cor.test(oaks_period$canopy_openness, oaks_period$pH)
+cor.test(oaks_0305$canopy_openness, oaks_0305$pH)
+cor.test(oaks_2025$canopy_openness, oaks_2025$pH)
+#Significant correlation between canopy openness and pH only in the combined data, and not in the individual datasets
+
+
+#pH dropped from this model
 m4_period <- glmmTMB(oak_count ~ total_ba + canopy_openness + period
-                        + offset(log(area_m2))
-                        + (1 | site/plot/transect/subplot),
-                        data = oaks_period, family = nbinom2)
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     data = oaks_period, family = nbinom2)
 
 summary(m4_period)
 #As basal area decreases, oak seedling density decreases (significant), similar effect size in both m4 models
