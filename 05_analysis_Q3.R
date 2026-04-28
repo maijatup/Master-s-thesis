@@ -30,3 +30,19 @@ oaks_noshoots <- regeneration_core %>%
             total_ba = first(total_ba), 
             quercus_sp_ba = first(quercus_sp_ba), .groups = "drop")
 
+
+#Create a period dataset, excluding trunk shoots
+#Merge 2003 and 2005 to early period, calculate means of oak count and canopy openness
+#Round oak count to be able to use nbinom2, round2 for correct rounding
+round2 <- function(x) floor(x + 0.5)
+
+oaks_period <- oaks_noshoots %>%
+  mutate(period = if_else(year %in% c(2003, 2005), "early", "late"),
+         period = factor(period)) %>%
+  group_by(site, plot, treatment, transect, subplot, area_m2, period) %>%
+  summarise(oak_count = round2(mean(oak_count)),
+            canopy_openness = mean(canopy_openness, na.rm = TRUE),
+            pH = mean(pH, na.rm = TRUE),
+            total_ba = mean(total_ba, na.rm = TRUE), 
+            quercus_sp_ba = mean(quercus_sp_ba, na.rm = TRUE), .groups = "drop") %>% 
+  mutate(across(where(is.numeric), ~ifelse(is.nan(.), NA, .)))
