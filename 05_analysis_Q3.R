@@ -119,6 +119,28 @@ m5 <- glmmTMB(oak_count ~ treatment * total_ba + canopy_openness + period
 summary(m5)
 #In control plots, basal area has a negative effect on oak density, but in thinned plots, basal area has almost no effect
 
+
+#Test if including trunk shoots influences the results
+oaks_period_all <- oaks_all %>%
+  mutate(period = if_else(year %in% c(2003, 2005), "early", "late"),
+         period = factor(period)) %>%
+  group_by(site, plot, treatment, transect, subplot, area_m2, period) %>%
+  summarise(oak_count = round2(mean(oak_count)),
+            canopy_openness = mean(canopy_openness, na.rm = TRUE),
+            pH = mean(pH, na.rm = TRUE),
+            total_ba = mean(total_ba, na.rm = TRUE), 
+            quercus_sp_ba = mean(quercus_sp_ba, na.rm = TRUE), .groups = "drop") %>% 
+  mutate(across(where(is.numeric), ~ifelse(is.nan(.), NA, .)))
+
+m5_shoots <- glmmTMB(oak_count ~ treatment * total_ba + canopy_openness + period
+                     + offset(log(area_m2))
+                     + (1 | site/transect/subplot),
+                     family = nbinom2, data = oaks_period_all)
+
+summary(m5_shoots)
+#Doesn't affect the results
+
+
 r.squaredGLMM(m5)
 
 #Diagnostics
