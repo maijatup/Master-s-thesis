@@ -4,6 +4,9 @@
 library(readr)
 library(dplyr)
 library(glmmTMB)
+library(MuMIn)
+library(DHARMa)
+library(emmeans)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -116,6 +119,31 @@ m5 <- glmmTMB(oak_count ~ treatment * total_ba + canopy_openness + period
 summary(m5)
 #In control plots, basal area has a negative effect on oak density, but in thinned plots, basal area has almost no effect
 
+r.squaredGLMM(m5)
+
+#Diagnostics
+#First, create a dataset with only the 94 observations used in the model
+oaks_ba_can <- oaks_period %>% 
+  filter(complete.cases(total_ba, canopy_openness))
+
+sim_res <- simulateResiduals(m5)
+
+plot(sim_res)
+#No significant deviation
+
+testDispersion(sim_res)
+testZeroInflation(sim_res)
+#No overdispersion or zeroinflation
+
+plotResiduals(sim_res, oaks_ba_can$total_ba)
+plotResiduals(sim_res, oaks_ba_can$canopy_openness)
+#Minor quantile deviations - due to skewed distribution?
+
+plotResiduals(sim_res, oaks_ba_can$treatment)
+#More variance in thinned plots
+
+plotResiduals(sim_res, oaks_ba_can$period)
+
 
 
 #Model 6: test if the effect of canopy differs between treatments
@@ -127,4 +155,54 @@ m6 <- glmmTMB(oak_count ~ treatment * canopy_openness + total_ba + period
 summary(m6)
 #Canopy has a positive (non-significant) effect in control plots, and a negative effect in thinned plots
 #The effect of canopy differs significantly between treatments
+
+#Diagnostics
+sim_res6 <- simulateResiduals(m6)
+
+plot(sim_res6)
+#Ok but worse than m5
+
+testDispersion(sim_res6)
+testZeroInflation(sim_res6)
+#No overdispersion or zeroinflation
+
+plotResiduals(sim_res6, oaks_ba_can$total_ba)
+#Strong wavy pattern, much worse than m5
+
+plotResiduals(sim_res6, oaks_ba_can$canopy_openness)
+#Similar to m5
+
+plotResiduals(sim_res6, oaks_ba_can$treatment)
+plotResiduals(sim_res6, oaks_ba_can$period)
+#Ok
+
+
+
+#Post-hocs
+#Estimated marginal means for treatment effect
+(emm_treatment <- emmeans(m5, ~ treatment, type = "response"))
+pairs(emm_treatment)
+#Thinned plots have more oak seedlings (not significant)
+
+
+#Estimated marginal means for period effect
+(emm_period <- emmeans(m5, ~ period, type = "response"))
+pairs(emm_period)
+#Late period has fewer seedlings than early period (not significant)
+
+
+#Evaluate treatment effect at low, intermediate, and high basal areas
+ba_values <- quantile(oaks_ba_can$total_ba, probs = c(0.1, 0.5, 0.9), na.rm = TRUE)
+
+(emm_interaction <- emmeans(m5, ~ treatment | total_ba,
+                           at = list(total_ba = ba_values),
+                           type = "response"))
+pairs(emm_interaction)
+#Thinned plots at high ba have significantly higher seedling density
+
+#Effect of basal area within each treatment
+emtrends(m5, ~ treatment, var = "total_ba") %>% 
+  test()
+#In control plots, basal area has a significant negative effect on oak density
+#In thinned plots, basal area has no significant effect
 
