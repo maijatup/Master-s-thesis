@@ -257,6 +257,7 @@ summary(m1_period)
 #As basal area increases, oak seedling density decreases (significant)
 
 
+
 m2_period <- glmmTMB(oak_count ~ canopy_openness + period
                      + offset(log(area_m2))
                      + (1 | site/plot/transect/subplot),
@@ -265,6 +266,7 @@ m2_period <- glmmTMB(oak_count ~ canopy_openness + period
 summary(m2_period)
 #Canopy openness doesn’t have a significant effect on oak seedling density
 #Oak density decreases significantly over time, regardless of canopy
+
 
 
 m3_period <- glmmTMB(oak_count ~ pH + period
