@@ -5,6 +5,7 @@ library(readr)
 library(dplyr)
 library(glmmTMB)
 library(flextable)
+library(DHARMa)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -308,4 +309,11 @@ m1_subset <- glmmTMB(quercus_sp ~ total_competitor + period
 
 summary(m1_subset)
 #The effect of total competitor density disappears due to less data and not basal area
+
+
+
+#Diagnostics
+sim_res <- simulateResiduals(m1)
+plot(sim_res)
+#Model not optimal but still OK?
 
