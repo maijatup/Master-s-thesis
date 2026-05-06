@@ -1,8 +1,10 @@
 #4/5/2026
-#How does competition from other tree species affect oak seedling density?
+#Question 4: How does competition from other tree species affect oak seedling density?
 
 library(readr)
 library(dplyr)
+library(glmmTMB)
+library(flextable)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -20,6 +22,7 @@ regeneration_core %>%
   mutate(p_subplot_years = 100 * n_subplot_years / 224) %>%
   arrange(desc(total_density)) %>%
   print(n = Inf)
+#Choose Sorbus aucuparia, Corylus avellana, Frangula alnus, Populus tremula, Fraxinus excelsior, Picea abies and merged Betula spp.
 
 
 #Create competition datasets, both without (main) and with trunk shoots
@@ -58,21 +61,21 @@ competition_all <- regeneration_core %>%
 
 
 #Create period datasets by merging 2003&2005
-#Round counts to be able to use nbinom2, round2 for correct rounding
+#Round oak counts to be able to use nbinom2, round2 for correct rounding
 round2 <- function(x) floor(x + 0.5)
 
 competition_p <- competition %>%
   mutate(period = factor(if_else(year %in% c(2003, 2005), "early", "late"))) %>%
   group_by(site, plot, treatment, transect, subplot, area_m2, period) %>%
   summarise(quercus_sp = round2(mean(quercus_sp)),
-            fraxinus_excelsior = round2(mean(fraxinus_excelsior)),
-            frangula_alnus = round2(mean(frangula_alnus)),
-            sorbus_aucuparia = round2(mean(sorbus_aucuparia)),
-            populus_tremula = round2(mean(populus_tremula)),
-            corylus_avellana = round2(mean(corylus_avellana)),
-            picea_abies = round2(mean(picea_abies)),
-            betula_sp = round2(mean(betula_sp)),
-            total_competitor = round2(mean(total_competitor)),
+            fraxinus_excelsior = mean(fraxinus_excelsior),
+            frangula_alnus = mean(frangula_alnus),
+            sorbus_aucuparia = mean(sorbus_aucuparia),
+            populus_tremula = mean(populus_tremula),
+            corylus_avellana = mean(corylus_avellana),
+            picea_abies = mean(picea_abies),
+            betula_sp = mean(betula_sp),
+            total_competitor = mean(total_competitor),
             canopy_openness = mean(canopy_openness, na.rm = TRUE),
             pH = mean(pH, na.rm = TRUE),
             total_ba = mean(total_ba, na.rm = TRUE),
@@ -84,17 +87,225 @@ competition_all_p <- competition_all %>%
   mutate(period = factor(if_else(year %in% c(2003, 2005), "early", "late"))) %>%
   group_by(site, plot, treatment, transect, subplot, area_m2, period) %>%
   summarise(quercus_sp = round2(mean(quercus_sp)),
-            fraxinus_excelsior = round2(mean(fraxinus_excelsior)),
-            frangula_alnus = round2(mean(frangula_alnus)),
-            sorbus_aucuparia = round2(mean(sorbus_aucuparia)),
-            populus_tremula = round2(mean(populus_tremula)),
-            corylus_avellana = round2(mean(corylus_avellana)),
-            picea_abies = round2(mean(picea_abies)),
-            betula_sp = round2(mean(betula_sp)),
-            total_competitor = round2(mean(total_competitor)),
+            fraxinus_excelsior = mean(fraxinus_excelsior),
+            frangula_alnus = mean(frangula_alnus),
+            sorbus_aucuparia = mean(sorbus_aucuparia),
+            populus_tremula = mean(populus_tremula),
+            corylus_avellana = mean(corylus_avellana),
+            picea_abies = mean(picea_abies),
+            betula_sp = mean(betula_sp),
+            total_competitor = mean(total_competitor),
             canopy_openness = mean(canopy_openness, na.rm = TRUE),
             pH = mean(pH, na.rm = TRUE),
             total_ba = mean(total_ba, na.rm = TRUE),
             quercus_sp_ba = mean(quercus_sp_ba, na.rm = TRUE), .groups = "drop") %>%
   mutate(across(where(is.numeric), ~ifelse(is.nan(.), NA, .)))
+
+
+
+#Model 1: test the effect of total competitor density on oak density
+m1 <- glmmTMB(quercus_sp ~ total_competitor + period
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m1)
+#Total competitor density has a significant positive effect on oak density
+
+#Test if including trunk shoots influences the results
+m1_shoots <- glmmTMB(quercus_sp ~ total_competitor + period
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_all_p)
+
+summary(m1_shoots)
+#Doesn't affect the results
+
+
+
+#Model 2: test if the effect of total competitor density differs between periods
+m2 <- glmmTMB(quercus_sp ~ total_competitor * period
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m2)
+#The effect doesn't differ between periods
+
+
+
+#Model 3: test the effect of total competitor density and thinning together
+m3 <- glmmTMB(quercus_sp ~ total_competitor + period + treatment
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m3)
+#The effect of competitor density stays significant
+#Period effect now significant
+#Treatment doesn't have a significant effect
+
+
+
+#Model 4: test if the effect of total competitor density differs between treatments
+m4 <- glmmTMB(quercus_sp ~ total_competitor * treatment + period
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m4)
+#The effect doesn't differ between treatments
+
+
+
+#Test the effect of Sorbus aucuparia density on oak density
+m_sorbus <- glmmTMB(quercus_sp ~ sorbus_aucuparia + period
+                    + offset(log(area_m2))
+                    + (1 | site/plot/transect/subplot),
+                    family = nbinom2, data = competition_p)
+
+summary(m_sorbus)
+#No significant effect on oak density
+
+
+
+#Test the effect of Corylus avellana on oak density
+m_corylus <- glmmTMB(quercus_sp ~ corylus_avellana + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     family = nbinom2, data = competition_p)
+
+summary(m_corylus)
+#No significant effect on oak density
+
+
+
+#Test the effect of Frangula alnus on oak density
+m_frangula <- glmmTMB(quercus_sp ~ frangula_alnus + period
+                      + offset(log(area_m2))
+                      + (1 | site/plot/transect/subplot),
+                      family = nbinom2, data = competition_p)
+
+summary(m_frangula)
+#No significant effect on oak density
+
+
+
+#Test the effect of Populus tremula on oak density
+m_populus <- glmmTMB(quercus_sp ~ populus_tremula + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     family = nbinom2, data = competition_p)
+
+summary(m_populus)
+#No significant effect on oak density
+
+
+
+#Test the effect of Fraxinus excelsior on oak density
+m_fraxinus <- glmmTMB(quercus_sp ~ fraxinus_excelsior + period
+                      + offset(log(area_m2))
+                      + (1 | site/plot/transect/subplot),
+                      family = nbinom2, data = competition_p)
+
+summary(m_fraxinus)
+#Fraxinus excelsior has a significant positive effect on oak density
+
+
+
+#Test the effect of Picea abies on oak density
+m_picea <- glmmTMB(quercus_sp ~ picea_abies + period
+                   + offset(log(area_m2))
+                   + (1 | site/plot/transect/subplot),
+                   family = nbinom2, data = competition_p)
+
+summary(m_picea)
+#No significant effect
+
+
+
+#Test the effect of Betula sp. on oak density
+m_betula <- glmmTMB(quercus_sp ~ betula_sp + period
+                    + offset(log(area_m2))
+                    + (1 | site/plot/transect/subplot),
+                    family = nbinom2, data = competition_p)
+
+summary(m_betula)
+#Betula sp. have a significant negative effect on oak density
+
+
+#Check the distribution of Fraxinus, Betula and Quercus across the plots
+competition_p %>%
+  group_by(site, treatment) %>%
+  summarise(fraxinus = sum(fraxinus_excelsior),
+            betula = sum(betula_sp),
+            quercus = sum(quercus_sp), .groups = "drop")
+#Both concentrated in one site or plot, the significant effects could be due to this
+
+#Make a table that shows these distributions
+table1 <- competition_p %>%
+  group_by(site, treatment) %>%
+  summarise(fraxinus = sum(fraxinus_excelsior),
+            betula = sum(betula_sp),
+            quercus = sum(quercus_sp), .groups = "drop") %>%
+  rename(Site = site, Treatment = treatment,
+         "Fraxinus excelsior" = fraxinus,
+         "Betula sp." = betula,
+         "Quercus sp." = quercus) %>%
+  flextable() %>%
+  merge_v(j = "Site") %>%
+  theme_booktabs() %>%
+  autofit() %>%
+  italic(j = c("Fraxinus excelsior", "Betula sp.", "Quercus sp."), part = "header") %>%
+  font(fontname = "Times New Roman", part = "all") %>%
+  colformat_num(big.mark = "", decimal.mark = ".", digits = 1)
+
+save_as_docx(table1, path = "competition_table.docx")
+
+
+
+#Calculate competitor diversity
+competitor_diversity <- regeneration_core %>%
+  filter(shoot == FALSE, species != "Quercus sp.") %>%
+  group_by(site, plot, treatment, year, transect, subplot) %>%
+  summarise(competitor_diversity = n_distinct(species), .groups = "drop") %>%
+  mutate(period = factor(if_else(year %in% c(2003, 2005), "early", "late"))) %>%
+  group_by(site, plot, treatment, transect, subplot, period) %>%
+  summarise(competitor_diversity = mean(competitor_diversity), .groups = "drop")
+
+competition_p <- competition_p %>%
+  left_join(competitor_diversity, by = c("site", "plot", "treatment", "transect", "subplot", "period")) %>% 
+  mutate(competitor_diversity = ifelse(is.na(competitor_diversity), 0, competitor_diversity))
+
+
+#Model 5: test the effect of competitor diversity on oak density
+m5 <- glmmTMB(quercus_sp ~ competitor_diversity + period
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m5)
+#Competitor diversity doesn't have a significant effect
+
+
+
+#Test the effect of competitor density and basal area together
+m6 <- glmmTMB(quercus_sp ~ total_competitor + period + total_ba
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m6)
+#Total basal area has a negative effect, the effect of total competitor density disappears - ba a stronger driver?
+#Note less data than m1
+
+#Run m1 with the same subset of data as m6 to compare
+m1_subset <- glmmTMB(quercus_sp ~ total_competitor + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     family = nbinom2,
+                     data = subset(competition_p, !is.na(total_ba)))
+
+summary(m1_subset)
+#The effect of total competitor density disappears due to less data and not basal area
 
