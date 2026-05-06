@@ -222,6 +222,7 @@ ba_values <- quantile(oaks_ba_can$total_ba, probs = c(0.1, 0.5, 0.9), na.rm = TR
 pairs(emm_interaction)
 #Thinned plots at high ba have significantly higher seedling density
 
+
 #Effect of basal area within each treatment
 emtrends(m5, ~ treatment, var = "total_ba") %>% 
   test()
