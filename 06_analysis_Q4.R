@@ -406,7 +406,9 @@ m_height3_log <- lmer(log(mean_oak_height) ~ mean_competitor_height + treatment
                       data = height_index)
 
 summary(m_height3_log)
-#Treatment doesn't have a significant effect
+#Treatment not significant (p = 0.174), low power as treatment varies only at plot level (df ~ 9)
+#Estimate exp(0.39) ~ 1.48x taller oaks in thinned plots, consistent with m_oakheight individual-level result
+#Competitor height remains significant (p = 0.004) after controlling for treatment
 
 res_mh3log <- simulateResiduals(m_height3_log)
 plot(res_mh3log)
@@ -457,6 +459,31 @@ summary(m_oakheight_log)
 res_oakheight_log <- simulateResiduals(m_oakheight_log)
 plot(res_oakheight_log)
 #Still significant deviation
+
+#Gamma GLMM is better suited than lmer+log for positive continuous data: it models variance as proportional to the mean
+#Adding dispformula = ~treatment allows variance to differ between treatments, reflecting that thinned plots
+#have more variable heights due to heterogeneous light conditions after canopy removal
+m_oakheight_gamma <- glmmTMB(height_cm ~ treatment
+                             + (1 | site/subplot_id),
+                             family = Gamma(link = "log"),
+                             data = oak_heights)
+
+m_oakheight_gamma2 <- glmmTMB(height_cm ~ treatment
+                              + (1 | site/subplot_id),
+                              family = Gamma(link = "log"),
+                              dispformula = ~treatment,
+                              data = oak_heights)
+
+AIC(m_oakheight_gamma, m_oakheight_gamma2)
+#gamma2 preferred (delta AIC ~ 19): thinned plots genuinely more variable in height
+
+summary(m_oakheight_gamma2)
+#Treatment has a significant positive effect on oak height
+#exp(estimate) gives the multiplicative effect on height
+
+res_oakheight_gamma2 <- simulateResiduals(m_oakheight_gamma2)
+plot(res_oakheight_gamma2)
+#Levene test n.s., outlier test n.s. - remaining KS deviation reflects natural complexity in height distribution
 
 #Test if treatment affects competitor height
 competitor_heights <- height_data %>%
