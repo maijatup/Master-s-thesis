@@ -6,6 +6,8 @@ library(dplyr)
 library(glmmTMB)
 library(flextable)
 library(DHARMa)
+library(lme4)
+library(lmerTest)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -23,7 +25,7 @@ regeneration_core %>%
   mutate(p_subplot_years = 100 * n_subplot_years / 224) %>%
   arrange(desc(total_density)) %>%
   print(n = Inf)
-#Choose Sorbus aucuparia, Corylus avellana, Frangula alnus, Populus tremula, Fraxinus excelsior, Picea abies and merged Betula spp.
+#Choose Sorbus aucuparia, Corylus avellana, Frangula alnus, Populus tremula, Fraxinus excelsior, Picea abies and merged Betula spp. (highest occurrences)
 
 
 #Create competition datasets, both without (main) and with trunk shoots
@@ -115,9 +117,9 @@ summary(m1)
 
 #Test if including trunk shoots influences the results
 m1_shoots <- glmmTMB(quercus_sp ~ total_competitor + period
-              + offset(log(area_m2))
-              + (1 | site/plot/transect/subplot),
-              family = nbinom2, data = competition_all_p)
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     family = nbinom2, data = competition_all_p)
 
 summary(m1_shoots)
 #Doesn't affect the results
@@ -159,6 +161,29 @@ summary(m4)
 
 
 
+#Model 5: test the effect of competitor density and basal area together
+m5 <- glmmTMB(quercus_sp ~ total_competitor + period + total_ba
+              + offset(log(area_m2))
+              + (1 | site/plot/transect/subplot),
+              family = nbinom2, data = competition_p)
+
+summary(m5)
+#Total basal area has a negative effect, the effect of total competitor density disappears - ba a stronger driver?
+#Note less data than m1
+
+#Run m1 with the same subset of data as m5 to compare
+m1_subset <- glmmTMB(quercus_sp ~ total_competitor + period
+                     + offset(log(area_m2))
+                     + (1 | site/plot/transect/subplot),
+                     family = nbinom2,
+                     data = subset(competition_p, !is.na(total_ba)))
+
+summary(m1_subset)
+#The effect of total competitor density disappears due to less data and not basal area
+
+
+
+#Test the effects of individual species densities
 #Test the effect of Sorbus aucuparia density on oak density
 m_sorbus <- glmmTMB(quercus_sp ~ sorbus_aucuparia + period
                     + offset(log(area_m2))
@@ -265,50 +290,28 @@ save_as_docx(table1, path = "competition_table.docx")
 
 
 
-#Calculate competitor diversity
-competitor_diversity <- regeneration_core %>%
+#Calculate competitor species richness
+competitor_richness <- regeneration_core %>%
   filter(shoot == FALSE, species != "Quercus sp.") %>%
   group_by(site, plot, treatment, year, transect, subplot) %>%
-  summarise(competitor_diversity = n_distinct(species), .groups = "drop") %>%
+  summarise(competitor_richness = n_distinct(species), .groups = "drop") %>%
   mutate(period = factor(if_else(year %in% c(2003, 2005), "early", "late"))) %>%
   group_by(site, plot, treatment, transect, subplot, period) %>%
-  summarise(competitor_diversity = mean(competitor_diversity), .groups = "drop")
+  summarise(competitor_richness = mean(competitor_richness), .groups = "drop")
 
 competition_p <- competition_p %>%
-  left_join(competitor_diversity, by = c("site", "plot", "treatment", "transect", "subplot", "period")) %>% 
-  mutate(competitor_diversity = ifelse(is.na(competitor_diversity), 0, competitor_diversity))
+  left_join(competitor_richness, by = c("site", "plot", "treatment", "transect", "subplot", "period")) %>% 
+  mutate(competitor_richness = ifelse(is.na(competitor_richness), 0, competitor_richness))
 
 
-#Model 5: test the effect of competitor diversity on oak density
-m5 <- glmmTMB(quercus_sp ~ competitor_diversity + period
-              + offset(log(area_m2))
-              + (1 | site/plot/transect/subplot),
-              family = nbinom2, data = competition_p)
-
-summary(m5)
-#Competitor diversity doesn't have a significant effect
-
-
-
-#Test the effect of competitor density and basal area together
-m6 <- glmmTMB(quercus_sp ~ total_competitor + period + total_ba
+#Model 6: test the effect of competitor species richness on oak density
+m6 <- glmmTMB(quercus_sp ~ competitor_richness + period
               + offset(log(area_m2))
               + (1 | site/plot/transect/subplot),
               family = nbinom2, data = competition_p)
 
 summary(m6)
-#Total basal area has a negative effect, the effect of total competitor density disappears - ba a stronger driver?
-#Note less data than m1
-
-#Run m1 with the same subset of data as m6 to compare
-m1_subset <- glmmTMB(quercus_sp ~ total_competitor + period
-                     + offset(log(area_m2))
-                     + (1 | site/plot/transect/subplot),
-                     family = nbinom2,
-                     data = subset(competition_p, !is.na(total_ba)))
-
-summary(m1_subset)
-#The effect of total competitor density disappears due to less data and not basal area
+#Competitor species richness doesn't have a significant effect
 
 
 
@@ -317,3 +320,176 @@ sim_res <- simulateResiduals(m1)
 plot(sim_res)
 #Model not optimal but still OK?
 
+
+
+
+#Model competition using height data instead of density
+height_data <- read_csv2("raw_data/seedling_data_raw.csv")
+
+#Add a shoot column
+height_data <- height_data %>% 
+  mutate(shoot = notes %in% c("stubbskott, räknas ej?",
+                              "stubbskott",
+                              "stubbskott på ovan rönn",
+                              "stubbskott av nian")) %>% 
+  select(site, plot, treatment, transect, subplot, species, height_cm, diameter_cm, shoot)
+
+
+#Calculate mean heights and height ratio
+#Filter out everything >130 cm (exact height not measured)
+height_index <- height_data %>%
+  filter(species != "0", !is.na(height_cm), height_cm != ">130") %>%
+  mutate(height_cm = as.numeric(height_cm),
+         height_cm = ifelse(height_cm > 130, NA, height_cm)) %>%
+  filter(!is.na(height_cm), shoot == FALSE) %>%
+  group_by(site, plot, treatment, transect, subplot) %>%
+  summarise(mean_oak_height = mean(height_cm[species == "Quercus sp."], na.rm = TRUE),
+            mean_competitor_height = mean(height_cm[species != "Quercus sp."], na.rm = TRUE), .groups = "drop") %>%
+  mutate(height_ratio = mean_competitor_height / mean_oak_height)
+
+#Join to main dataset, note that exact height values only exist for 2025
+#Create subplot id to be able to remove transect from nesting so the model will converge
+competition_p <- competition_p %>%
+  left_join(height_index %>% select(site, plot, treatment, transect, subplot, height_ratio, mean_oak_height),
+            by = c("site", "plot", "treatment", "transect", "subplot")) %>%
+  mutate(height_ratio = ifelse(period == "early", NA, height_ratio),
+         mean_oak_height = ifelse(period == "early", NA, mean_oak_height),
+         subplot_id = paste(site, transect, subplot, sep = "_"))
+
+
+
+#Test the effect of mean competitor height on mean oak height
+m_height2 <- lmer(mean_oak_height ~ mean_competitor_height 
+                  + (1 | site/plot),
+                  data = height_index)
+
+summary(m_height2)
+#Mean competitor height has a significant positive effect on mean oak height
+
+res_mh2 <- simulateResiduals(m_height2)
+plot(res_mh2)
+#Significant deviation
+
+#Log transform, create unique plot IDs
+height_index <- height_index %>%
+  mutate(plot_id = paste(site, plot, sep = "_")) %>% 
+  mutate(subplot_id = paste(site, transect, subplot, sep = "_"))
+
+m_height2_log <- lmer(log(mean_oak_height) ~ mean_competitor_height 
+                      + (1 | plot_id),
+                      data = height_index)
+
+summary(m_height2_log)
+#Mean competitor height has a significant effect on mean oak height
+
+res_mh2log <- simulateResiduals(m_height2_log)
+plot(res_mh2log)
+#No significant deviation
+
+
+
+#Test the effect of mean competitor height and treatment together
+m_height3 <- lmer(mean_oak_height ~ mean_competitor_height + treatment
+                  + (1 | site/plot),
+                  data = height_index)
+
+summary(m_height3)
+
+res_mh3 <- simulateResiduals(m_height3)
+plot(res_mh3)
+#Significant deviation
+
+#Log transform
+m_height3_log <- lmer(log(mean_oak_height) ~ mean_competitor_height + treatment
+                      + (1 | plot_id),
+                      data = height_index)
+
+summary(m_height3_log)
+#Treatment doesn't have a significant effect
+
+res_mh3log <- simulateResiduals(m_height3_log)
+plot(res_mh3log)
+#No significant deviation
+
+
+
+#Test the effect of total competitor density on mean oak height
+competition_p <- competition_p %>%
+  mutate(plot_id = paste(site, plot, sep = "_"))
+
+m_height4 <- lmer(log(mean_oak_height) ~ total_competitor
+                  + (1 | plot_id),
+                  data = competition_p)
+
+summary(m_height4)
+#Total competitor density doesn't have a significant effect on mean oak height
+
+res_mh4 <- simulateResiduals(m_height4)
+plot(res_mh4)
+#No significant deviation
+
+
+
+#Test if treatment affects oak height
+oak_heights <- height_data %>%
+  filter(species == "Quercus sp.", shoot == FALSE,
+         !is.na(height_cm), height_cm != ">130") %>%
+  mutate(height_cm = as.numeric(height_cm),
+         subplot_id = paste(site, transect, subplot, sep = "_")) %>%
+  filter(height_cm <= 130)
+
+m_oakheight <- lmer(height_cm ~ treatment
+                    + (1 | site/subplot_id),
+                    data = oak_heights)
+
+summary(m_oakheight)
+#Treatment has a significant positive effect on oak seedling height
+
+res_oakheight <- simulateResiduals(m_oakheight)
+plot(res_oakheight)
+#Significant deviation
+
+#Log transform
+m_oakheight_log <- lmer(log(height_cm) ~ treatment
+                        + (1 | site/subplot_id),
+                        data = oak_heights)
+
+summary(m_oakheight_log)
+
+res_oakheight_log <- simulateResiduals(m_oakheight_log)
+plot(res_oakheight_log)
+#Still significant deviation
+
+
+
+#Test if treatment affects competitor height
+competitor_heights <- height_data %>%
+  filter(species != "Quercus sp.", species != "0", shoot == FALSE,
+         !is.na(height_cm), height_cm != ">130") %>%
+  mutate(height_cm = as.numeric(height_cm),
+         subplot_id = paste(site, transect, subplot, sep = "_")) %>%
+  filter(height_cm <= 130)
+
+m_compheight <- lmer(height_cm ~ treatment
+                     + (1 | site/subplot_id),
+                     data = competitor_heights)
+
+summary(m_compheight)
+#Treatment has a significant positive effect on competitor seedling height
+#Competitor seedlings are on average taller than oak seedlings
+
+res_compheight <- simulateResiduals(m_compheight)
+plot(res_compheight)
+#Significant deviation
+
+#Log transform
+m_compheight_log <- lmer(log(height_cm) ~ treatment
+                         + (1 | site/subplot_id),
+                         data = competitor_heights)
+
+summary(m_compheight_log)
+
+res_compheight_log <- simulateResiduals(m_compheight_log)
+plot(res_compheight_log)
+#Still significant deviation, heights are much more variable in thinned plots?
+#Just accept this as a limitation?
