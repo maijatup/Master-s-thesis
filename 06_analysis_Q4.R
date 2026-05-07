@@ -8,6 +8,7 @@ library(flextable)
 library(DHARMa)
 library(lme4)
 library(lmerTest)
+library(ggplot2)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -411,8 +412,6 @@ res_mh3log <- simulateResiduals(m_height3_log)
 plot(res_mh3log)
 #No significant deviation
 
-
-
 #Test the effect of total competitor density on mean oak height
 competition_p <- competition_p %>%
   mutate(plot_id = paste(site, plot, sep = "_"))
@@ -427,7 +426,6 @@ summary(m_height4)
 res_mh4 <- simulateResiduals(m_height4)
 plot(res_mh4)
 #No significant deviation
-
 
 
 #Test if treatment affects oak height
@@ -460,8 +458,6 @@ res_oakheight_log <- simulateResiduals(m_oakheight_log)
 plot(res_oakheight_log)
 #Still significant deviation
 
-
-
 #Test if treatment affects competitor height
 competitor_heights <- height_data %>%
   filter(species != "Quercus sp.", species != "0", shoot == FALSE,
@@ -493,3 +489,52 @@ res_compheight_log <- simulateResiduals(m_compheight_log)
 plot(res_compheight_log)
 #Still significant deviation, heights are much more variable in thinned plots?
 #Just accept this as a limitation?
+
+
+#Test height ratio (mean competitor height / mean oak height)
+#A ratio > 1 means competitors are on average taller than oaks
+#This directly tests whether competitors outpace oaks, rather than both just tracking habitat quality
+
+height_index <- height_index %>%
+  mutate(plot_id = paste(site, plot, sep = "_"),
+         subplot_id = paste(site, transect, subplot, sep = "_"))
+
+#Model: does treatment affect the height ratio?
+m_ratio1 <- lmer(log(height_ratio) ~ treatment + (1 | plot_id),
+                 data = height_index)
+
+summary(m_ratio1)
+#If thinning reduces the ratio, oaks are keeping up with competitors better in thinned plots
+
+res_ratio1 <- simulateResiduals(m_ratio1)
+plot(res_ratio1)
+
+
+#Join total competitor density (late period only) to height_index
+height_index_comp <- competition_p %>%
+  filter(period == "late") %>%
+  select(site, plot, treatment, transect, subplot, total_competitor) %>%
+  right_join(height_index, by = c("site", "plot", "treatment", "transect", "subplot"))
+
+#Model: does total competitor density relate to the height ratio?
+m_ratio2 <- lmer(log(height_ratio) ~ total_competitor + (1 | plot_id),
+                 data = height_index_comp)
+
+summary(m_ratio2)
+#If more competitors = higher ratio, competitors are outpacing oaks in denser subplots
+
+res_ratio2 <- simulateResiduals(m_ratio2)
+plot(res_ratio2)
+
+
+#Model: does the height ratio predict oak density?
+#Most direct test: are subplots where competitors are taller relative to oaks associated with fewer oaks?
+m_ratio3 <- glmmTMB(quercus_sp ~ height_ratio + offset(log(area_m2))
+                    + (1 | site/plot),
+                    family = nbinom2,
+                    data = competition_p)
+
+summary(m_ratio3)
+
+res_ratio3 <- simulateResiduals(m_ratio3)
+plot(res_ratio3)
