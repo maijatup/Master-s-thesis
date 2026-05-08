@@ -485,6 +485,8 @@ res_oakheight_gamma2 <- simulateResiduals(m_oakheight_gamma2)
 plot(res_oakheight_gamma2)
 #Levene test n.s., outlier test n.s. - remaining KS deviation reflects natural complexity in height distribution
 
+
+
 #Test if treatment affects competitor height
 competitor_heights <- height_data %>%
   filter(species != "Quercus sp.", species != "0", shoot == FALSE,
@@ -517,6 +519,33 @@ plot(res_compheight_log)
 #Still significant deviation, heights are much more variable in thinned plots?
 #Just accept this as a limitation?
 
+#Run Gamma GLMM
+m_compheight_gamma <- glmmTMB(height_cm ~ treatment
+                              + (1 | site/subplot_id),
+                              family = Gamma(link = "log"),
+                              data = competitor_heights)
+
+m_compheight_gamma2 <- glmmTMB(height_cm ~ treatment
+                               + (1 | site/subplot_id),
+                               family = Gamma(link = "log"),
+                               dispformula = ~treatment,
+                               data = competitor_heights)
+
+AIC(m_compheight_gamma, m_compheight_gamma2)
+#delta AIC ~ 3.6
+
+summary(m_compheight_gamma2)
+#Treatment has a significant positive effect on competitor height
+
+res_compheight_gamma <- simulateResiduals(m_compheight_gamma)
+plot(res_compheight_gamma)
+#KS significant, deviation significant, Levene significant
+
+res_compheight_gamma2 <- simulateResiduals(m_compheight_gamma2)
+plot(res_compheight_gamma2)
+#KS n.s., deviation n.s., Levene still significant
+
+
 
 #Test height ratio (mean competitor height / mean oak height)
 #A ratio > 1 means competitors are on average taller than oaks
@@ -532,6 +561,7 @@ m_ratio1 <- lmer(log(height_ratio) ~ treatment + (1 | plot_id),
 
 summary(m_ratio1)
 #If thinning reduces the ratio, oaks are keeping up with competitors better in thinned plots
+#Treatment didn't affect height ratio
 
 res_ratio1 <- simulateResiduals(m_ratio1)
 plot(res_ratio1)
@@ -549,6 +579,7 @@ m_ratio2 <- lmer(log(height_ratio) ~ total_competitor + (1 | plot_id),
 
 summary(m_ratio2)
 #If more competitors = higher ratio, competitors are outpacing oaks in denser subplots
+#Total competitor density wasn't related to (higher) height ratio
 
 res_ratio2 <- simulateResiduals(m_ratio2)
 plot(res_ratio2)
@@ -562,6 +593,7 @@ m_ratio3 <- glmmTMB(quercus_sp ~ height_ratio + offset(log(area_m2))
                     data = competition_p)
 
 summary(m_ratio3)
+#Height ratio doesn't predict oak density
 
 res_ratio3 <- simulateResiduals(m_ratio3)
 plot(res_ratio3)
