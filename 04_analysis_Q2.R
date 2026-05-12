@@ -7,6 +7,7 @@ library(glmmTMB)
 library(Hmisc)
 library(piecewiseSEM)
 library(MuMIn)
+library(ggplot2)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -346,4 +347,85 @@ coefs(sem_period)
 #Basal area is the only significant direct predictor of oak density
 #As basal area increases, canopy openness slightly decreases
 #Significant decline of oak density between early and late period
+
+
+
+#Plot the results
+#Calculate oak seedling density per m2
+oaks_period <- oaks_period %>%
+  mutate(oak_density = oak_count / area_m2)
+
+
+#Ba prediction grid
+pred_ba <- expand.grid(
+  total_ba = seq(min(oaks_period$total_ba, na.rm = TRUE),
+                 max(oaks_period$total_ba, na.rm = TRUE),
+                 length.out = 100),
+  period = unique(oaks_period$period),
+  canopy_openness = mean(oaks_period$canopy_openness, na.rm = TRUE),
+  area_m2 = 1)
+
+#Predict from final model
+pred_ba$pred <- predict(m4_period,
+                        newdata = pred_ba,
+                        type = "response",
+                        re.form = NA)
+
+#Plot density against basal area
+ggplot() +
+  geom_point(data = oaks_period,
+              aes(x = total_ba,
+                  y = oak_density,
+                  colour = period),
+              alpha = 0.3,
+              size = 1.5) +
+  geom_line(data = pred_ba,
+            aes(x = total_ba,
+                y = pred,
+                colour = period),
+            linewidth = 1.2) +
+  labs(x = expression("Total basal area (m²/ha)"),
+       y = expression("Oak seedling density per m²"),
+       colour = "Period") +
+  scale_colour_manual(values = c("early" = "#E69F00",
+                                 "late" = "#0072B2")) +
+  theme_classic()
+
+
+#Canopy prediction grid
+pred_canopy <- expand.grid(
+  canopy_openness = seq(min(oaks_period$canopy_openness, na.rm = TRUE),
+                        max(oaks_period$canopy_openness, na.rm = TRUE),
+                        length.out = 100),
+  period = unique(oaks_period$period),
+  total_ba = mean(oaks_period$total_ba, na.rm = TRUE),
+  area_m2 = 1)
+
+#Predictions
+pred_canopy$pred <- predict(m4_period,
+                            newdata = pred_canopy,
+                            type = "response",
+                            re.form = NA)
+
+#Plot density against canopy
+ggplot() +
+  geom_point(data = oaks_period,
+             aes(x = canopy_openness,
+                 y = oak_density,
+                 colour = period),
+             alpha = 0.3,
+             size = 1.5) +
+  geom_line(data = pred_canopy,
+            aes(x = canopy_openness,
+                y = pred,
+                colour = period),
+            linewidth = 1.2) +
+  labs(x = "Canopy openness (%)",
+       y = expression("Oak seedling density per m²"),
+       colour = "Period") +
+  scale_colour_manual(values = c("early" = "#E69F00",
+                                 "late" = "#0072B2")) +
+  theme_classic()
+
+
 
