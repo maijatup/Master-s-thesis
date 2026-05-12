@@ -7,6 +7,7 @@ library(glmmTMB)
 library(MuMIn)
 library(DHARMa)
 library(emmeans)
+library(ggplot2)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -228,4 +229,52 @@ emtrends(m5, ~ treatment, var = "total_ba") %>%
   test()
 #In control plots, basal area has a significant negative effect on oak density
 #In thinned plots, basal area has no significant effect
+
+
+
+#Plot the results
+#Calculate oak seedling density per m2
+oaks_period <- oaks_period %>%
+  mutate(oak_density = oak_count / area_m2)
+
+
+#Prediction grid
+pred_ba <- expand.grid(
+  total_ba = seq(min(oaks_period$total_ba, na.rm = TRUE),
+                 max(oaks_period$total_ba, na.rm = TRUE),
+                 length.out = 100),
+  period = unique(oaks_period$period),
+  treatment = unique(oaks_period$treatment),
+  canopy_openness = mean(oaks_period$canopy_openness, na.rm = TRUE),
+  area_m2 = 1)
+
+#Predictions from m5
+pred_ba$pred <- predict(m5,
+                        newdata = pred_ba,
+                        type = "response",
+                        re.form = NA)
+
+#Plot
+ggplot() +
+  geom_point(data = oaks_period,
+             aes(x = total_ba,
+                 y = oak_density,
+                 colour = period),
+             alpha = 0.3,
+             size = 1.5) +
+  geom_line(data = pred_ba,
+            aes(
+              x = total_ba,
+              y = pred,
+              colour = period),
+            linewidth = 1.2) +
+  facet_wrap(~ treatment) +
+  labs(
+    x = expression("Total basal area (m²/ha)"),
+    y = expression("Oak seedling density per m²"),
+    colour = "Period") +
+  scale_colour_manual(
+    values = c("early" = "#E69F00",
+               "late" = "#0072B2")) +
+  theme_classic()
 
