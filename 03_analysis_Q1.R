@@ -276,20 +276,22 @@ ggplot() +
   geom_line(data = emm_df,
             aes(x = period, y = response,
                 colour = treatment, group = treatment),
-            linewidth = 1) +
+            linewidth = 1,
+            position = position_dodge(width = 0.15)) +
   geom_point(data = emm_df,
              aes(x = period, y = response, colour = treatment),
-             size = 4) +
+             size = 4,
+             position = position_dodge(width = 0.15)) +
   geom_errorbar(data = emm_df,
                 aes(x = period, y = response,
                     ymin = asymp.LCL, ymax = asymp.UCL,
                     colour = treatment),
-                width = 0.08, linewidth = 1) +
+                width = 0.08, linewidth = 1,
+                position = position_dodge(width = 0.15)) +
   coord_cartesian(ylim = c(0, 10)) +
   labs(x = "Period after thinning", y = "Oak seedling density per m²",
        colour = "Treatment") +
-  scale_colour_manual(values = c("control" = "#E07B54",
-                                 "thinned" = "#3A9E8F")) +
+  scale_colour_manual(values = c("control" = "#E69F00",
+                                 "thinned" = "#0072B2")) +
   theme_classic()
-
 
