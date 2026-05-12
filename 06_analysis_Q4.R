@@ -4,11 +4,14 @@
 library(readr)
 library(dplyr)
 library(glmmTMB)
+library(MuMIn)
 library(flextable)
 library(DHARMa)
 library(lme4)
 library(lmerTest)
 library(ggplot2)
+library(patchwork)
+library(performance)
 
 regeneration <- read_csv("processed_data/regeneration_data.csv")
 
@@ -115,6 +118,9 @@ m1 <- glmmTMB(quercus_sp ~ total_competitor + period
 
 summary(m1)
 #Total competitor density has a significant positive effect on oak density
+
+r.squaredGLMM(m1)
+
 
 #Test if including trunk shoots influences the results
 m1_shoots <- glmmTMB(quercus_sp ~ total_competitor + period
@@ -387,6 +393,8 @@ res_mh2log <- simulateResiduals(m_height2_log)
 plot(res_mh2log)
 #No significant deviation
 
+r.squaredGLMM(m_height2_log)
+
 
 
 #Test the effect of mean competitor height and treatment together
@@ -481,6 +489,9 @@ summary(m_oakheight_gamma2)
 #Treatment has a significant positive effect on oak height
 #exp(estimate) gives the multiplicative effect on height
 
+r2(m_oakheight_gamma)
+#gamma2 gave NAs
+
 res_oakheight_gamma2 <- simulateResiduals(m_oakheight_gamma2)
 plot(res_oakheight_gamma2)
 #Levene test n.s., outlier test n.s. - remaining KS deviation reflects natural complexity in height distribution
@@ -536,6 +547,9 @@ AIC(m_compheight_gamma, m_compheight_gamma2)
 
 summary(m_compheight_gamma2)
 #Treatment has a significant positive effect on competitor height
+
+r2(m_compheight_gamma)
+#gamma2 gave NAs
 
 res_compheight_gamma <- simulateResiduals(m_compheight_gamma)
 plot(res_compheight_gamma)
@@ -597,3 +611,78 @@ summary(m_ratio3)
 
 res_ratio3 <- simulateResiduals(m_ratio3)
 plot(res_ratio3)
+
+
+
+
+#Plot the results
+
+#Total competitor prediction grid
+pred_comp <- expand.grid(
+  total_competitor = seq(min(competition_p$total_competitor, na.rm = TRUE),
+                         max(competition_p$total_competitor, na.rm = TRUE),
+                         length.out = 100),
+  period = c("early", "late"),
+  area_m2 = 1)
+
+#Predictions
+pred_comp$pred <- predict(m1,
+                          newdata = pred_comp,
+                          type = "response",
+                          re.form = NA)
+
+
+#Oak seedling density
+competition_p <- competition_p %>%
+  mutate(oak_density = quercus_sp / area_m2)
+
+
+#Plot
+ggplot() +
+  geom_point(data = competition_p,
+             aes(x = total_competitor,
+                 y = oak_density,
+                 colour = period),
+             alpha = 0.3,
+             size = 1.5) +
+  geom_line(data = pred_comp,
+            aes(x = total_competitor,
+                y = pred,
+                colour = period),
+            linewidth = 1.2) +
+  labs(x = "Total competitor density per m²",
+       y = "Oak seedling density per m²",
+       colour = "Period") +
+  scale_colour_manual(values = c("early" = "#E69F00",
+                                 "late" = "#0072B2")) +
+  theme_classic()
+
+
+
+#Boxplot over individual heights
+oak_plot <- ggplot(oak_heights, 
+                   aes(x = treatment, 
+                       y = height_cm, 
+                       fill = treatment)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c("control" = "#E69F00",
+                               "thinned" = "#0072B2")) +
+  labs(x = NULL, y = "Oak seedling height (cm)") +
+  ylim(0, 130) +
+  theme_classic() +
+  theme(legend.position = "none")
+
+comp_plot <- ggplot(competitor_heights,
+                    aes(x = treatment,
+                        y = height_cm,
+                        fill = treatment)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c("control" = "#E69F00",
+                               "thinned" = "#0072B2")) +
+  labs(x = NULL, y = "Competitor seedling height (cm)") +
+  ylim(0, 130) +
+  theme_classic() +
+  theme(legend.position = "none")
+
+oak_plot + comp_plot
+
