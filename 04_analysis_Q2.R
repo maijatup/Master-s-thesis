@@ -257,6 +257,14 @@ m1_period <- glmmTMB(oak_count ~ total_ba + period
 summary(m1_period)
 #As basal area increases, oak seedling density decreases (significant)
 
+m_oak_period <- glmmTMB(oak_count ~ quercus_sp_ba + period
+                        + offset(log(area_m2))
+                        + (1 | site/plot/transect/subplot),
+                        data = oaks_period, family = nbinom2)
+
+summary(m_oak_period)
+#No significant effect
+
 
 
 m2_period <- glmmTMB(oak_count ~ canopy_openness + period
