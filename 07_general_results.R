@@ -125,23 +125,31 @@ oaks_period %>%
 
 #Change in total basal area between years, per site and treatment
 oaks_noshoots %>% 
+  distinct(site, treatment, plot, year, total_ba, quercus_sp_ba) %>% 
   group_by(site, treatment, year) %>% 
   summarise(mean_total_ba = mean(total_ba, na.rm = TRUE),
             mean_quercus_ba = mean(quercus_sp_ba, na.rm = TRUE), 
             .groups = "drop")
 
 ba_table <- oaks_noshoots %>%
+  distinct(site, treatment, plot, year, total_ba, quercus_sp_ba) %>% 
   group_by(site, treatment, year) %>%
   filter(year != 2005) %>% 
   summarise(mean_total_ba = mean(total_ba, na.rm = TRUE),
+            mean_oak_ba = mean(quercus_sp_ba, na.rm = TRUE),
             .groups = "drop") %>%
-  mutate(total_ba = sprintf("%.1f", mean_total_ba)) %>%
-  select(site, treatment, year, total_ba) %>%
+  mutate(total_ba = sprintf("%.1f", mean_total_ba),
+         oak_ba = sprintf("%.1f", mean_oak_ba)) %>%
+  select(site, treatment, year, total_ba, oak_ba) %>%
   pivot_wider(names_from = year,
-              values_from = total_ba,
-              names_glue = "{year} basal area") %>%
+              values_from = c(total_ba, oak_ba),
+              names_glue = "{year} {.value}") %>%
   rename(Site = site,
-         Treatment = treatment)
+         Treatment = treatment,
+         `2003 total basal area` = `2003 total_ba`,
+         `2025 total basal area` = `2025 total_ba`,
+         `2003 oak basal area` = `2003 oak_ba`,
+         `2025 oak basal area` = `2025 oak_ba`)
 
 (ba_flextable <- ba_table %>%
   flextable() %>%
@@ -155,6 +163,7 @@ save_as_docx(ba_flextable, path = "ba_table.docx")
 
 #Overall BA change by treatment
 oaks_noshoots %>%
+  distinct(site, treatment, plot, year, total_ba, quercus_sp_ba) %>% 
   group_by(year, treatment) %>%
   summarise(mean_total_ba = mean(total_ba, na.rm = TRUE),
             mean_quercus_ba = mean(quercus_sp_ba, na.rm = TRUE))
@@ -210,3 +219,108 @@ height_data %>%
   summarise(mean_oak_height = mean(height_cm[species == "Quercus sp."], na.rm = TRUE))
 
 
+
+
+
+#Merged summary table
+#Density
+density_merged <- oaks_noshoots %>%
+  mutate(period = if_else(year %in% c(2003, 2005), "early", "late")) %>%
+  group_by(site, treatment, period) %>%
+  summarise(
+    mean_density = mean(oak_count / area_m2, na.rm = TRUE),
+    sd_density   = sd(oak_count / area_m2, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(density = sprintf("%.2f ± %.2f", mean_density, sd_density)) %>%
+  select(site, treatment, period, density) %>%
+  pivot_wider(names_from = period, values_from = density,
+              names_glue = "{period} density (mean ± SD/m²)")
+
+
+#Basal area
+ba_merged <- oaks_noshoots %>%
+  distinct(site, treatment, plot, year, total_ba, quercus_sp_ba) %>%
+  filter(year != 2005) %>%
+  group_by(site, treatment, year) %>%
+  summarise(
+    mean_total_ba = mean(total_ba, na.rm = TRUE),
+    mean_oak_ba   = mean(quercus_sp_ba, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    total_ba_fmt = sprintf("%.1f", mean_total_ba),
+    oak_ba_fmt   = sprintf("%.1f", mean_oak_ba)
+  ) %>%
+  select(site, treatment, year, total_ba_fmt, oak_ba_fmt) %>%
+  pivot_wider(names_from = year,
+              values_from = c(total_ba_fmt, oak_ba_fmt),
+              names_glue = "{year} {.value}") %>%
+  rename(
+    `early total BA (m²/ha)` = `2003 total_ba_fmt`,
+    `late total BA (m²/ha)`  = `2025 total_ba_fmt`,
+    `early oak BA (m²/ha)`   = `2003 oak_ba_fmt`,
+    `late oak BA (m²/ha)`    = `2025 oak_ba_fmt`
+  )
+
+
+#Canopy openness
+canopy_merged <- oaks_period %>%
+  group_by(site, treatment, period) %>%
+  summarise(
+    mean_canopy = mean(canopy_openness, na.rm = TRUE),
+    sd_canopy   = sd(canopy_openness, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  mutate(canopy = sprintf("%.1f ± %.1f", mean_canopy, sd_canopy)) %>%
+  select(site, treatment, period, canopy) %>%
+  pivot_wider(names_from = period, values_from = canopy,
+              names_glue = "{period} canopy openness (mean ± SD %)")
+
+
+#Merge ba and canopy
+summary_table <- ba_merged %>%
+  left_join(canopy_merged, by = c("site", "treatment")) %>%
+  arrange(site, treatment) %>%
+  rename(Site = site, Treatment = treatment)
+
+
+(summary_flextable <- summary_table %>%
+    flextable() %>%
+    merge_v(j = "Site") %>%
+    theme_booktabs() %>%
+    # Add a spanning header row to group the columns
+    add_header_row(
+      values = c("", "", 
+                 "Total BA (m²/ha)", "Oak BA (m²/ha)", 
+                 "Canopy openness (mean ± SD %)"),
+      colwidths = c(1, 1, 2, 2, 2)
+    ) %>%
+    # Rename the lower header row to something cleaner
+    set_header_labels(
+      Site                              = "Site",
+      Treatment                         = "Treatment",
+      `early total BA (m²/ha)`          = "Early",
+      `late total BA (m²/ha)`           = "Late",
+      `early oak BA (m²/ha)`            = "Early",
+      `late oak BA (m²/ha)`             = "Late",
+      `early canopy openness (mean ± SD %)` = "Early",
+      `late canopy openness (mean ± SD %)` = "Late"
+    ) %>%
+    align(align = "center", part = "header") %>%
+    align(j = 3:8, align = "center", part = "body") %>%
+    align(j = 1:2, align = "left", part = "body") %>%
+    theme_booktabs() %>%
+    autofit() %>%
+    font(fontname = "Times New Roman", part = "all"))
+
+save_as_docx(summary_flextable, path = "summary_table.docx")
+
+
+
+oaks_period %>%
+  group_by(site, treatment, period) %>%
+  summarise(plot_mean_ba = mean(total_ba, na.rm = TRUE), .groups = "drop") %>%
+  group_by(treatment, period) %>%
+  summarise(mean_ba_plots = mean(plot_mean_ba, na.rm = TRUE),
+            n_plots = n(), .groups = "drop")
