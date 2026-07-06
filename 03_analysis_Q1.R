@@ -135,7 +135,8 @@ summary(m4_year_c)
 
 
 #Try the model with year as factor
-m4_year_f <- glmmTMB(oak_count ~ treatment * factor(year) + offset(log(area_m2))
+m4_year_f <- glmmTMB(oak_count ~ treatment * factor(year) 
+                     + offset(log(area_m2))
                      + (1 | site/transect/subplot),
                      data = oaks_all, family = nbinom2)
 
@@ -256,6 +257,19 @@ pairs(emm1)
                  at = list(area_m2 = 1)))
 pairs(emm2)
 #Control plots had 54% lower density in the late period compared to the early period (significant)
+
+
+#emmeans on year model to compare to Götmark's results
+m4_noshoots_y <- glmmTMB(oak_count ~ treatment * factor(year)
+                         + offset(log(area_m2))
+                         + (1 | site/plot/transect/subplot),
+                         data = oaks_noshoots, family = nbinom2)
+
+emm_year <- emmeans(m4_noshoots_y, ~ treatment | factor(year), 
+                    type = "response",
+                    at = list(area_m2 = 1))
+
+pairs(emm_year)
 
 
 
