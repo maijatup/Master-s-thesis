@@ -96,6 +96,15 @@ summary(m3)
 #As basal area increases, oak density decreases (significant)
 #Period effect is significant again
 
+#Model 3 with oak ba
+m3_oak <- glmmTMB(oak_count ~ treatment + quercus_sp_ba + canopy_openness + period
+                  + offset(log(area_m2))
+                  + (1 | site/transect/subplot),
+                  family = nbinom2, data = oaks_period)
+
+summary(m3_oak)
+#No significant effect
+
 
 
 #Model 4: test the effect of thinning, basal area, canopy and pH together
@@ -121,6 +130,16 @@ summary(m5)
 #In control plots, basal area has a negative effect on oak density, but in thinned plots, basal area has almost no effect
 
 
+#Test if the effect of oak basal area differs between treatments
+m5_oak <- glmmTMB(oak_count ~ treatment * quercus_sp_ba + canopy_openness + period
+                  + offset(log(area_m2))
+                  + (1 | site/transect/subplot),
+                  family = nbinom2, data = oaks_period)
+
+summary(m5_oak)
+#Oak ba has a significant negative effect, significant interaction
+
+
 #Test if including trunk shoots influences the results
 oaks_period_all <- oaks_all %>%
   mutate(period = if_else(year %in% c(2003, 2005), "early", "late"),
@@ -143,24 +162,34 @@ summary(m5_shoots)
 
 
 r.squaredGLMM(m5)
+r.squaredGLMM(m5_oak)
 
 #Diagnostics
 #First, create a dataset with only the 94 observations used in the model
 oaks_ba_can <- oaks_period %>% 
-  filter(complete.cases(total_ba, canopy_openness))
+  filter(complete.cases(total_ba, quercus_sp_ba, canopy_openness))
 
 sim_res <- simulateResiduals(m5)
+sim_res_oak <- simulateResiduals(m5_oak)
 
-plot(sim_res)
-#No significant deviation
+plot(sim_res) #No significant deviation
+plot(sim_res_oak) #Quantile deviations detected
 
 testDispersion(sim_res)
+testDispersion(sim_res_oak)
 testZeroInflation(sim_res)
+testZeroInflation(sim_res_oak)
 #No overdispersion or zeroinflation
 
 plotResiduals(sim_res, oaks_ba_can$total_ba)
 plotResiduals(sim_res, oaks_ba_can$canopy_openness)
 #Minor quantile deviations - due to skewed distribution?
+
+plotResiduals(sim_res_oak, oaks_ba_can$quercus_sp_ba)
+plotResiduals(sim_res_oak, oaks_ba_can$canopy_openness)
+#Quantile deviations
+
+
 
 plotResiduals(sim_res, oaks_ba_can$treatment)
 #More variance in thinned plots
@@ -224,11 +253,22 @@ pairs(emm_interaction)
 #Thinned plots at high ba have significantly higher seedling density
 
 
-#Effect of basal area within each treatment
+#Effect of total basal area within each treatment
 emtrends(m5, ~ treatment, var = "total_ba") %>% 
   test()
 #In control plots, basal area has a significant negative effect on oak density
 #In thinned plots, basal area has no significant effect
+
+#Effect of oak basal area within each treatment
+emtrends(m5_oak, ~ treatment, var = "quercus_sp_ba") %>% 
+  test()
+#Same patterns as total ba
+
+
+#Effect of canopy within each treatment
+emtrends(m6, ~ treatment, var = "canopy_openness") %>% 
+  test()
+#Canopy openness has a significant negative effect in thinned plots
 
 
 
