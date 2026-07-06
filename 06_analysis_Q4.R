@@ -570,7 +570,8 @@ height_index <- height_index %>%
          subplot_id = paste(site, transect, subplot, sep = "_"))
 
 #Model: does treatment affect the height ratio?
-m_ratio1 <- lmer(log(height_ratio) ~ treatment + (1 | plot_id),
+m_ratio1 <- lmer(log(height_ratio) ~ treatment 
+                 + (1 | plot_id),
                  data = height_index)
 
 summary(m_ratio1)
@@ -588,7 +589,8 @@ height_index_comp <- competition_p %>%
   right_join(height_index, by = c("site", "plot", "treatment", "transect", "subplot"))
 
 #Model: does total competitor density relate to the height ratio?
-m_ratio2 <- lmer(log(height_ratio) ~ total_competitor + (1 | plot_id),
+m_ratio2 <- lmer(log(height_ratio) ~ total_competitor 
+                 + (1 | plot_id),
                  data = height_index_comp)
 
 summary(m_ratio2)
@@ -601,7 +603,8 @@ plot(res_ratio2)
 
 #Model: does the height ratio predict oak density?
 #Most direct test: are subplots where competitors are taller relative to oaks associated with fewer oaks?
-m_ratio3 <- glmmTMB(quercus_sp ~ height_ratio + offset(log(area_m2))
+m_ratio3 <- glmmTMB(quercus_sp ~ height_ratio 
+                    + offset(log(area_m2))
                     + (1 | site/plot),
                     family = nbinom2,
                     data = competition_p)
@@ -659,6 +662,36 @@ ggplot() +
 
 
 
+#Mean competitor height prediction grid
+pred_height <- data.frame(
+  mean_competitor_height = seq(min(height_index$mean_competitor_height, na.rm = TRUE),
+                               max(height_index$mean_competitor_height, na.rm = TRUE),
+                               length.out = 100))
+
+#Predictions (back-transformed from log scale)
+pred_height$pred <- exp(predict(m_height2_log,
+                                newdata = pred_height,
+                                re.form = NA))
+
+#Plot
+ggplot() +
+  geom_point(data = height_index,
+             aes(x = mean_competitor_height,
+                 y = mean_oak_height),
+             alpha = 0.3,
+             size = 1.5,
+             colour = "#0072B2") +
+  geom_line(data = pred_height,
+            aes(x = mean_competitor_height,
+                y = pred),
+            linewidth = 1.2,
+            colour = "#0072B2") +
+  labs(x = "Mean competitor height (cm)",
+       y = "Mean oak height (cm)") +
+  theme_classic()
+
+
+
 #Boxplot over individual heights
 oak_plot <- ggplot(oak_heights, 
                    aes(x = treatment, 
@@ -684,5 +717,41 @@ comp_plot <- ggplot(competitor_heights,
   theme_classic() +
   theme(legend.position = "none")
 
-oak_plot + comp_plot
+(oak_plot + comp_plot) +
+  plot_annotation(tag_levels = "a")
+
+
+
+#Height ratio prediction grid
+pred_ratio <- data.frame(
+  height_ratio = seq(min(competition_p$height_ratio, na.rm = TRUE),
+                     max(competition_p$height_ratio, na.rm = TRUE),
+                     length.out = 100),
+  area_m2 = 1)
+
+#Predictions
+pred_ratio$pred <- predict(m_ratio3,
+                           newdata = pred_ratio,
+                           type = "response",
+                           re.form = NA)
+
+ggplot() +
+  geom_point(data = competition_p,
+             aes(x = height_ratio,
+                 y = oak_density,
+                 colour = treatment),
+             alpha = 0.3,
+             size = 1.5,) +
+  geom_line(data = pred_ratio,
+            aes(x = height_ratio,
+                y = pred),
+            linewidth = 1,
+            colour = "black") +
+  labs(x = "Height ratio (mean competitor height/mean oak height)",
+       y = "Oak seedling density per m²",
+       colour = "Treatment") +
+  scale_colour_manual(values = c("control" = "#E69F00",
+                                 "thinned" = "#0072B2")) +
+  coord_cartesian(ylim = c(0, 22)) +
+  theme_classic()
 
