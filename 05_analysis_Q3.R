@@ -1,5 +1,5 @@
 #27/4/2026
-#Question 3: How do these factors (basal area, canopy openness, pH) together influence long-term oak regeneration following conservation thinning, compared to the undisturbed control plots?
+#Question 2: How do total basal area, oak basal area and canopy openness influence oak seedling density, and do these effects differ between thinned and control plots? 
 
 library(readr)
 library(dplyr)
