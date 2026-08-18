@@ -1,5 +1,5 @@
 #4/5/2026
-#Question 4: How does competition from other tree species affect oak seedling density?
+#Question 3: How do competitor density and height influence oak seedling density and height, and how does conservation thinning affect the height of oak and competitor seedlings?
 
 library(readr)
 library(dplyr)
