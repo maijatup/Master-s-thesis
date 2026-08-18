@@ -1,5 +1,5 @@
 #21/4/2026
-#Question 2: How do forest structure, light availability, and soil conditions influence oak seedling density across the study sites?
+#Question 2: How do total basal area, oak basal area and canopy openness influence oak seedling density? 
 
 library(readr)
 library(dplyr)
