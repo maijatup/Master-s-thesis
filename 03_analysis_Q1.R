@@ -1,5 +1,5 @@
 #30/3/2026
-#Question 1: Do the positive effects of conservation thinning on oak regeneration persist 22 years after thinning?
+#Question 1: How has oak seedling density changed over 22 years, and how has this change been influenced by conservation thinning?
 
 library(readr)
 library(dplyr)
